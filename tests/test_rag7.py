@@ -10,7 +10,7 @@ from pathlib import Path
 from types import SimpleNamespace
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from src.rag7.agent import ContextWindow, run_agent  # noqa: E402
+from src.rag7.agent import ContextWindow, repair_citations, run_agent  # noqa: E402
 from src.rag7.evidence import gold_hits  # noqa: E402
 from src.rag7.llm import Usage  # noqa: E402
 from src.rag7.retrievers import BM25Retriever, ChunkCorpus, HybridRetriever, RerankRetriever  # noqa: E402
@@ -122,6 +122,23 @@ class AgentTests(unittest.TestCase):
                 raise RuntimeError("quota")
         out = run_agent("q", Boom([]), FixedRetriever([]), filters=None, top_k=3, max_searches=1, budget_chars=100)
         self.assertEqual(out["status"], "error")
+
+
+class CitationRepairTests(unittest.TestCase):
+    def test_restores_missing_prefix_only_when_unique(self):
+        ans, cites, m = repair_citations("x [pds-ch02:p73:1]", ["pds-ch02:p73:1"], ["B:pds-ch02:p73:1", "B:pds-ch02:p73:4"])
+        self.assertEqual((ans, cites), ("x [B:pds-ch02:p73:1]", ["B:pds-ch02:p73:1"]))
+        _, cites, m = repair_citations("x [p9]", ["p9"], ["B:a"])
+        self.assertEqual((cites, m), (["p9"], {}))
+
+    def test_agent_with_cite_fix_accepts_repaired_citation(self):
+        llm = ScriptedLLM([tool_msg("search_documents", query="q"),
+                           tool_msg("submit_answer", answer="ok [x:1]", citations=["x:1"])])
+        rows = [chunk("B:x:1", "text")]
+        out = run_agent("q", llm, FixedRetriever(rows), filters=None, top_k=3, max_searches=1,
+                        budget_chars=1000, cite_fix=True)
+        self.assertEqual((out["status"], out["citations"]), ("answered", ["B:x:1"]))
+        self.assertIn("including the `B:` prefix", llm.seen[0][0]["content"])
 
 
 class ContextTests(unittest.TestCase):

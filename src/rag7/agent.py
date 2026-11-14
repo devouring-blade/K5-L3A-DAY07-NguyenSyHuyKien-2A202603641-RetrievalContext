@@ -29,7 +29,13 @@ Rules:
   Cite every supporting chunk inline as [chunk-id] and list the same ids in `citations`.
 - If the evidence is missing or insufficient after searching, call `abstain`.
   Do not answer from your own knowledge.
-- Answer concisely in the language of the question."""
+- Answer concisely in the language of the question.{cite_rule}"""
+
+# Thêm sau khi đọc lỗi dev (xem experiments.py, cite_fix): model hay quên [id] trong
+# câu trả lời rồi khi sửa lại bỏ mất tiền tố "B:" của chunk ID.
+CITE_RULE = """
+- Chunk ids look like `B:pds-ch02:p73:1`. Copy them EXACTLY, including the `B:` prefix,
+  inline in the answer text, e.g. "... cluster sampling [B:pds-ch02:p73:1]." and in `citations`."""
 
 TOOLS = [
     {"type": "function", "function": {
@@ -87,12 +93,33 @@ class ContextWindow:
         return added, dup, over
 
 
+def repair_citations(answer: str, cites: list[str], ctx_ids: list[str]) -> tuple[str, list[str], dict]:
+    """Chỉ sửa lỗi định dạng ID: citation thiếu tiền tố (vd `pds-ch02:p73:1`) được đổi
+    thành ID đầy đủ nếu khớp DUY NHẤT một chunk đang có trong context. Không thêm
+    citation mới, không đổi nội dung câu trả lời."""
+    fixed, mapping = [], {}
+    for c in cites:
+        if c in ctx_ids:
+            fixed.append(c)
+            continue
+        cand = [i for i in ctx_ids if i.endswith(":" + c) or i.split(":", 1)[-1] == c]
+        if len(cand) == 1:
+            mapping[c] = cand[0]
+            answer = answer.replace(f"[{c}]", f"[{cand[0]}]")
+            fixed.append(cand[0])
+        else:
+            fixed.append(c)
+    return answer, fixed, mapping
+
+
 def run_agent(question: str, llm, retriever, *, filters: dict | None, top_k: int,
-              max_searches: int, budget_chars: int, max_turns: int | None = None) -> dict:
+              max_searches: int, budget_chars: int, max_turns: int | None = None,
+              cite_fix: bool = False) -> dict:
     max_turns = max_turns or max_searches + 3
     ctx = ContextWindow(budget_chars)
     events: list[dict] = []
-    messages = [{"role": "system", "content": SYSTEM_PROMPT.format(max_searches=max_searches)},
+    messages = [{"role": "system", "content": SYSTEM_PROMPT.format(
+                    max_searches=max_searches, cite_rule=CITE_RULE if cite_fix else "")},
                 {"role": "user", "content": question}]
     searches, fixes = 0, 0
     t0 = time.perf_counter()
@@ -150,6 +177,10 @@ def run_agent(question: str, llm, retriever, *, filters: dict | None, top_k: int
             elif name == "submit_answer":
                 answer = str(args.get("answer", "")).strip()
                 cites = [c for c in args.get("citations", []) if isinstance(c, str)]
+                if cite_fix:
+                    answer, cites, mapping = repair_citations(answer, cites, ctx.ids())
+                    if mapping:
+                        events.append({"event": "citation_repaired", "mapping": mapping})
                 bad = [c for c in cites if c not in ctx.ids() or f"[{c}]" not in answer]
                 if answer and cites and not bad:
                     events.append({"event": "answer"})
@@ -159,9 +190,11 @@ def run_agent(question: str, llm, retriever, *, filters: dict | None, top_k: int
                 if fixes >= 1:
                     return finish("abstain", ABSTAIN_TEXT, [], "citation không hợp lệ sau khi sửa")
                 fixes += 1
+                hint = (f" Valid ids in context: {', '.join(ctx.ids())}. Put each cited id inline, "
+                        "e.g. [B:pds-ch02:p73:1], and keep the B: prefix.") if cite_fix else ""
                 messages.append({"role": "tool", "tool_call_id": call.id, "content":
                                  "Invalid: every citation must be a chunk id from the retrieved context "
-                                 f"and appear inline as [id]. Problems: {bad or 'no citations'}. "
+                                 f"and appear inline as [id]. Problems: {bad or 'no citations'}.{hint} "
                                  "Fix and resubmit, or abstain."})
 
             elif name == "abstain":

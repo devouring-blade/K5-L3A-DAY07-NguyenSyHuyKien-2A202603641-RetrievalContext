@@ -56,6 +56,7 @@ def summarize(name: str, traces: list[dict], cases: list[dict], llm_usage: dict)
     cfg = AGENT_CONFIGS[name]
     return {
         "config": name, **{k: cfg[k] for k in ("retriever", "top_k", "max_searches", "budget_chars")},
+        "cite_fix": cfg.get("cite_fix", False),
         "model": config.AGENT_MODEL, "cases": len(cases), "errors": len(traces) - len(ok),
         "error_ids": [t["query_id"] for t in traces if t["status"] == "error"],
         "tool_use": f"{sum(t['n_searches'] > 0 for t in ok)}/{len(ok)}",
@@ -95,7 +96,8 @@ def main() -> None:
             # Chỉ đưa câu hỏi + filter người dùng cung cấp; gold chỉ dùng SAU để chấm.
             out = run_agent(case["question"], llm, retriever, filters=case.get("filter"),
                             top_k=cfg["top_k"], max_searches=cfg["max_searches"],
-                            budget_chars=cfg["budget_chars"])
+                            budget_chars=cfg["budget_chars"],
+                            cite_fix=cfg.get("cite_fix", False))
             g = gold.get(case["id"])
             has_ev = bool(g) and any(gold_hits(corpus.by_id[i], g) for i in out["context_ids"])
             traces.append({"query_id": case["id"], "split": case["split"], "config": name,
@@ -115,12 +117,12 @@ def main() -> None:
 
 
 def write_table(split_dir) -> None:
-    rows = ["| Cấu hình | Retriever | Budget | Tool use | Lượt search TB | Context Evidence | "
+    rows = ["| Cấu hình | Retriever | Budget | Sửa citation | Tool use | Lượt search TB | Context Evidence | "
             "Có đáp án được trả lời | Từ chối nhầm | Thiếu evidence bị từ chối | Lỗi | Median s | Chi phí USD |",
-            "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+            "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for f in sorted(split_dir.glob("*/summary.json")):
         s = json.loads(f.read_text(encoding="utf-8"))
-        rows.append(f"| {s['config']} | {s['retriever']} | {s['budget_chars']} | {s['tool_use']} | {s['mean_searches']} | "
+        rows.append(f"| {s['config']} | {s['retriever']} | {s['budget_chars']} | {s.get('cite_fix', False)} | {s['tool_use']} | {s['mean_searches']} | "
                     f"{s['context_evidence_rate']} | {s['answerable_answered']} | {s['false_abstention']} | "
                     f"{s['unanswerable_abstained']} | {s['errors']} | {s['median_seconds']} | {s['usage']['cost_usd']} |")
     (split_dir / "summary.md").write_text("\n".join(rows) + "\n", encoding="utf-8")

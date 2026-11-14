@@ -34,7 +34,7 @@ Model nhận câu hỏi và 3 tool:
 1. `search_documents(query)`: model tự viết query (có thể viết lại câu hỏi). Code gọi retriever của cấu hình, rồi thêm chunk mới vào **context**:
    - chunk trùng ID bị bỏ;
    - nếu vượt **budget** (số ký tự) thì chunk bị loại và model được báo lại.
-2. `submit_answer(answer, citations)`: hợp lệ khi mọi citation là ID chunk **đã có trong context** và xuất hiện dạng `[id]` trong câu trả lời. Sai thì cho sửa 1 lần, sai nữa thì coi như từ chối.
+2. `submit_answer(answer, citations)`: hợp lệ khi mọi citation là ID chunk **đã có trong context** và xuất hiện dạng `[id]` trong câu trả lời. Sai thì cho sửa 1 lần, sai nữa thì coi như từ chối. Với `cite_fix=True`, prompt nói rõ định dạng ID, thông báo sửa liệt kê các ID hợp lệ, và code tự khôi phục tiền tố `B:` nếu ID bị thiếu tiền tố khớp **duy nhất** một chunk trong context. Code không tự thêm citation mới.
 3. `abstain(reason)`: từ chối khi không đủ bằng chứng.
 
 Điều kiện dừng: trả lời, từ chối, hết số lượt search (model bị buộc phải chốt), hoặc quá số lượt hội thoại. Lỗi API được ghi `status: "error"`, không thay bằng kết quả giả.
@@ -47,6 +47,8 @@ Model nhận câu hỏi và 3 tool:
 | `ag_budget` | chỉ tăng budget lên 4000 |
 | `ag_hybrid` | như `ag_budget`, tool tìm bằng hybrid |
 | `ag_rerank` | như `ag_hybrid`, thêm LLM rerank |
+| `ag_budget_cite` | như `ag_budget` + sửa lỗi định dạng citation (thêm SAU khi đọc lỗi dev) |
+| `ag_hybrid_cite` | như `ag_hybrid` + cùng cách sửa citation |
 
 `run_agent.py` tự đo: tool use, số lượt search, **Context Evidence Rate** (context cuối có chunk hit hay không), số câu trả lời hay từ chối, thời gian, token, chi phí.
 `select_config.py` áp tiêu chí đã chốt **chỉ trên dev**. Sau đó mới chạy test.

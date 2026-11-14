@@ -25,6 +25,20 @@ AGENT_CONFIGS = {
         "changes": "Cải thiện 3: giống ag_hybrid nhưng xếp lại 10 ứng viên bằng LLM.",
         "hypothesis": "Rerank tăng Hit@1 (chunk đúng lên đầu) đổi lại thêm 1 lời gọi LLM mỗi lượt tìm (chậm hơn, tốn hơn).",
     },
+    # ---- Thêm SAU khi đọc lỗi dev của 4 cấu hình trên (vẫn chỉ dùng dev) ----
+    # Lỗi: 6/20 câu dev của ag_budget bị từ chối dù context ĐÃ có evidence. Trace cho thấy
+    # model trả lời đúng nhưng quên [chunk-id] trong câu, khi sửa lại thì bỏ tiền tố "B:".
+    "ag_budget_cite": {
+        "retriever": "dense", "top_k": 3, "max_searches": 3, "budget_chars": 4000, "cite_fix": True,
+        "changes": "Cải thiện 4 (sau phân tích lỗi dev): như ag_budget + hướng dẫn định dạng citation "
+                   "trong prompt, thông báo sửa liệt kê ID hợp lệ, tự khôi phục tiền tố 'B:' khi khớp duy nhất.",
+        "hypothesis": "Giảm từ chối nhầm do lỗi định dạng citation, không đổi Context Evidence Rate.",
+    },
+    "ag_hybrid_cite": {
+        "retriever": "hybrid", "top_k": 3, "max_searches": 3, "budget_chars": 4000, "cite_fix": True,
+        "changes": "Như ag_hybrid + cùng sửa citation như ag_budget_cite.",
+        "hypothesis": "Kiểm tra hybrid có lợi hơn dense khi lỗi citation đã được loại bỏ.",
+    },
 }
 
 BASELINE = "ag_base"
