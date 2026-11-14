@@ -1,0 +1,5 @@
+# Cùng phiên bản đã dùng ở Day 6 (Python 3.13, Windows)
+pypdf==7.0.1
+chromadb==1.5.9
+openai==3.50.0
+python-dotenv==1.2.4

@@ -1,0 +1,428 @@
+[
+ {
+  "id": "q01",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "In stratified sampling, how is the sample taken from each subgroup?",
+  "expected_answer": "A random sample is taken from each stratum in proportion to its size in the population.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 73,
+    "evidence": "taking a random sample from each stratum in proportion to its size in the population"
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q01 (split Day 6: dev)"
+ },
+ {
+  "id": "q02",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "question": "Which sampling method randomly picks whole natural groups such as school districts and then includes every member of the chosen groups?",
+  "expected_answer": "Cluster sampling.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 73,
+    "evidence": "With cluster sampling, the population is divided into natural groups or clusters, such as schools, communities, or cities, with a random sample of these clusters picked and all members within the chosen clusters included in the sample."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q02 (split Day 6: dev)"
+ },
+ {
+  "id": "q03",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "Which historical poll is given as a real-life example of sampling bias leading to inaccurate findings?",
+  "expected_answer": "The 1936 Literary Digest poll.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 72,
+    "evidence": "One well-known real-life instance of sampling bias leading to inaccurate findings is the 1936 Literary Digest poll."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q03 (split Day 6: dev)"
+ },
+ {
+  "id": "q04",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "question": "Which sampling technique relies on participants referring other similar people because the target population is hard to reach?",
+  "expected_answer": "Snowball sampling.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 74,
+    "evidence": "Snowball sampling is typically used in situations where it is difficult to access a particular population; it relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q04 (split Day 6: dev)"
+ },
+ {
+  "id": "q05",
+  "split": "dev",
+  "type": "dieu_kien",
+  "question": "How does random measurement error differ from systematic measurement error?",
+  "expected_answer": "Random error arises unpredictably and affects precision; systematic error consistently biases measurements in one direction.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 75,
+    "evidence": "Random error, which arises unpredictably, can affect the precision of measurements, and systematic error may consistently bias measurements in a particular direction."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q05 (split Day 6: dev)"
+ },
+ {
+  "id": "q06",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "What does data integration mean as a data preprocessing step?",
+  "expected_answer": "Merging data from multiple sources into a single dataset.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 86,
+    "evidence": "Data integration refers to merging data from multiple sources into a single dataset."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q06 (split Day 6: dev)"
+ },
+ {
+  "id": "q07",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "question": "What is the name for missing data that has no relationship to any other variable and no underlying cause?",
+  "expected_answer": "MCAR (missing completely at random).",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 87,
+    "evidence": "MCAR (missing completely at random) data is missing data not related to any other variables, with no underlying cause for its absence."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q07 (split Day 6: dev)"
+ },
+ {
+  "id": "q08",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "question": "How can daily stock index values that fluctuate a lot be smoothed to reveal the monthly trend?",
+  "expected_answer": "By calculating a seven-day average.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 93,
+    "evidence": "By calculating a seven-day average, we can smooth out these fluctuations and see the overall trend of the index over the course of the month."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q08 (split Day 6: dev)"
+ },
+ {
+  "id": "q09",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "What does stopwords removal do in text preprocessing?",
+  "expected_answer": "It filters out commonly occurring words that do not add meaning or context.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 95,
+    "evidence": "Filtering out commonly occurring words that do not add meaning or context"
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q09 (split Day 6: dev)"
+ },
+ {
+  "id": "q10",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "Which big data storage solution stores data as objects made of both data and metadata?",
+  "expected_answer": "Object storage.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 99,
+    "evidence": "With object storage, data are stored as objects that consist of both data and metadata."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q10 (split Day 6: dev)"
+ },
+ {
+  "id": "q11",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "What is pseudonymization?",
+  "expected_answer": "Replacing sensitive information with artificial identifiers or codes while keeping the data useful for analysis.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 390,
+    "evidence": "Pseudonymization is the act of replacing sensitive information in a dataset with artificial identifiers or codes while still maintaining its usefulness for analysis."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q11 (split Day 6: dev)"
+ },
+ {
+  "id": "q12",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "What are cookies, as described in the discussion of informed consent?",
+  "expected_answer": "Small data files deposited on users' hard disks by the websites they visit.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 392,
+    "evidence": "Cookies are small data files that are deposited on users' hard disks from websites they visit."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q12 (split Day 6: dev)"
+ },
+ {
+  "id": "q13",
+  "split": "dev",
+  "type": "metadata_filter",
+  "question": "How can an outlier affect an algorithm's outcomes?",
+  "expected_answer": "Because of its abnormality, an outlier can cause an algorithm to drastically change its outcomes (a source of bias).",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 400,
+    "evidence": "An outlier might cause an algorithm to drastically change its outcomes due to its abnormality compared to the rest of the data."
+   }
+  ],
+  "filter": {
+   "chapter": 8
+  },
+  "origin": "day6:q13 (split Day 6: dev)"
+ },
+ {
+  "id": "q14",
+  "split": "dev",
+  "type": "metadata_filter",
+  "question": "At which stages can sampling bias occur, and why does it matter?",
+  "expected_answer": "It can occur at various stages of the sampling process and can greatly impact the accuracy and validity of findings.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 75,
+    "evidence": "Sampling bias can occur at various stages of the sampling process, and it can greatly impact the accuracy and validity of research findings."
+   }
+  ],
+  "filter": {
+   "chapter": 2
+  },
+  "origin": "day6:q14 (split Day 6: dev)"
+ },
+ {
+  "id": "q15",
+  "split": "dev",
+  "type": "dieu_kien",
+  "question": "Who should set the data anonymization policy, including choosing k for k-anonymization?",
+  "expected_answer": "The regulatory compliance officer (RCO) or other compliance professionals with specialized knowledge of data privacy regulations.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 402,
+    "evidence": "Data anonymization policy (including the determination of k in k-anonymization if needed) should be set by the regulatory compliance officer (RCO) or other compliance professionals with specialized knowledge of data privacy regulations."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q15 (split Day 6: dev)"
+ },
+ {
+  "id": "q16",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "Which US law requires safeguarding sensitive information related to patient health?",
+  "expected_answer": "HIPAA (Health Insurance Portability and Accountability Act).",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 389,
+    "evidence": "the Health Insurance Portability and Accountability Act (HIPAA) requires the safeguarding of sensitive information related to patient health."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q16 (split Day 6: test)"
+ },
+ {
+  "id": "q17",
+  "split": "dev",
+  "type": "metadata_filter",
+  "question": "What is data validation?",
+  "expected_answer": "The process of checking, verifying, and validating the accuracy and reliability of data before it is used in decision-making.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 403,
+    "evidence": "Data validation (as introduced in Collecting and Preparing Data) is the process of checking, verifying, and validating the accuracy and reliability of data before it is used in decision-making."
+   }
+  ],
+  "filter": {
+   "chapter": 8
+  },
+  "origin": "day6:q17 (split Day 6: test)"
+ },
+ {
+  "id": "q18",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "question": "Which web scraping technique follows links from one page to other pages to collect data across a site?",
+  "expected_answer": "Web crawling.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 77,
+    "evidence": "Follows links on a web page to navigate to other pages and collect data from them"
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q18 (split Day 6: test)"
+ },
+ {
+  "id": "q19",
+  "split": "dev",
+  "type": "truc_tiep",
+  "question": "When reporting findings ethically, what should be true of the scales on chart axes?",
+  "expected_answer": "They should be consistent and proportionate.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 405,
+    "evidence": "Ensure that the scales on all axes in a chart are consistent and proportionate."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q19 (split Day 6: test)"
+ },
+ {
+  "id": "q20",
+  "split": "dev",
+  "type": "dieu_kien",
+  "question": "Why might the results of quota sampling not represent the entire population?",
+  "expected_answer": "Because the sample is not randomly selected and may be biased toward certain characteristics.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 74,
+    "evidence": "the results of quota sampling may not accurately represent the entire population, as the sample is not randomly selected and may be biased toward certain characteristics."
+   }
+  ],
+  "filter": null,
+  "origin": "day6:q20 (split Day 6: test)"
+ },
+ {
+  "id": "t01",
+  "split": "test",
+  "type": "truc_tiep",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "expected_answer": "The chunk number and the total number of chunks.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 100,
+    "evidence": "the chunk number and the total number of chunks"
+   }
+  ],
+  "filter": null,
+  "origin": "day7-new: viết mới cho Day 7 trước mọi lần chạy"
+ },
+ {
+  "id": "t02",
+  "split": "test",
+  "type": "dien_dat_lai",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "expected_answer": "Beautiful Soup.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 80,
+    "evidence": "Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code"
+   }
+  ],
+  "filter": null,
+  "origin": "day7-new: viết mới cho Day 7 trước mọi lần chạy"
+ },
+ {
+  "id": "t03",
+  "split": "test",
+  "type": "metadata_filter",
+  "question": "Which normal forms are most commonly used in database design?",
+  "expected_answer": "1NF, 2NF, 3NF (First, Second and Third Normal Form) and BCNF (Boyce-Codd Normal Form).",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 90,
+    "evidence": "The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form)"
+   }
+  ],
+  "filter": {
+   "chapter": 2
+  },
+  "origin": "day7-new: viết mới cho Day 7 trước mọi lần chạy"
+ },
+ {
+  "id": "t04",
+  "split": "test",
+  "type": "truc_tiep",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "expected_answer": "For the life of the creator plus 70 years.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 394,
+    "evidence": "copyright protects original creative works for the life of the creator plus 70 years"
+   }
+  ],
+  "filter": null,
+  "origin": "day7-new: viết mới cho Day 7 trước mọi lần chạy"
+ },
+ {
+  "id": "t05",
+  "split": "test",
+  "type": "metadata_filter",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "expected_answer": "Kaggle, which is designed for open data sharing in a research context.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 397,
+    "evidence": "through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context"
+   }
+  ],
+  "filter": {
+   "chapter": 8
+  },
+  "origin": "day7-new: viết mới cho Day 7 trước mọi lần chạy"
+ },
+ {
+  "id": "t06",
+  "split": "test",
+  "type": "dieu_kien",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "expected_answer": "One group received eight hours of sunlight per day and the other only four hours.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 71,
+    "evidence": "one group received eight hours of sunlight per day, while the other only received four hours"
+   }
+  ],
+  "filter": null,
+  "origin": "day7-new: viết mới cho Day 7 trước mọi lần chạy"
+ }
+]

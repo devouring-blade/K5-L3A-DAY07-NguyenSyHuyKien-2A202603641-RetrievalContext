@@ -9,3 +9,9 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Day 7 - bai lam
+venv/
+chroma_db/
+results/cache/
+data/day6/*.pdf

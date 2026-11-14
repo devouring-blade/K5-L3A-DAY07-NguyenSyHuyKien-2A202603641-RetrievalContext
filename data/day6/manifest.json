@@ -1,0 +1,50 @@
+{
+  "page_counting_rule": "Chỉ tính các trang nội dung bài học của chương 2 và chương 8, từ trang mở đầu chương tới trang ngay trước mục 'Key Terms'. Loại bỏ phần cuối chương (Key Terms, Group Project, Chapter Review, Critical Thinking, Quantitative Problems, References) vì đó là thuật ngữ, bài tập và tài liệu tham khảo, không phải nội dung để tra cứu. Số trang trong manifest là số trang vật lý của file PDF (bắt đầu từ 1); số trang in trên sách = trang PDF - 10. Không có trang nào trong khoảng được tính bị rỗng/không trích được chữ (kiểm tra bằng load_pdf).",
+  "documents": [
+    {
+      "source_id": "pds-ch02",
+      "title": "Principles of Data Science — Chapter 2: Collecting and Preparing Data",
+      "source_path_or_url": "https://openstax.org/details/books/principles-data-science",
+      "local_file": "day6/principles-data-science.pdf",
+      "license_or_permission": "CC BY-NC-SA 4.0 (OpenStax, Rice University). Dùng phi thương mại cho mục đích học tập, có ghi nguồn: 'Access for free at openstax.org'.",
+      "version_or_snapshot": "PDF OpenStax ©2025 Rice University (ghi trên trang bản quyền, trang PDF 4), tải ngày 2026-11-13, tổng 569 trang",
+      "accessed_at": "2026-11-13",
+      "pdf_total_pages": 569,
+      "chapter": 2,
+      "pdf_pages_counted": [
+        67,
+        103
+      ],
+      "pdf_pages_excluded": [
+        104,
+        112
+      ],
+      "printed_page_offset": 10,
+      "char_count": 110828,
+      "char_count_note": "Số ký tự sau chuẩn hóa (bỏ header/footer, NFKC, gộp khoảng trắng) của các trang được tính; đo bằng load_corpus() với pypdf 7.0.1."
+    },
+    {
+      "source_id": "pds-ch08",
+      "title": "Principles of Data Science — Chapter 8: Ethics Throughout the Data Science Cycle",
+      "source_path_or_url": "https://openstax.org/details/books/principles-data-science",
+      "local_file": "day6/principles-data-science.pdf",
+      "license_or_permission": "CC BY-NC-SA 4.0 (OpenStax, Rice University). Dùng phi thương mại cho mục đích học tập, có ghi nguồn: 'Access for free at openstax.org'.",
+      "version_or_snapshot": "PDF OpenStax ©2025 Rice University (ghi trên trang bản quyền, trang PDF 4), tải ngày 2026-11-13, tổng 569 trang",
+      "accessed_at": "2026-11-13",
+      "pdf_total_pages": 569,
+      "chapter": 8,
+      "pdf_pages_counted": [
+        387,
+        413
+      ],
+      "pdf_pages_excluded": [
+        414,
+        420
+      ],
+      "printed_page_offset": 10,
+      "char_count": 83266,
+      "char_count_note": "Số ký tự sau chuẩn hóa (bỏ header/footer, NFKC, gộp khoảng trắng) của các trang được tính; đo bằng load_corpus() với pypdf 7.0.1."
+    }
+  ],
+  "day7_note": "Bản sao manifest Day 6 (repo devouring-blade/K5-L3A-DAY06-...-DataIngestion, nhánh main). Chỉ đổi local_file để trỏ tới data/day6/ trong repo Day 7; nội dung, trang và giấy phép giữ nguyên."
+}

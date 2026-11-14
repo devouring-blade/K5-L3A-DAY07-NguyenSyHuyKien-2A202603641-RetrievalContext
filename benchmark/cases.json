@@ -1,0 +1,260 @@
+[
+ {
+  "id": "q01",
+  "split": "dev",
+  "question": "In stratified sampling, how is the sample taken from each subgroup?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q02",
+  "split": "dev",
+  "question": "Which sampling method randomly picks whole natural groups such as school districts and then includes every member of the chosen groups?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q03",
+  "split": "dev",
+  "question": "Which historical poll is given as a real-life example of sampling bias leading to inaccurate findings?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q04",
+  "split": "dev",
+  "question": "Which sampling technique relies on participants referring other similar people because the target population is hard to reach?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q05",
+  "split": "dev",
+  "question": "How does random measurement error differ from systematic measurement error?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q06",
+  "split": "dev",
+  "question": "What does data integration mean as a data preprocessing step?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q07",
+  "split": "dev",
+  "question": "What is the name for missing data that has no relationship to any other variable and no underlying cause?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q08",
+  "split": "dev",
+  "question": "How can daily stock index values that fluctuate a lot be smoothed to reveal the monthly trend?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q09",
+  "split": "dev",
+  "question": "What does stopwords removal do in text preprocessing?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q10",
+  "split": "dev",
+  "question": "Which big data storage solution stores data as objects made of both data and metadata?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q11",
+  "split": "dev",
+  "question": "What is pseudonymization?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q12",
+  "split": "dev",
+  "question": "What are cookies, as described in the discussion of informed consent?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q13",
+  "split": "dev",
+  "question": "How can an outlier affect an algorithm's outcomes?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": {
+   "chapter": 8
+  }
+ },
+ {
+  "id": "q14",
+  "split": "dev",
+  "question": "At which stages can sampling bias occur, and why does it matter?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": {
+   "chapter": 2
+  }
+ },
+ {
+  "id": "q15",
+  "split": "dev",
+  "question": "Who should set the data anonymization policy, including choosing k for k-anonymization?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q16",
+  "split": "dev",
+  "question": "Which US law requires safeguarding sensitive information related to patient health?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q17",
+  "split": "dev",
+  "question": "What is data validation?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": {
+   "chapter": 8
+  }
+ },
+ {
+  "id": "q18",
+  "split": "dev",
+  "question": "Which web scraping technique follows links from one page to other pages to collect data across a site?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q19",
+  "split": "dev",
+  "question": "When reporting findings ethically, what should be true of the scales on chart axes?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "q20",
+  "split": "dev",
+  "question": "Why might the results of quota sampling not represent the entire population?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "t01",
+  "split": "test",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "t02",
+  "split": "test",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "t03",
+  "split": "test",
+  "question": "Which normal forms are most commonly used in database design?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": {
+   "chapter": 2
+  }
+ },
+ {
+  "id": "t04",
+  "split": "test",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "t05",
+  "split": "test",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": {
+   "chapter": 8
+  }
+ },
+ {
+  "id": "t06",
+  "split": "test",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "answerable": true,
+  "expected_behavior": "search_and_answer",
+  "filter": null
+ },
+ {
+  "id": "u01",
+  "split": "dev",
+  "question": "What is the maximum fine under the GDPR, as an amount in euros or a percentage of annual revenue?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Corpus chỉ nói vi phạm có thể bị 'penalties and legal consequences' (trang 389-390), không có mức phạt cụ thể.",
+  "how_checked": "Tìm từ khóa 'fine', '€', 'percent', 'penalt' trong 64 trang chuẩn hóa: chỉ 1 câu chung chung về penalties, không có số tiền/tỷ lệ."
+ },
+ {
+  "id": "u02",
+  "split": "dev",
+  "question": "What default block size does Hadoop HDFS use when splitting large files into chunks?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Mục 2.5 nói về data chunking nói chung, không nhắc Hadoop/HDFS hay kích thước block mặc định.",
+  "how_checked": "Từ khóa 'hadoop', 'hdfs', '128': 0 kết quả trong 64 trang."
+ },
+ {
+  "id": "u03",
+  "split": "test",
+  "question": "What sample size is needed for a survey to reach a 95% confidence level with a 5% margin of error?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Mục 2.2 nói về sampling và sample size nói chung, không có công thức/số mẫu cho mức tin cậy 95%.",
+  "how_checked": "Từ khóa '95%', 'margin of error', 'confidence level': 0 kết quả; 'sample size' chỉ xuất hiện trong câu chung."
+ },
+ {
+  "id": "u04",
+  "split": "test",
+  "question": "Which programming language is recommended for writing smart contracts on a blockchain?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Trang 393-394 chỉ nhắc blockchain khi nói về mã hóa của tiền mã hóa, không nói về smart contract hay ngôn ngữ lập trình.",
+  "how_checked": "Từ khóa 'smart contract', 'solidity', 'ethereum': 0 kết quả; 'blockchain' 1 lần (ngữ cảnh mã hóa)."
+ }
+]
