@@ -49,7 +49,7 @@
   "abstention_correct": null,
   "context_grade": 2,
   "reason": "Nêu đúng 'chunk number và total number of chunks'; chunk p100:1 chứa nguyên văn câu này.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -102,7 +102,7 @@
   "abstention_correct": null,
   "context_grade": 2,
   "reason": "Beautiful Soup đúng; chunk p80:0 ghi rõ 'external library ... scraping and parsing HTML and XML'.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -155,7 +155,7 @@
   "abstention_correct": null,
   "context_grade": 2,
   "reason": "Đủ 1NF, 2NF, 3NF, BCNF; câu thêm về normalization cũng có trong chunk p90:2.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -207,7 +207,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Agent tự viết lại query ('copyright duration...') và lấy p394:1 thay vì p394:0 chứa đáp án; context không có evidence.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -260,7 +260,7 @@
   "abstention_correct": null,
   "context_grade": 2,
   "reason": "Kaggle đúng; chunk p397:1 chứa 'platforms like Kaggle ... open data sharing in a research context' kèm điều kiện 'no privacy-related implications'.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -319,7 +319,7 @@
   "abstention_correct": null,
   "context_grade": 2,
   "reason": "8 giờ và 4 giờ đúng; p71:0 có câu gold, p71:1 nhắc lại 'eight hours ... compared to those with only four hours' nên cả 2 citation đều hỗ trợ.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -365,7 +365,7 @@
   "abstention_correct": true,
   "context_grade": null,
   "reason": "Từ chối, không đưa ra con số nào; corpus không có công thức/số mẫu cho 95% và 5%.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -404,7 +404,7 @@
   "abstention_correct": true,
   "context_grade": null,
   "reason": "Từ chối, không bịa tên ngôn ngữ; corpus không nhắc smart contract.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  }
 ]

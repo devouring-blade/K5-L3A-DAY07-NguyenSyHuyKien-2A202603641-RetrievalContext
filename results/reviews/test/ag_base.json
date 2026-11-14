@@ -38,7 +38,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context chỉ có p99:3, p103:1, không chứa evidence.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -69,7 +69,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -100,7 +100,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -136,7 +136,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context chỉ có p388:4, không chứa evidence.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -166,7 +166,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -195,7 +195,7 @@
   "abstention_correct": null,
   "context_grade": 0,
   "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -225,7 +225,7 @@
   "abstention_correct": true,
   "context_grade": null,
   "reason": "Từ chối, không đưa khẳng định nào.",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  },
  {
@@ -255,7 +255,7 @@
   "abstention_correct": true,
   "context_grade": null,
   "reason": "Từ chối, không đưa khẳng định nào (dù agent có thử query 'Solidity', không có trong corpus).",
-  "reviewer": "",
+  "reviewer": "Nguyen Sy Huy Kien",
   "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
  }
 ]
