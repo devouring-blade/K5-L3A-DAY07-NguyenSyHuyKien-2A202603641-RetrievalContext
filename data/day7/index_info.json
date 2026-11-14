@@ -1,0 +1,61 @@
+{
+  "built_at_utc": "2026-11-14T09:40:32+00:00",
+  "pages": 64,
+  "chunks": 242,
+  "chunking": "Day 6 strategy B: by_paragraph(max_size=1000)",
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "vector_store": {
+    "name": "Chroma PersistentClient",
+    "path": "chroma_db/",
+    "collection": "day06_B",
+    "metric": "cosine",
+    "search": "approximate (HNSW)"
+  },
+  "embedded_now": 242,
+  "skipped_unchanged": 0,
+  "removed_obsolete": 0,
+  "embedding_tokens": 36241,
+  "embedding_cost_usd": 0.000725,
+  "seconds": 23.47,
+  "libraries": {
+    "chromadb": "1.5.9",
+    "openai": "3.50.0",
+    "pypdf": "7.0.1"
+  },
+  "gold_not_in_single_chunk": [],
+  "corpus_report": {
+    "documents": [
+      {
+        "source_id": "pds-ch02",
+        "pages_counted": 37,
+        "pages_loaded": 37,
+        "empty_pages": [],
+        "furniture_lines_removed": 56,
+        "char_count_normalized": 110828,
+        "sections": {
+          "2.0": "Introduction",
+          "2.1": "Overview of Data Collection Methods",
+          "2.2": "Survey Design and Implementation",
+          "2.3": "Web Scraping and Social Media Data Collection",
+          "2.4": "Data Cleaning and Preprocessing",
+          "2.5": "Handling Large Datasets"
+        }
+      },
+      {
+        "source_id": "pds-ch08",
+        "pages_counted": 27,
+        "pages_loaded": 27,
+        "empty_pages": [],
+        "furniture_lines_removed": 41,
+        "char_count_normalized": 83266,
+        "sections": {
+          "8.0": "Introduction",
+          "8.1": "Ethics in Data Collection",
+          "8.2": "Ethics in Data Analysis and Modeling",
+          "8.3": "Ethics in Visualization and Reporting"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "method": "dense",
+    "N": 20,
+    "hit1": "14/20",
+    "hit1_rate": 0.7,
+    "hit3": "19/20",
+    "hit3_rate": 0.95,
+    "misses_top3": [
+      "q17"
+    ],
+    "not_top1": [
+      "q01",
+      "q03",
+      "q07",
+      "q11",
+      "q17",
+      "q19"
+    ],
+    "filter_questions_respected": "3/3",
+    "median_ms": 188.9,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 287,
+          "out": 0,
+          "calls": 20
+        }
+      },
+      "cost_usd": 6e-06
+    }
+  },
+  {
+    "method": "bm25",
+    "N": 20,
+    "hit1": "16/20",
+    "hit1_rate": 0.8,
+    "hit3": "19/20",
+    "hit3_rate": 0.95,
+    "misses_top3": [
+      "q17"
+    ],
+    "not_top1": [
+      "q01",
+      "q11",
+      "q12",
+      "q17"
+    ],
+    "filter_questions_respected": "3/3",
+    "median_ms": 0.3,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 0,
+          "out": 0,
+          "calls": 0
+        }
+      },
+      "cost_usd": 0.0
+    }
+  },
+  {
+    "method": "hybrid",
+    "N": 20,
+    "hit1": "16/20",
+    "hit1_rate": 0.8,
+    "hit3": "19/20",
+    "hit3_rate": 0.95,
+    "misses_top3": [
+      "q17"
+    ],
+    "not_top1": [
+      "q01",
+      "q11",
+      "q17",
+      "q19"
+    ],
+    "filter_questions_respected": "3/3",
+    "median_ms": 1.8,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 0,
+          "out": 0,
+          "calls": 0
+        }
+      },
+      "cost_usd": 0.0
+    }
+  },
+  {
+    "method": "hybrid_rerank",
+    "N": 20,
+    "hit1": "16/20",
+    "hit1_rate": 0.8,
+    "hit3": "19/20",
+    "hit3_rate": 0.95,
+    "misses_top3": [
+      "q15"
+    ],
+    "not_top1": [
+      "q06",
+      "q10",
+      "q15",
+      "q16"
+    ],
+    "filter_questions_respected": "3/3",
+    "median_ms": 1471.8,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 0,
+          "out": 0,
+          "calls": 0
+        },
+        "gpt-4.1-mini": {
+          "in": 28377,
+          "out": 2280,
+          "calls": 20
+        }
+      },
+      "cost_usd": 0.014999
+    }
+  }
+]
