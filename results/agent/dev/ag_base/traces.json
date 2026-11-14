@@ -1,0 +1,2921 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "In stratified sampling, how is the sample taken from each subgroup?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "stratified sampling how sample taken from each subgroup",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p76:1",
+      "rank": 1,
+      "score": 0.672448,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 2,
+      "score": 0.608629,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:1",
+      "rank": 3,
+      "score": 0.508934,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p76:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p73:0",
+     "B:pds-ch02:p73:1"
+    ],
+    "context_chars": 616
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "In stratified sampling, the population is divided into subgroups or strata based on certain characteristics, and then participants are randomly selected from each subgroup. This method ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population.",
+    "citations": [
+     "B:pds-ch02:p76:1"
+    ],
+    "problem": [
+     "B:pds-ch02:p76:1"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "In stratified sampling, the population is divided into subgroups or strata based on certain characteristics, and then participants are randomly selected from each subgroup. This method ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population [pds-ch02:p76:1].",
+    "citations": [
+     "pds-ch02:p76:1"
+    ],
+    "problem": [
+     "pds-ch02:p76:1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p76:1 | pds-ch02 | page 76]\nThis involves dividing the population into subgroups or strata based on certain characteristics and then randomly selecting participants from each subgroup. This ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population. This type of sampling is often used in market research studies to get a more comprehensive understanding of consumer behavior and preferences. By using stratified sampling, Mark can make more reliable conclusions and recommendations for the new product launch based on the data he collects.",
+  "context_ids": [
+   "B:pds-ch02:p76:1"
+  ],
+  "context_chars": 616,
+  "elapsed_s": 4.33,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1255,
+     "out": 186,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 10,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.0008
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Which sampling method randomly picks whole natural groups such as school districts and then includes every member of the chosen groups?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document does not contain information about the sampling method that randomly picks whole natural groups such as school districts and then includes every member of the chosen groups.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sampling method that randomly picks whole natural groups such as school districts and then includes every member",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p73:1",
+      "rank": 1,
+      "score": 0.651258,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.582817,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 3,
+      "score": 0.565296,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p73:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p73:1",
+     "B:pds-ch02:p73:0"
+    ],
+    "context_chars": 709
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sampling method that randomly picks whole groups such as school districts and includes every member",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p73:1",
+      "rank": 1,
+      "score": 0.627854,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.59596,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 3,
+      "score": 0.578985,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p73:4"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p73:1",
+     "B:pds-ch02:p73:0"
+    ],
+    "context_chars": 709
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sampling method selecting entire natural groups like school districts and including all members in sample",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p73:1",
+      "rank": 1,
+      "score": 0.653313,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.549755,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:3",
+      "rank": 3,
+      "score": 0.54349,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p73:4"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p73:1",
+     "B:pds-ch02:p73:3"
+    ],
+    "context_chars": 709
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document does not contain information about the sampling method that randomly picks whole natural groups such as school districts and then includes every member of the chosen groups."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p73:4 | pds-ch02 | page 73]\nThe researcher first assigns a number to each student, going from 1 to 1,000. Then, the researcher randomly selects a number from 1 to 10-let's say they select 4. This number will be the starting point for selecting the sample of students. The researcher will then select every 10th student from the list, which means every student with a number ending in 4 (14, 24, 34, etc.) will be included in the sample. This way, the researcher will have a representative sample of 100 students from the high school, which is 10% of the population. The sample will consist of students from different grades, genders, and backgrounds, making it a diverse and representative sample.",
+  "context_ids": [
+   "B:pds-ch02:p73:4"
+  ],
+  "context_chars": 709,
+  "elapsed_s": 4.21,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1971,
+     "out": 131,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 47,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000999
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Which historical poll is given as a real-life example of sampling bias leading to inaccurate findings?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not contain information about a historical poll used as a real-life example of sampling bias leading to inaccurate findings.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "example of sampling bias historical poll",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p72:1",
+      "rank": 1,
+      "score": 0.584728,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p72:0",
+      "rank": 2,
+      "score": 0.512897,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p74:4",
+      "rank": 3,
+      "score": 0.471206,
+      "source_id": "pds-ch02",
+      "page": 74
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p72:1",
+     "B:pds-ch02:p72:0",
+     "B:pds-ch02:p74:4"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sampling bias example historical poll inaccurate findings",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p72:1",
+      "rank": 1,
+      "score": 0.541011,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p72:0",
+      "rank": 2,
+      "score": 0.537051,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p74:4",
+      "rank": 3,
+      "score": 0.523166,
+      "source_id": "pds-ch02",
+      "page": 74
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p72:1",
+     "B:pds-ch02:p72:0",
+     "B:pds-ch02:p74:4"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not contain information about a historical poll used as a real-life example of sampling bias leading to inaccurate findings."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 3.02,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 958,
+     "out": 79,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 13,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.00051
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Which sampling technique relies on participants referring other similar people because the target population is hard to reach?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about the sampling technique where participants refer other similar people for hard-to-reach populations.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sampling technique participants referring others similar target population hard to reach",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:1",
+      "rank": 1,
+      "score": 0.643984,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p73:2",
+      "rank": 2,
+      "score": 0.54711,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p74:3",
+      "rank": 3,
+      "score": 0.540173,
+      "source_id": "pds-ch02",
+      "page": 74
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p74:1",
+     "B:pds-ch02:p73:2",
+     "B:pds-ch02:p74:3"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "snowball sampling",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:1",
+      "rank": 1,
+      "score": 0.620685,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p73:2",
+      "rank": 2,
+      "score": 0.462345,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 3,
+      "score": 0.443533,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p74:1",
+     "B:pds-ch02:p73:2",
+     "B:pds-ch02:p73:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about the sampling technique where participants refer other similar people for hard-to-reach populations."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 3.43,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 967,
+     "out": 78,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 14,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000512
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "How does random measurement error differ from systematic measurement error?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved documents did not contain information about the difference between random measurement error and systematic measurement error.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "difference between random measurement error and systematic measurement error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 0.544508,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 2,
+      "score": 0.433808,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:3",
+      "rank": 3,
+      "score": 0.41036,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p75:3"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "random measurement error systematic measurement error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 0.616523,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 2,
+      "score": 0.514622,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:3",
+      "rank": 3,
+      "score": 0.511428,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p75:3"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "random error vs systematic error in measurement",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 0.596336,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 2,
+      "score": 0.484199,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:3",
+      "rank": 3,
+      "score": 0.479197,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p75:3"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved documents did not contain information about the difference between random measurement error and systematic measurement error."
+   }
+  ],
+  "n_searches": 3,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 4.14,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1340,
+     "out": 94,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 22,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000687
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What does data integration mean as a data preprocessing step?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information about data integration as a data preprocessing step found in the retrieved documents.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "data integration in data preprocessing",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p86:0",
+      "rank": 1,
+      "score": 0.57075,
+      "source_id": "pds-ch02",
+      "page": 86
+     },
+     {
+      "id": "B:pds-ch02:p86:1",
+      "rank": 2,
+      "score": 0.514481,
+      "source_id": "pds-ch02",
+      "page": 86
+     },
+     {
+      "id": "B:pds-ch02:p67:1",
+      "rank": 3,
+      "score": 0.504701,
+      "source_id": "pds-ch02",
+      "page": 67
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p86:0",
+     "B:pds-ch02:p86:1",
+     "B:pds-ch02:p67:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "data integration preprocessing",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p86:0",
+      "rank": 1,
+      "score": 0.548142,
+      "source_id": "pds-ch02",
+      "page": 86
+     },
+     {
+      "id": "B:pds-ch02:p86:1",
+      "rank": 2,
+      "score": 0.522277,
+      "source_id": "pds-ch02",
+      "page": 86
+     },
+     {
+      "id": "B:pds-ch02:p67:1",
+      "rank": 3,
+      "score": 0.516436,
+      "source_id": "pds-ch02",
+      "page": 67
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p86:0",
+     "B:pds-ch02:p86:1",
+     "B:pds-ch02:p67:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information about data integration as a data preprocessing step found in the retrieved documents."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 3.3,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 931,
+     "out": 65,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 8,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000477
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What is the name for missing data that has no relationship to any other variable and no underlying cause?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information found in the retrieved chunks about the name for missing data that has no relationship to any other variable and no underlying cause.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "types of missing data relationship to variables underlying cause",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p87:1",
+      "rank": 1,
+      "score": 0.577399,
+      "source_id": "pds-ch02",
+      "page": 87
+     },
+     {
+      "id": "B:pds-ch02:p87:2",
+      "rank": 2,
+      "score": 0.539937,
+      "source_id": "pds-ch02",
+      "page": 87
+     },
+     {
+      "id": "B:pds-ch02:p87:0",
+      "rank": 3,
+      "score": 0.516784,
+      "source_id": "pds-ch02",
+      "page": 87
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p87:1",
+     "B:pds-ch02:p87:2",
+     "B:pds-ch02:p87:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "missing data no relationship underlying cause",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p87:1",
+      "rank": 1,
+      "score": 0.522744,
+      "source_id": "pds-ch02",
+      "page": 87
+     },
+     {
+      "id": "B:pds-ch02:p87:2",
+      "rank": 2,
+      "score": 0.486655,
+      "source_id": "pds-ch02",
+      "page": 87
+     },
+     {
+      "id": "B:pds-ch02:p87:0",
+      "rank": 3,
+      "score": 0.441744,
+      "source_id": "pds-ch02",
+      "page": 87
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p87:1",
+     "B:pds-ch02:p87:2",
+     "B:pds-ch02:p87:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information found in the retrieved chunks about the name for missing data that has no relationship to any other variable and no underlying cause."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 2.96,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 969,
+     "out": 82,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 15,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000519
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "How can daily stock index values that fluctuate a lot be smoothed to reveal the monthly trend?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not contain information on methods to smooth daily stock index values to reveal monthly trends.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "smoothing daily stock index values to reveal monthly trend",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p93:1",
+      "rank": 1,
+      "score": 0.563326,
+      "source_id": "pds-ch02",
+      "page": 93
+     },
+     {
+      "id": "B:pds-ch02:p88:1",
+      "rank": 2,
+      "score": 0.417871,
+      "source_id": "pds-ch02",
+      "page": 88
+     },
+     {
+      "id": "B:pds-ch08:p406:1",
+      "rank": 3,
+      "score": 0.409065,
+      "source_id": "pds-ch08",
+      "page": 406
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p88:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p93:1",
+     "B:pds-ch08:p406:1"
+    ],
+    "context_chars": 655
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "smoothing techniques for stock index values revealing monthly trend",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p93:1",
+      "rank": 1,
+      "score": 0.554262,
+      "source_id": "pds-ch02",
+      "page": 93
+     },
+     {
+      "id": "B:pds-ch08:p406:1",
+      "rank": 2,
+      "score": 0.416641,
+      "source_id": "pds-ch08",
+      "page": 406
+     },
+     {
+      "id": "B:pds-ch02:p93:2",
+      "rank": 3,
+      "score": 0.416045,
+      "source_id": "pds-ch02",
+      "page": 93
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p93:1",
+     "B:pds-ch08:p406:1",
+     "B:pds-ch02:p93:2"
+    ],
+    "context_chars": 655
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "time series smoothing monthly trend from daily data",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p93:1",
+      "rank": 1,
+      "score": 0.514963,
+      "source_id": "pds-ch02",
+      "page": 93
+     },
+     {
+      "id": "B:pds-ch08:p406:1",
+      "rank": 2,
+      "score": 0.360119,
+      "source_id": "pds-ch08",
+      "page": 406
+     },
+     {
+      "id": "B:pds-ch02:p88:1",
+      "rank": 3,
+      "score": 0.358096,
+      "source_id": "pds-ch02",
+      "page": 88
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p88:1"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p93:1",
+     "B:pds-ch08:p406:1"
+    ],
+    "context_chars": 655
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not contain information on methods to smooth daily stock index values to reveal monthly trends."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p88:1 | pds-ch02 | page 88]\nThe employment level during this month shows a significant jump from approximately 5,400 to 9,500, exceeding the overall maximum employment level recorded between 1939 and 2019. b. A possible approach to addressing this outlier is to replace it with median, calculated by taking the mean of the points before and after the outlier. This method can help to improve the smoothness and realism of the employment curve as well as mitigate any potential impacts the outlier may have on statistical analysis or modeling processes. (See Table 2.3.) Date Number of Employers × 1000 1/1/1990 4974 2/1/1990 4933 3/1/1990 4989",
+  "context_ids": [
+   "B:pds-ch02:p88:1"
+  ],
+  "context_chars": 655,
+  "elapsed_s": 4.0,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1896,
+     "out": 102,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 28,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000922
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What does stopwords removal do in text preprocessing?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No sufficient information about 'stopwords removal' in the retrieved chunks.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "stopwords removal in text preprocessing",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p95:1",
+      "rank": 1,
+      "score": 0.565307,
+      "source_id": "pds-ch02",
+      "page": 95
+     },
+     {
+      "id": "B:pds-ch02:p97:2",
+      "rank": 2,
+      "score": 0.487284,
+      "source_id": "pds-ch02",
+      "page": 97
+     },
+     {
+      "id": "B:pds-ch02:p97:3",
+      "rank": 3,
+      "score": 0.476452,
+      "source_id": "pds-ch02",
+      "page": 97
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p97:3"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p95:1",
+     "B:pds-ch02:p97:2"
+    ],
+    "context_chars": 478
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "stopwords removal",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p95:1",
+      "rank": 1,
+      "score": 0.522101,
+      "source_id": "pds-ch02",
+      "page": 95
+     },
+     {
+      "id": "B:pds-ch02:p97:2",
+      "rank": 2,
+      "score": 0.338753,
+      "source_id": "pds-ch02",
+      "page": 97
+     },
+     {
+      "id": "B:pds-ch02:p97:3",
+      "rank": 3,
+      "score": 0.33499,
+      "source_id": "pds-ch02",
+      "page": 97
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p97:3"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p95:1",
+     "B:pds-ch02:p97:2"
+    ],
+    "context_chars": 478
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "stopwords removal text preprocessing definition",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p95:1",
+      "rank": 1,
+      "score": 0.580907,
+      "source_id": "pds-ch02",
+      "page": 95
+     },
+     {
+      "id": "B:pds-ch02:p97:2",
+      "rank": 2,
+      "score": 0.531004,
+      "source_id": "pds-ch02",
+      "page": 97
+     },
+     {
+      "id": "B:pds-ch02:p97:3",
+      "rank": 3,
+      "score": 0.523352,
+      "source_id": "pds-ch02",
+      "page": 97
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p97:3"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p95:1",
+     "B:pds-ch02:p97:2"
+    ],
+    "context_chars": 478
+   },
+   {
+    "event": "abstain",
+    "reason": "No sufficient information about 'stopwords removal' in the retrieved chunks."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p97:3 | pds-ch02 | page 97]\nAn example of text preprocessing in artificial intelligence involves the conversion of text data into a more standardized and consistent format. This can include tasks such as removing accents and diacritics, expanding contractions, and converting numbers into their written representations (e.g., \"10\" to \"ten\"). Normalizing text data helps to reduce the number of variations and therefore improves the efficiency and accuracy of natural",
+  "context_ids": [
+   "B:pds-ch02:p97:3"
+  ],
+  "context_chars": 478,
+  "elapsed_s": 3.74,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1638,
+     "out": 82,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 15,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000787
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Which big data storage solution stores data as objects made of both data and metadata?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved text does not contain information about which big data storage solution stores data as objects made of both data and metadata.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "big data storage solutions objects data metadata",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p99:1",
+      "rank": 1,
+      "score": 0.539994,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p99:0",
+      "rank": 2,
+      "score": 0.520974,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p98:1",
+      "rank": 3,
+      "score": 0.503556,
+      "source_id": "pds-ch02",
+      "page": 98
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p99:1",
+     "B:pds-ch02:p99:0",
+     "B:pds-ch02:p98:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "object storage data and metadata",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p99:1",
+      "rank": 1,
+      "score": 0.405639,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p68:4",
+      "rank": 2,
+      "score": 0.396095,
+      "source_id": "pds-ch02",
+      "page": 68
+     },
+     {
+      "id": "B:pds-ch08:p396:4",
+      "rank": 3,
+      "score": 0.367787,
+      "source_id": "pds-ch08",
+      "page": 396
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p68:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p99:1",
+     "B:pds-ch08:p396:4"
+    ],
+    "context_chars": 741
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "object storage",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p99:1",
+      "rank": 1,
+      "score": 0.342413,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p102:2",
+      "rank": 2,
+      "score": 0.334522,
+      "source_id": "pds-ch02",
+      "page": 102
+     },
+     {
+      "id": "B:pds-ch02:p103:1",
+      "rank": 3,
+      "score": 0.328333,
+      "source_id": "pds-ch02",
+      "page": 103
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p99:1",
+     "B:pds-ch02:p102:2",
+     "B:pds-ch02:p103:1"
+    ],
+    "context_chars": 741
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved text does not contain information about which big data storage solution stores data as objects made of both data and metadata."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p68:4 | pds-ch02 | page 68]\nTransactional data refers to any type of information related to transactions or interactions between individuals, businesses, or systems, and it is more often used in quantitative research. Many fields of study use observational data for their research. Table 2.1 summarizes some examples of fields that rely on observational data, the type of data they collect, and the purpose of their data collection. Field Data Collected By Purpose Education Teachers To monitor and assess student behavior and learning progress in the classroom Psychology Therapists and psychologists To gather information about their clients' behavior, thoughts, and emotions Table 2.1 Fields Where Observation Methods Are Used",
+  "context_ids": [
+   "B:pds-ch02:p68:4"
+  ],
+  "context_chars": 741,
+  "elapsed_s": 3.9,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1623,
+     "out": 91,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 14,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000795
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What is pseudonymization?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information about pseudonymization was found in the provided textbook chunks.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "pseudonymization",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p401:3",
+      "rank": 1,
+      "score": 0.663266,
+      "source_id": "pds-ch08",
+      "page": 401
+     },
+     {
+      "id": "B:pds-ch08:p390:1",
+      "rank": 2,
+      "score": 0.657748,
+      "source_id": "pds-ch08",
+      "page": 390
+     },
+     {
+      "id": "B:pds-ch08:p402:0",
+      "rank": 3,
+      "score": 0.614579,
+      "source_id": "pds-ch08",
+      "page": 402
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p401:3",
+     "B:pds-ch08:p390:1",
+     "B:pds-ch08:p402:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "definition of pseudonymization",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p390:1",
+      "rank": 1,
+      "score": 0.675517,
+      "source_id": "pds-ch08",
+      "page": 390
+     },
+     {
+      "id": "B:pds-ch08:p401:3",
+      "rank": 2,
+      "score": 0.656431,
+      "source_id": "pds-ch08",
+      "page": 401
+     },
+     {
+      "id": "B:pds-ch08:p402:0",
+      "rank": 3,
+      "score": 0.599697,
+      "source_id": "pds-ch08",
+      "page": 402
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p390:1",
+     "B:pds-ch08:p401:3",
+     "B:pds-ch08:p402:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "pseudonymization definition data science",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p390:1",
+      "rank": 1,
+      "score": 0.731454,
+      "source_id": "pds-ch08",
+      "page": 390
+     },
+     {
+      "id": "B:pds-ch08:p401:3",
+      "rank": 2,
+      "score": 0.722784,
+      "source_id": "pds-ch08",
+      "page": 401
+     },
+     {
+      "id": "B:pds-ch08:p402:0",
+      "rank": 3,
+      "score": 0.614822,
+      "source_id": "pds-ch08",
+      "page": 402
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p390:1",
+     "B:pds-ch08:p401:3",
+     "B:pds-ch08:p402:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information about pseudonymization was found in the provided textbook chunks."
+   }
+  ],
+  "n_searches": 3,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 3.65,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1303,
+     "out": 84,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 16,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000656
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What are cookies, as described in the discussion of informed consent?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not provide a definition or description of cookies in the discussion of informed consent.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "cookies informed consent",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p392:0",
+      "rank": 1,
+      "score": 0.63562,
+      "source_id": "pds-ch08",
+      "page": 392
+     },
+     {
+      "id": "B:pds-ch08:p392:1",
+      "rank": 2,
+      "score": 0.552923,
+      "source_id": "pds-ch08",
+      "page": 392
+     },
+     {
+      "id": "B:pds-ch08:p392:4",
+      "rank": 3,
+      "score": 0.483203,
+      "source_id": "pds-ch08",
+      "page": 392
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p392:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p392:0",
+     "B:pds-ch08:p392:1"
+    ],
+    "context_chars": 293
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "cookies",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p392:0",
+      "rank": 1,
+      "score": 0.500947,
+      "source_id": "pds-ch08",
+      "page": 392
+     },
+     {
+      "id": "B:pds-ch08:p392:1",
+      "rank": 2,
+      "score": 0.445667,
+      "source_id": "pds-ch08",
+      "page": 392
+     },
+     {
+      "id": "B:pds-ch08:p402:0",
+      "rank": 3,
+      "score": 0.289808,
+      "source_id": "pds-ch08",
+      "page": 402
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p392:0",
+     "B:pds-ch08:p392:1",
+     "B:pds-ch08:p402:0"
+    ],
+    "context_chars": 293
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not provide a definition or description of cookies in the discussion of informed consent."
+   }
+  ],
+  "n_searches": 2,
+  "context": "[B:pds-ch08:p392:4 | pds-ch08 | page 392]\nThis process includes a consent form outlining the study's scope, potential risks and benefits, data handling and storage, and the ability for participants to review and update their personal information. Participants can review the terms at any point",
+  "context_ids": [
+   "B:pds-ch08:p392:4"
+  ],
+  "context_chars": 293,
+  "elapsed_s": 2.88,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1049,
+     "out": 64,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 4,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000522
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "How can an outlier affect an algorithm's outcomes?",
+  "answerable": true,
+  "filter": {
+   "chapter": 8
+  },
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved documents do not contain information on how outliers affect an algorithm's outcomes.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "effect of outliers on algorithm outcomes",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p400:0",
+      "rank": 1,
+      "score": 0.622189,
+      "source_id": "pds-ch08",
+      "page": 400
+     },
+     {
+      "id": "B:pds-ch08:p403:4",
+      "rank": 2,
+      "score": 0.598765,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:3",
+      "rank": 3,
+      "score": 0.567784,
+      "source_id": "pds-ch08",
+      "page": 403
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p403:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p400:0",
+     "B:pds-ch08:p403:3"
+    ],
+    "context_chars": 234
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "outliers effect on algorithm outcomes",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p400:0",
+      "rank": 1,
+      "score": 0.61699,
+      "source_id": "pds-ch08",
+      "page": 400
+     },
+     {
+      "id": "B:pds-ch08:p403:4",
+      "rank": 2,
+      "score": 0.552742,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:3",
+      "rank": 3,
+      "score": 0.520549,
+      "source_id": "pds-ch08",
+      "page": 403
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch08:p403:4"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch08:p400:0",
+     "B:pds-ch08:p403:3"
+    ],
+    "context_chars": 234
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved documents do not contain information on how outliers affect an algorithm's outcomes."
+   }
+  ],
+  "n_searches": 2,
+  "context": "[B:pds-ch08:p403:4 | pds-ch08 | page 403]\nCross-validation techniques can be used to assess the robustness of outlier detection algorithms and evaluate their performance across different subsets of the data, and ethical considerations",
+  "context_ids": [
+   "B:pds-ch08:p403:4"
+  ],
+  "context_chars": 234,
+  "elapsed_s": 2.89,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1042,
+     "out": 70,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 12,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000529
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "At which stages can sampling bias occur, and why does it matter?",
+  "answerable": true,
+  "filter": {
+   "chapter": 2
+  },
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about the stages at which sampling bias can occur or why it matters.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sampling bias stages and importance",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:4",
+      "rank": 1,
+      "score": 0.548605,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 2,
+      "score": 0.522424,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p76:0",
+      "rank": 3,
+      "score": 0.499806,
+      "source_id": "pds-ch02",
+      "page": 76
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p74:4",
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p76:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "stages of sampling bias",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 0.579447,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p74:4",
+      "rank": 2,
+      "score": 0.56958,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 3,
+      "score": 0.47266,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p74:4",
+     "B:pds-ch02:p73:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about the stages at which sampling bias can occur or why it matters."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 2.92,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 942,
+     "out": 71,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 10,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000491
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Who should set the data anonymization policy, including choosing k for k-anonymization?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved documents do not contain information about who should set the data anonymization policy or how to choose k for k-anonymization.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "who should set data anonymization policy choosing k for k-anonymization",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p402:0",
+      "rank": 1,
+      "score": 0.689223,
+      "source_id": "pds-ch08",
+      "page": 402
+     },
+     {
+      "id": "B:pds-ch08:p402:2",
+      "rank": 2,
+      "score": 0.683346,
+      "source_id": "pds-ch08",
+      "page": 402
+     },
+     {
+      "id": "B:pds-ch08:p402:3",
+      "rank": 3,
+      "score": 0.619067,
+      "source_id": "pds-ch08",
+      "page": 402
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p402:0",
+     "B:pds-ch08:p402:2",
+     "B:pds-ch08:p402:3"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved documents do not contain information about who should set the data anonymization policy or how to choose k for k-anonymization."
+   }
+  ],
+  "n_searches": 1,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 2.21,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 605,
+     "out": 68,
+     "calls": 2
+    },
+    "text-embedding-3-small": {
+     "in": 14,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.000351
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Which US law requires safeguarding sensitive information related to patient health?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information found in the available data science textbook chunks about the specific US law requiring safeguarding sensitive patient health information.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "law requiring safeguarding sensitive patient health information",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 1,
+      "score": 0.564406,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p390:2",
+      "rank": 2,
+      "score": 0.538959,
+      "source_id": "pds-ch08",
+      "page": 390
+     },
+     {
+      "id": "B:pds-ch08:p395:0",
+      "rank": 3,
+      "score": 0.533041,
+      "source_id": "pds-ch08",
+      "page": 395
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p390:2",
+     "B:pds-ch08:p395:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "law safeguarding sensitive patient health information",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p395:0",
+      "rank": 1,
+      "score": 0.554628,
+      "source_id": "pds-ch08",
+      "page": 395
+     },
+     {
+      "id": "B:pds-ch08:p390:2",
+      "rank": 2,
+      "score": 0.539476,
+      "source_id": "pds-ch08",
+      "page": 390
+     },
+     {
+      "id": "B:pds-ch08:p394:4",
+      "rank": 3,
+      "score": 0.522707,
+      "source_id": "pds-ch08",
+      "page": 394
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p394:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p395:0",
+     "B:pds-ch08:p390:2"
+    ],
+    "context_chars": 570
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "Health Insurance Portability and Accountability Act",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 1,
+      "score": 0.377238,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p395:0",
+      "rank": 2,
+      "score": 0.373645,
+      "source_id": "pds-ch08",
+      "page": 395
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.320664,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p395:0",
+     "B:pds-ch08:p388:3"
+    ],
+    "context_chars": 570
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information found in the available data science textbook chunks about the specific US law requiring safeguarding sensitive patient health information."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch08:p394:4 | pds-ch08 | page 394]\nEXAMPLE 8.3 Problem Consider a data science team working on a revolutionary data science project that would have a huge impact on the health care industry. The project involves gathering and analyzing sensitive medical information from patients, including full names, addresses, phone numbers, and medical histories. The team recognizes the critical importance of maintaining data security to ensure the success and ethical integrity of their work. One day, a request for access to the data is received from a researcher from an",
+  "context_ids": [
+   "B:pds-ch08:p394:4"
+  ],
+  "context_chars": 570,
+  "elapsed_s": 3.74,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1558,
+     "out": 96,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 22,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000777
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q17",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What is data validation?",
+  "answerable": true,
+  "filter": {
+   "chapter": 8
+  },
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not contain information or definition about data validation.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "data validation",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p403:2",
+      "rank": 1,
+      "score": 0.580585,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:3",
+      "rank": 2,
+      "score": 0.556982,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:1",
+      "rank": 3,
+      "score": 0.513504,
+      "source_id": "pds-ch08",
+      "page": 403
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p403:2",
+     "B:pds-ch08:p403:3",
+     "B:pds-ch08:p403:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "definition of data validation",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p403:2",
+      "rank": 1,
+      "score": 0.631468,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:3",
+      "rank": 2,
+      "score": 0.527085,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:1",
+      "rank": 3,
+      "score": 0.491916,
+      "source_id": "pds-ch08",
+      "page": 403
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p403:2",
+     "B:pds-ch08:p403:3",
+     "B:pds-ch08:p403:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not contain information or definition about data validation."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 2.84,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 908,
+     "out": 60,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 6,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000459
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q18",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Which web scraping technique follows links from one page to other pages to collect data across a site?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "Insufficient evidence on specific web scraping techniques that follow links from one page to other pages in the retrieved chunks.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "web scraping technique that follows links from one page to other pages",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 1,
+      "score": 0.696239,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch02:p76:2",
+      "rank": 2,
+      "score": 0.490167,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p78:1",
+      "rank": 3,
+      "score": 0.45837,
+      "source_id": "pds-ch02",
+      "page": 78
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p77:0",
+     "B:pds-ch02:p76:2",
+     "B:pds-ch02:p78:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "web scraping technique follows links from one page to other pages",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 1,
+      "score": 0.705497,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch02:p76:2",
+      "rank": 2,
+      "score": 0.508662,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p78:1",
+      "rank": 3,
+      "score": 0.472757,
+      "source_id": "pds-ch02",
+      "page": 78
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p77:0",
+     "B:pds-ch02:p76:2",
+     "B:pds-ch02:p78:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "crawl website follow links",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 1,
+      "score": 0.453587,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch02:p76:2",
+      "rank": 2,
+      "score": 0.342504,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p79:1",
+      "rank": 3,
+      "score": 0.323956,
+      "source_id": "pds-ch02",
+      "page": 79
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p79:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p77:0",
+     "B:pds-ch02:p76:2"
+    ],
+    "context_chars": 415
+   },
+   {
+    "event": "abstain",
+    "reason": "Insufficient evidence on specific web scraping techniques that follow links from one page to other pages in the retrieved chunks."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p79:1 | pds-ch02 | page 79]\nSolution # Import pandas import pandas as pd # Read data from the URL df_list = pd.read_html( \"https://fred.stlouisfed.org/release/tables?rid=50&eid=3149#snid=4498\") # Since pd.read_html() returns a list of DataFrames, select the first DataFrame df = df_list[0] # Print the first 5 rows of the DataFrame print(df.head(5)) The resulting output will look like this: PYTHON CODE",
+  "context_ids": [
+   "B:pds-ch02:p79:1"
+  ],
+  "context_chars": 415,
+  "elapsed_s": 4.02,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1507,
+     "out": 102,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 27,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000767
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q19",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "When reporting findings ethically, what should be true of the scales on chart axes?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved text does not contain information about ethical considerations for scales on chart axes when reporting findings.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "ethical reporting of scales on chart axes",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p405:2",
+      "rank": 1,
+      "score": 0.505779,
+      "source_id": "pds-ch08",
+      "page": 405
+     },
+     {
+      "id": "B:pds-ch08:p408:0",
+      "rank": 2,
+      "score": 0.497316,
+      "source_id": "pds-ch08",
+      "page": 408
+     },
+     {
+      "id": "B:pds-ch08:p405:0",
+      "rank": 3,
+      "score": 0.468161,
+      "source_id": "pds-ch08",
+      "page": 405
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p405:2",
+     "B:pds-ch08:p408:0",
+     "B:pds-ch08:p405:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "scales on chart axes ethics reporting",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p405:2",
+      "rank": 1,
+      "score": 0.531352,
+      "source_id": "pds-ch08",
+      "page": 405
+     },
+     {
+      "id": "B:pds-ch08:p405:0",
+      "rank": 2,
+      "score": 0.525194,
+      "source_id": "pds-ch08",
+      "page": 405
+     },
+     {
+      "id": "B:pds-ch08:p405:1",
+      "rank": 3,
+      "score": 0.506221,
+      "source_id": "pds-ch08",
+      "page": 405
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p405:2",
+     "B:pds-ch08:p405:0",
+     "B:pds-ch08:p405:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "reporting findings ethical scales chart axes",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p405:1",
+      "rank": 1,
+      "score": 0.516253,
+      "source_id": "pds-ch08",
+      "page": 405
+     },
+     {
+      "id": "B:pds-ch08:p405:0",
+      "rank": 2,
+      "score": 0.510953,
+      "source_id": "pds-ch08",
+      "page": 405
+     },
+     {
+      "id": "B:pds-ch08:p408:0",
+      "rank": 3,
+      "score": 0.473542,
+      "source_id": "pds-ch08",
+      "page": 408
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p405:1",
+     "B:pds-ch08:p405:0",
+     "B:pds-ch08:p408:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved text does not contain information about ethical considerations for scales on chart axes when reporting findings."
+   }
+  ],
+  "n_searches": 3,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 4.26,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1356,
+     "out": 93,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 21,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000692
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q20",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "Why might the results of quota sampling not represent the entire population?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information about quota sampling and its limitations in population representation found in the retrieved chunks.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "quota sampling limitations population representation",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:2",
+      "rank": 1,
+      "score": 0.601632,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p74:1",
+      "rank": 2,
+      "score": 0.595771,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 3,
+      "score": 0.556667,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p74:2",
+     "B:pds-ch02:p74:1",
+     "B:pds-ch02:p73:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information about quota sampling and its limitations in population representation found in the retrieved chunks."
+   }
+  ],
+  "n_searches": 1,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 1.87,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 586,
+     "out": 50,
+     "calls": 2
+    },
+    "text-embedding-3-small": {
+     "in": 5,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.000315
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What is the maximum fine under the GDPR, as an amount in euros or a percentage of annual revenue?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about the maximum fine under the GDPR, either as an amount in euros or as a percentage of annual revenue.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "maximum fine under GDPR in euros or percentage of annual revenue",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p389:0",
+      "rank": 1,
+      "score": 0.46857,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 2,
+      "score": 0.420254,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.400798,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p389:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p388:3"
+    ],
+    "context_chars": 568
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "GDPR maximum fine euros percentage annual revenue",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p389:0",
+      "rank": 1,
+      "score": 0.431508,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 2,
+      "score": 0.408019,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.373433,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch08:p389:0"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p388:3"
+    ],
+    "context_chars": 568
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "GDPR maximum fine",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p389:0",
+      "rank": 1,
+      "score": 0.414962,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 2,
+      "score": 0.391555,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.366323,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch08:p389:0"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p388:3"
+    ],
+    "context_chars": 568
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about the maximum fine under the GDPR, either as an amount in euros or as a percentage of annual revenue."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch08:p389:0 | pds-ch08 | page 389]\ntransparently. Figure 8.2 and Figure 8.3 summarize the GDPR and CCPA/CPRA principles. This GDPR Checklist for Data Controllers (https://openstax.org/r/gdpr1) on the EU website presents the principles in an actionable format for organizations. Figure 8.2 GDPR Principles Figure 8.3 CCPA/CPRA Principles Some countries have laws regarding data sovereignty that require data collected from their citizens to be stored and processed within their borders, making it important to understand where data is being collected and stored.",
+  "context_ids": [
+   "B:pds-ch08:p389:0"
+  ],
+  "context_chars": 568,
+  "elapsed_s": 4.76,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1813,
+     "out": 105,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 23,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000894
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "config": "ag_base",
+  "question": "What default block size does Hadoop HDFS use when splitting large files into chunks?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about the default block size used by Hadoop HDFS when splitting large files.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "Hadoop HDFS default block size",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 1,
+      "score": 0.366269,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p99:0",
+      "rank": 2,
+      "score": 0.335724,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 3,
+      "score": 0.330679,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p99:0",
+     "B:pds-ch02:p100:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "HDFS block size default",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 1,
+      "score": 0.372653,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p99:0",
+      "rank": 2,
+      "score": 0.349943,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 3,
+      "score": 0.335023,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p99:0",
+     "B:pds-ch02:p100:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about the default block size used by Hadoop HDFS when splitting large files."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 3.07,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 952,
+     "out": 74,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 12,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000499
+  },
+  "context_has_evidence": false
+ }
+]

@@ -1,0 +1,50 @@
+{
+  "config": "ag_budget",
+  "retriever": "dense",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget_chars": 4000,
+  "model": "gpt-4.1-mini",
+  "cases": 22,
+  "errors": 0,
+  "error_ids": [],
+  "tool_use": "22/22",
+  "searches_distribution": {
+    "1": 20,
+    "3": 2
+  },
+  "mean_searches": 1.18,
+  "context_evidence_rate": "20/20",
+  "context_evidence_rate_value": 1.0,
+  "context_missing_evidence": [],
+  "answerable_answered": "14/20",
+  "false_abstention": "6/20",
+  "false_abstention_ids": [
+    "q02",
+    "q06",
+    "q08",
+    "q15",
+    "q16",
+    "q18"
+  ],
+  "unanswerable_abstained": "2/2",
+  "answers_with_citation": "14/14",
+  "mean_context_chars": 2654.9,
+  "median_seconds": 3.9,
+  "total_seconds": 83.9,
+  "usage": {
+    "by_model": {
+      "gpt-4.1-mini": {
+        "in": 43640,
+        "out": 4575,
+        "calls": 64
+      },
+      "text-embedding-3-small": {
+        "in": 170,
+        "out": 0,
+        "calls": 20
+      }
+    },
+    "cost_usd": 0.024779
+  }
+}

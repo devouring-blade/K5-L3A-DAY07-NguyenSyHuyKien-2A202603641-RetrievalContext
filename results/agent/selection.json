@@ -1,0 +1,35 @@
+{
+  "rule": "Chốt trước khi chạy: chọn cấu hình agent có Context Evidence Rate trên dev cao nhất; hòa thì ít câu có đáp án bị từ chối nhầm hơn (dev); hòa tiếp thì chi phí + thời gian thấp hơn. Sau khi chọn mới chạy test cho baseline và cấu hình đã chọn; không chỉnh gì sau khi xem test.",
+  "baseline": "ag_base",
+  "selected": "ag_budget",
+  "dev_ranking": [
+    {
+      "config": "ag_budget",
+      "context_evidence_rate": "20/20",
+      "false_abstention": "6/20",
+      "cost_usd": 0.024779,
+      "total_seconds": 83.9
+    },
+    {
+      "config": "ag_hybrid",
+      "context_evidence_rate": "19/20",
+      "false_abstention": "7/20",
+      "cost_usd": 0.026112,
+      "total_seconds": 79.5
+    },
+    {
+      "config": "ag_rerank",
+      "context_evidence_rate": "18/20",
+      "false_abstention": "7/20",
+      "cost_usd": 0.047417,
+      "total_seconds": 121.1
+    },
+    {
+      "config": "ag_base",
+      "context_evidence_rate": "0/20",
+      "false_abstention": "20/20",
+      "cost_usd": 0.013958,
+      "total_seconds": 76.1
+    }
+  ]
+}

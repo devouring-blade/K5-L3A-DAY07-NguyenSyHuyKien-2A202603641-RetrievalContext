@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-14T09:40:32+00:00",
+  "built_at_utc": "2026-11-14T09:43:12+00:00",
   "pages": 64,
   "chunks": 242,
   "chunking": "Day 6 strategy B: by_paragraph(max_size=1000)",
@@ -12,12 +12,12 @@
     "metric": "cosine",
     "search": "approximate (HNSW)"
   },
-  "embedded_now": 242,
-  "skipped_unchanged": 0,
+  "embedded_now": 0,
+  "skipped_unchanged": 242,
   "removed_obsolete": 0,
-  "embedding_tokens": 36241,
-  "embedding_cost_usd": 0.000725,
-  "seconds": 23.47,
+  "embedding_tokens": 0,
+  "embedding_cost_usd": 0.0,
+  "seconds": 18.09,
   "libraries": {
     "chromadb": "1.5.9",
     "openai": "3.50.0",

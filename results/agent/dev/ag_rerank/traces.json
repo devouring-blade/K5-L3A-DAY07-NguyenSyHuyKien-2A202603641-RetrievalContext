@@ -1,0 +1,2296 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "In stratified sampling, how is the sample taken from each subgroup?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "stratified sampling sample from each subgroup",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p73:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p76:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p76:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 76
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p73:0",
+     "B:pds-ch02:p76:1",
+     "B:pds-ch02:p76:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2435
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "In stratified sampling, the population is divided into subgroups (strata) based on specified factors such as age, area, income, or education level. Then, a random sample is taken from each stratum, often in proportion to its size in the population. This approach ensures that all subgroups are adequately represented in the sample, providing a more accurate representation of the entire population.",
+    "citations": [
+     "B:pds-ch02:p73:0",
+     "B:pds-ch02:p76:1"
+    ],
+    "problem": [
+     "B:pds-ch02:p73:0",
+     "B:pds-ch02:p76:1"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "In stratified sampling, the population is divided into subgroups (strata) based on specified factors such as age, area, income, or education level. Then, a random sample is taken from each stratum, often in proportion to its size in the population. This approach ensures that all subgroups are adequately represented in the sample, providing a more accurate representation of the entire population [pds-ch02:p73:0][pds-ch02:p76:1].",
+    "citations": [
+     "pds-ch02:p73:0",
+     "pds-ch02:p76:1"
+    ],
+    "problem": [
+     "pds-ch02:p73:0",
+     "pds-ch02:p76:1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p73:0 | pds-ch02 | page 73]\nfor quality control testing. In the political arena, simple random sampling is commonly used to select randomly registered voters for polls or surveys, ensuring equal representation and minimizing bias in the data collected. 2. Stratified sampling. Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population. Stratified sampling allows for a more accurate representation of the population as it ensures that all subgroups are adequately represented in the sample. This can be especially useful when the variables being studied vary significantly between the stratified groups. 3. Cluster sampling.\n\n[B:pds-ch02:p76:1 | pds-ch02 | page 76]\nThis involves dividing the population into subgroups or strata based on certain characteristics and then randomly selecting participants from each subgroup. This ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population. This type of sampling is often used in market research studies to get a more comprehensive understanding of consumer behavior and preferences. By using stratified sampling, Mark can make more reliable conclusions and recommendations for the new product launch based on the data he collects.\n\n[B:pds-ch02:p76:0 | pds-ch02 | page 76]\nResearchers need to be aware of these potential errors and take steps to minimize them when designing and conducting their studies. EXAMPLE 2.3 Problem Mark is a data scientist who works for a marketing research company. He has been tasked to lead a study to understand consumer behavior toward a new product that is about to be launched in the market. As data scientists, they know the importance of using the right sampling technique to collect accurate and reliable data. Mark divided the population into different groups based on factors such as age, education, and income. This ensures that he gets a representative sample from each group, providing a more accurate understanding of consumer behavior. What is the name of the sampling technique used by Mark to ensure a representative sample from different groups of consumers for his study on consumer behavior toward a new product? Solution The sampling technique used by Mark is called stratified sampling.",
+  "context_ids": [
+   "B:pds-ch02:p73:0",
+   "B:pds-ch02:p76:1",
+   "B:pds-ch02:p76:0"
+  ],
+  "context_chars": 2435,
+  "elapsed_s": 5.87,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3407,
+     "out": 380,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 8,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.001971
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Which sampling method randomly picks whole natural groups such as school districts and then includes every member of the chosen groups?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The sampling method that randomly picks whole natural groups, such as school districts, and then includes every member of the chosen groups is called cluster sampling. In this method, the population is divided into natural clusters, a random sample of these clusters is selected, and all members within the chosen clusters are included in the sample. For example, a study might randomly select school districts as clusters and then collect data from all schools within those districts. This approach is helpful to represent the entire population even if it is difficult or time-consuming, and can be more cost-effective than other methods [B:pds-ch02:p73:1].",
+  "citations": [
+   "B:pds-ch02:p73:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "sampling method randomly picks whole natural groups such as school districts and includes every member",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p73:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p72:3",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p73:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p73:1",
+     "B:pds-ch02:p72:3",
+     "B:pds-ch02:p73:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 3075
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The sampling method that randomly picks whole natural groups, such as school districts, and then includes every member of the chosen groups is called cluster sampling. In this method, the population is divided into natural clusters, a random sample of these clusters is selected, and all members within the chosen clusters are included in the sample. For example, a study might randomly select school districts as clusters and then collect data from all schools within those districts. This approach is helpful to represent the entire population even if it is difficult or time-consuming, and can be more cost-effective than other methods.",
+    "citations": [
+     "B:pds-ch02:p73:1"
+    ],
+    "problem": [
+     "B:pds-ch02:p73:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p73:1 | pds-ch02 | page 73]\nWith cluster sampling, the population is divided into natural groups or clusters, such as schools, communities, or cities, with a random sample of these clusters picked and all members within the chosen clusters included in the sample. Cluster sampling is helpful to represent the entire population even if it is difficult or time-consuming due to challenges such as identifying clusters, sourcing a list of clusters, traveling to different clusters, and communicating with them. Additionally, data analysis and sample size calculation may be more complex, and there is a risk of bias in the sample. However, cluster sampling can be more cost-effective. An example of cluster sampling would be a study on the effectiveness of a new educational program in a state. The state is divided into clusters based on school districts. The researcher uses a random selection process to choose a sample of school districts and then collects data from all the schools within those districts.\n\n[B:pds-ch02:p72:3 | pds-ch02 | page 72]\nIt's crucial to make the survey easily accessible to the chosen sample to achieve a higher response rate. A number of sampling techniques and their advantages are described below. The most frequently used among these are simple random selection, stratified sampling, cluster sampling, and convenience sampling. 1. Simple random selection. Simple random selection is a statistical technique used to pick a representative sample from a larger population. This process involves randomly choosing individuals or items from the population, ensuring that each selected member of the population has an identical chance of being contained in the sample. The main step in simple random selection is to define the population of interest and assign a unique identification number to each member. This could be done using a random number generator, a computer program designed to generate a sequence of random numbers, or a random number table, which lists numbers in a random sequence.\n\n[B:pds-ch02:p73:2 | pds-ch02 | page 73]\nThis method allows the researcher to obtain a representative sample of the state's student population without having to visit each individual school, saving time and resources. 4. Convenience sampling. Convenience sampling applies to selecting people or items for the sample based on their availability and convenience to the data science research. For example, a researcher may choose to survey students in their classroom or manipulate data from social media users. Convenience sampling is effortless to achieve, and it is useful for exploratory studies. However, it may not provide a representative sample as it is prone to selection bias in that individuals who are more readily available or willing to participate may be overrepresented. An example of convenience sampling would be conducting a survey about a new grocery store in a busy shopping mall. A researcher stands in front of the store and approaches people who are coming out of the store to ask them about their shopping experience.",
+  "context_ids": [
+   "B:pds-ch02:p73:1",
+   "B:pds-ch02:p72:3",
+   "B:pds-ch02:p73:2"
+  ],
+  "context_chars": 3075,
+  "elapsed_s": 5.71,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3620,
+     "out": 433,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 15,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.002141
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Which historical poll is given as a real-life example of sampling bias leading to inaccurate findings?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The 1936 Literary Digest poll is given as a real-life example of sampling bias leading to inaccurate findings. The poll aimed to predict the US presidential election results using a mailing list of telephone and automobile owners, which biased the sample toward affluent individuals who favored Republicans. The poll incorrectly predicted a victory for Alf Landon, whereas the actual winner was Franklin D. Roosevelt by a landslide. This discrepancy was attributed to the biased sampling method and the use of primarily closed-ended questions.[B:pds-ch02:p72:0][B:pds-ch02:p72:1]",
+  "citations": [
+   "B:pds-ch02:p72:0",
+   "B:pds-ch02:p72:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "historical poll sampling bias example",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p72:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p72:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 72
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p72:0",
+     "B:pds-ch02:p72:1",
+     "B:pds-ch02:p75:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2850
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p72:0 | pds-ch02 | page 72]\nOpen-ended questions allow for more in-depth responses and provide the opportunity for unexpected insights. They also allow respondents to elaborate on their thoughts and provide detailed and personal responses. Closed-ended questions have predetermined answer choices and are effective in gathering quantitative data. They are quick and easy to answer, and their clear and structured format allows for quantifiable results. Avoiding Bias in Survey Questions Unbiased sampling and unbiased survey methodology are essential for ensuring accurate and reliable results. One well-known real-life instance of sampling bias leading to inaccurate findings is the 1936 Literary Digest poll. This survey aimed to forecast the results of the US presidential election and utilized a mailing list of telephone and automobile owners. This approach was considered biased toward affluent individuals and therefore favored Republican voters.\n\n[B:pds-ch02:p72:1 | pds-ch02 | page 72]\nAs a consequence, the poll predicted a victory for Republican nominee Alf Landon. However, the actual outcome was a landslide win for Franklin D. Roosevelt (Lusinchi, 2012). This discrepancy can be attributed to the biased sampling method as well as the use of primarily closed-ended questions, which may not have accurately captured the opinions of all voters. An example of a biased survey question in a survey conducted by a shampoo company might be \"Do you prefer our brand of shampoo over cheaper alternatives?\" This question is biased because it assumes that the respondent prefers the company's brand over others. A more unbiased and accurate question would be \"What factors do you consider when choosing a shampoo brand?\" This allows for a more detailed and accurate response. The biased question could have led to inflated results in favor of the company's brand.\n\n[B:pds-ch02:p75:0 | pds-ch02 | page 75]\nthe sample. Additionally, careful consideration of the sampling frame should ideally encompass all members of the target population and provide a clear and accessible way to identify and select individuals or units for inclusion in the sample. Sampling bias can occur at various stages of the sampling process, and it can greatly impact the accuracy and validity of research findings. Measurement Error Measurement errors are inaccuracies or discrepancies that surface during the process of collecting, recording, or analyzing data. They may occur due to human error, environmental factors, or inherent inconsistencies in the phenomena being studied. Random error, which arises unpredictably, can affect the precision of measurements, and systematic error may consistently bias measurements in a particular direction. In data analysis, addressing measurement error is crucial for ensuring the reliability and validity of results.",
+  "context_ids": [
+   "B:pds-ch02:p72:0",
+   "B:pds-ch02:p72:1",
+   "B:pds-ch02:p75:0"
+  ],
+  "context_chars": 2850,
+  "elapsed_s": 3.73,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2491,
+     "out": 286,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001454
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Which sampling technique relies on participants referring other similar people because the target population is hard to reach?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The sampling technique that relies on participants referring other similar people because the target population is hard to reach is called snowball sampling. It is typically used in situations where accessing a particular population is difficult, based on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This method is useful for studying hard-to-reach or sensitive populations but may introduce bias and limit generalizability [B:pds-ch02:p74:1].",
+  "citations": [
+   "B:pds-ch02:p74:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "sampling technique participants referring other similar people hard to reach population",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p74:0",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p73:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p74:1",
+     "B:pds-ch02:p74:0",
+     "B:pds-ch02:p73:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2962
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The sampling technique that relies on participants referring other similar people because the target population is hard to reach is called snowball sampling. It is typically used in situations where accessing a particular population is difficult, based on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This method is useful for studying hard-to-reach or sensitive populations but may introduce bias and limit generalizability.",
+    "citations": [
+     "B:pds-ch02:p74:1"
+    ],
+    "problem": [
+     "B:pds-ch02:p74:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p74:1 | pds-ch02 | page 74]\nHowever, researchers need to be transparent about their sampling strategy and potential biases that may arise from purposely selecting certain individuals. 7. Snowball sampling. Snowball sampling is typically used in situations where it is difficult to access a particular population; it relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This type of sampling can be useful in studying hard-to-reach or sensitive populations, but it may also be biased and limit the generalizability of findings. 8. Quota sampling. Quota sampling is a non-probability sampling technique in which experimenters select participants based on predetermined quotas to guarantee that a certain number or percentage of the population of interest is represented in the sample.\n\n[B:pds-ch02:p74:0 | pds-ch02 | page 74]\n6. Purposive sampling. With purposive sampling, one or more specific criteria are used to select participants who are likely to provide the most relevant and useful information for the research study. This can involve selecting participants based on their expertise, characteristics, experiences, or behaviors that are relevant to the research question. For example, if a researcher is conducting a study on the effects of exercise on mental health, they may use purposive sampling to select participants who have a strong interest or experience in physical fitness and have a history of mental health issues. This sampling technique allows the researcher to target a specific population that is most relevant to the research question, making the findings more applicable and generalizable to that particular group. The main advantage of purposive sampling is that it can save time and resources by focusing on individuals who are most likely to provide valuable insights and information.\n\n[B:pds-ch02:p73:2 | pds-ch02 | page 73]\nThis method allows the researcher to obtain a representative sample of the state's student population without having to visit each individual school, saving time and resources. 4. Convenience sampling. Convenience sampling applies to selecting people or items for the sample based on their availability and convenience to the data science research. For example, a researcher may choose to survey students in their classroom or manipulate data from social media users. Convenience sampling is effortless to achieve, and it is useful for exploratory studies. However, it may not provide a representative sample as it is prone to selection bias in that individuals who are more readily available or willing to participate may be overrepresented. An example of convenience sampling would be conducting a survey about a new grocery store in a busy shopping mall. A researcher stands in front of the store and approaches people who are coming out of the store to ask them about their shopping experience.",
+  "context_ids": [
+   "B:pds-ch02:p74:1",
+   "B:pds-ch02:p74:0",
+   "B:pds-ch02:p73:2"
+  ],
+  "context_chars": 2962,
+  "elapsed_s": 5.4,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3527,
+     "out": 371,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 11,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.002005
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "How does random measurement error differ from systematic measurement error?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "Random measurement error arises unpredictably and affects the precision of measurements, causing inaccuracies that vary without a consistent pattern. In contrast, systematic measurement error consistently biases measurements in a particular direction, leading to a consistent distortion of data. Both types of error impact the reliability and validity of research findings but in different ways: random error reduces precision, while systematic error introduces bias. Techniques to mitigate these errors include improving data collection methods, calibrating instruments, and employing statistical adjustments to account for inaccuracies [B:pds-ch02:p75:0].",
+  "citations": [
+   "B:pds-ch02:p75:0"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "difference between random measurement error and systematic measurement error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:3",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p86:3",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 86
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:3",
+     "B:pds-ch02:p86:3"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2796
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "random measurement error systematic measurement error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:3",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p75:1"
+    ],
+    "duplicate": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:3"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 3744
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "difference random error systematic error measurement error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:3",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:3",
+     "B:pds-ch02:p75:1"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 3744
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p75:0 | pds-ch02 | page 75]\nthe sample. Additionally, careful consideration of the sampling frame should ideally encompass all members of the target population and provide a clear and accessible way to identify and select individuals or units for inclusion in the sample. Sampling bias can occur at various stages of the sampling process, and it can greatly impact the accuracy and validity of research findings. Measurement Error Measurement errors are inaccuracies or discrepancies that surface during the process of collecting, recording, or analyzing data. They may occur due to human error, environmental factors, or inherent inconsistencies in the phenomena being studied. Random error, which arises unpredictably, can affect the precision of measurements, and systematic error may consistently bias measurements in a particular direction. In data analysis, addressing measurement error is crucial for ensuring the reliability and validity of results.\n\n[B:pds-ch02:p75:3 | pds-ch02 | page 75]\nMeasurement errors could occur, particularly if the researchers are measuring the participants' exercise and mental health outcomes through self-report measures. Participants may not accurately report their exercise habits or mental health symptoms, leading to inaccurate data. 3. Non-response bias. Some participants in the study may choose not to participate or may drop out before the study is completed. This could introduce non-response bias, as those who choose not to participate or drop out may differ from those who remain in the study in terms of their exercise habits or mental health outcomes. 4. Sampling variability. The sample of 100 participants is a relatively small subset of the larger population. As a result, there may be sampling variability, meaning that the characteristics and outcomes of the participants may differ from those of the larger population simply due to chance. 5. Sampling error in random assignment.\n\n[B:pds-ch02:p86:3 | pds-ch02 | page 86]\nA malfunction in data collection equipment resulting in missing values 3. A participant choosing not to answer a question due to sensitivity or discomfort An outlier is a data point that differs significantly from other data points in a given dataset. This can be due to human error, measurement error, or a true outlier value in the data. Outliers can skew statistical analysis and bias results, which is why it is important to identify and handle them properly before analysis. Missing data and outliers are common problems that can affect the accuracy and reliability of results. It is important to identify and handle these issues properly to ensure the integrity of the data and the validity of the analysis. You will find more details about outliers in Measures of Center, but here we summarize the\n\n[B:pds-ch02:p75:1 | pds-ch02 | page 75]\nTechniques for mitigating measurement error include improving data collection methods, calibrating instruments, conducting validation studies, and employing statistical methods like error modeling or sensitivity analysis to account for and minimize the impact of measurement inaccuracies on the analysis outcomes. A Sampling Case Study Consider a research study that wants to randomly select a group of college students from a larger population to examine the effects of exercise on their mental health outcomes. Using student ID numbers generated by a computer program, 100 participants from the larger population were randomly selected to participate in the study to achieve the desired accuracy. This process ensured that every student in the university had an equal chance of being selected to participate. The participants were then randomly assigned to either the exercise group or the control group.",
+  "context_ids": [
+   "B:pds-ch02:p75:0",
+   "B:pds-ch02:p75:3",
+   "B:pds-ch02:p86:3",
+   "B:pds-ch02:p75:1"
+  ],
+  "context_chars": 3744,
+  "elapsed_s": 9.32,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 7341,
+     "out": 536,
+     "calls": 7
+    },
+    "text-embedding-3-small": {
+     "in": 7,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.003794
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What does data integration mean as a data preprocessing step?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "Data integration as a data preprocessing step refers to merging data from multiple sources into a single dataset. This step is part of data cleaning and preprocessing, which organizes and converts raw data into usable structures for analysis, ensuring the dataset is comprehensive and ready for further processing [B:pds-ch02:p86:0].",
+  "citations": [
+   "B:pds-ch02:p86:0"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "data integration data preprocessing",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p86:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 86
+     },
+     {
+      "id": "B:pds-ch02:p86:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 86
+     },
+     {
+      "id": "B:pds-ch02:p86:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 86
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p86:0",
+     "B:pds-ch02:p86:1",
+     "B:pds-ch02:p86:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2905
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "Data integration as a data preprocessing step refers to merging data from multiple sources into a single dataset. This step is part of data cleaning and preprocessing, which organizes and converts raw data into usable structures for analysis, ensuring the dataset is comprehensive and ready for further processing.",
+    "citations": [
+     "B:pds-ch02:p86:0"
+    ],
+    "problem": [
+     "B:pds-ch02:p86:0"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p86:0 | pds-ch02 | page 86]\n2.4 Data Cleaning and Preprocessing Learning Outcomes By the end of this section, you should be able to: • 2.4.1 Apply methods to deal with missing data and outliers. • 2.4.2 Explain data standardization techniques, such as normalization, transformation, and aggregation. • 2.4.3 Identify sources of noise in data and apply various data preprocessing methods to reduce noise. Data cleaning and preprocessing is an important stage in any data science task. It refers to the technique of organizing and converting raw data into usable structures for further analysis. It involves extracting irrelevant or duplicate data, handling missing values, and correcting errors or inconsistencies. This ensures that the data is accurate, comprehensive, and ready for analysis. Data cleaning and preprocessing typically involve the following steps: 1. Data integration. Data integration refers to merging data from multiple sources into a single dataset. 2. Data cleaning.\n\n[B:pds-ch02:p86:1 | pds-ch02 | page 86]\nIn this step, data is assessed for any errors or inconsistencies, and appropriate actions are taken to correct them. This may include removing duplicate values, handling missing data, and correcting formatting misconceptions. 3. Data transformation. This step prepares the data for the next step by transforming the data into a format that is suitable for further analysis. This may involve converting data types, scaling or normalizing numerical data, or encoding categorical variables. 4. Data reduction. If the dataset contains a large number of columns or features, data reduction techniques may be used to select only the most appropriate ones for analysis. 5. Data discretization. Data discretization involves grouping continuous data into categories or ranges, which can help facilitate analysis. 6. Data sampling. In some cases, the data may be too large to analyze in its entirety.\n\n[B:pds-ch02:p86:2 | pds-ch02 | page 86]\nIn such cases, a sample of the data can be taken for analysis while still maintaining the overall characteristics of the original dataset. The goal of data cleaning and preprocessing is to guarantee that the data used for analysis is accurate, consistent, and relevant. It helps to improve the quality of the results and increase the efficiency of the analysis process. A well-prepared dataset can lead to more accurate insights and better decision-making. Handling Missing Data and Outliers Missing data refers to any data points or values that are not present in a dataset. This could be due to data collection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the accuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias. Some specific examples of missing data include the following: 1. A survey participant forgetting to answer a question 2.",
+  "context_ids": [
+   "B:pds-ch02:p86:0",
+   "B:pds-ch02:p86:1",
+   "B:pds-ch02:p86:2"
+  ],
+  "context_chars": 2905,
+  "elapsed_s": 4.96,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3568,
+     "out": 298,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 4,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.001904
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What is the name for missing data that has no relationship to any other variable and no underlying cause?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "missing data with no relationship to other variables and no underlying cause",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p87:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 87
+     },
+     {
+      "id": "B:pds-ch02:p87:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 87
+     },
+     {
+      "id": "B:pds-ch02:p87:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 87
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p87:0",
+     "B:pds-ch02:p87:1",
+     "B:pds-ch02:p87:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2878
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The name for missing data that has no relationship to any other variable and no underlying cause is \"MCAR\" which stands for missing completely at random.",
+    "citations": [
+     "B:pds-ch02:p87:0"
+    ],
+    "problem": [
+     "B:pds-ch02:p87:0"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The name for missing data that has no relationship to any other variable and no underlying cause is \"MCAR\" which stands for missing completely at random [pds-ch02:p87:0].",
+    "citations": [
+     "pds-ch02:p87:0"
+    ],
+    "problem": [
+     "pds-ch02:p87:0"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p87:0 | pds-ch02 | page 87]\nmeasures typically used to handle missing data and outliers in a data science project: 1. Identify the missing data and outliers. The first stage is to identify which data points are missing or appear to be outliers. This can be done through visualization techniques, such as scatterplots, box plots, IQR (interquartile range), or histograms, or through statistical methods, such as calculating the mean, median, and standard deviation (see Measures of Center and Measures of Variation as well as Encoding Univariate Data). It is important to distinguish between different types of missing data. MCAR (missing completely at random) data is missing data not related to any other variables, with no underlying cause for its absence. Consider data collection with a survey asking about driving habits. One of the demographic questions asks for income level.\n\n[B:pds-ch02:p87:1 | pds-ch02 | page 87]\nSome respondents accidentally skip this question, and so there is missing data for income, but this is not related to the variables being collected related to driving habits. MAR (missing at random) data is missing data related to other variables but not to any unknown or unmeasured variables. As an example, during data collection, a survey is sent to respondents and the survey asks about loneliness. One of the questions asks about memory retention. Some older respondents might skip this question since they may be unwilling to share this type of information. The likelihood of missing data for loneliness factors is related to age (older respondents). Thus, the missing data is related to an observed variable of age but not directly related to loneliness measurements. MNAR (missing not at random) data refers to a situation in which the absence of data depends on observed data but not on unobserved data.\n\n[B:pds-ch02:p87:2 | pds-ch02 | page 87]\nFor example, during data collection, a survey is sent to respondents and the survey asks about debt levels. One of the questions asks about outstanding debt that the customers have such as credit card debt. Some respondents with high credit card debt are less likely to respond to certain questions. Here the missing credit card information is related to the unobserved debt levels. 2. Determine the reasons behind missing data and outliers. It is helpful to understand the reasons behind the missing data and outliers. Some expected reasons for missing data include measurement errors, human error, or data not being collected for a particular variable. Similarly, outliers can be caused by incorrect data entry, measurement errors, or genuine extreme values in the data. 3. Determine how to solve missing data issues. Several approaches can be utilized to handle missing data. One option is to withdraw the missing data altogether, but this can lead to a loss of important information.",
+  "context_ids": [
+   "B:pds-ch02:p87:0",
+   "B:pds-ch02:p87:1",
+   "B:pds-ch02:p87:2"
+  ],
+  "context_chars": 2878,
+  "elapsed_s": 5.34,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3654,
+     "out": 260,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 12,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.001878
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "How can daily stock index values that fluctuate a lot be smoothed to reveal the monthly trend?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "To smooth daily stock index values that fluctuate a lot and reveal the monthly trend, a common approach is to calculate a moving average over a specific period, such as a seven-day average. This smoothing reduces day-to-day fluctuations and helps visualize the overall trend of the index throughout the month [B:pds-ch02:p93:1].",
+  "citations": [
+   "B:pds-ch02:p93:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "smoothing daily stock index values to reveal monthly trend",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p93:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 93
+     },
+     {
+      "id": "B:pds-ch02:p92:2",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 92
+     },
+     {
+      "id": "B:pds-ch02:p93:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 93
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p93:1",
+     "B:pds-ch02:p92:2",
+     "B:pds-ch02:p93:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2966
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "To smooth daily stock index values that fluctuate a lot and reveal the monthly trend, a common approach is to calculate a moving average over a specific period, such as a seven-day average. This smoothing reduces day-to-day fluctuations and helps visualize the overall trend of the index throughout the month.",
+    "citations": [
+     "B:pds-ch02:p93:1"
+    ],
+    "problem": [
+     "B:pds-ch02:p93:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p93:1 | pds-ch02 | page 93]\nOne example is smoothing a dataset of daily stock market index values over the course of a month. The values may fluctuate greatly on a day-to-day basis, making it difficult to see any overall trend. By calculating a seven-day average, we can smooth out these fluctuations and see the overall trend of the index over the course of the month. Imputation An example of imputation is in a hospital setting where a patient's medical history is incomplete due to missing information. The hospital staff can use imputation to estimate the missing data based on the patient's known medical conditions and past treatments. Binning A researcher is studying the age demographics of a population in a city. Instead of looking at individual ages, the researcher decides to bin the data into age groups of 10 years (e.g., 0-10, 10-20, 20-30, etc.). This allows for a more comprehensive and easier analysis of the data.\n\n[B:pds-ch02:p92:2 | pds-ch02 | page 92]\nThis can cause problems in data analysis as the data may not follow a normal distribution. By taking the logarithm of the values, the distribution can be shifted toward a more symmetrical shape, making it easier to analyze. Another common transformation technique is the square root transformation, which involves taking the square root of the data values. Similar to log transformation, square root transformation is often used to address issues with skewness and make the data more normally distributed. Square root transformation is also useful when the data contains values close to zero, as taking the square root of these values can bring them closer to the rest of the data and reduce the impact of extreme values. Exponential transformations involve taking the exponent of the data values. Whichever operation is used, data transformation can be a useful tool for data analysts to address issues with data distribution and improve the accuracy of their analyses.\n\n[B:pds-ch02:p93:2 | pds-ch02 | page 93]\nData transformation Consider the following dataset that shows the number of COVID-19 cases recorded in a country at different points in time-01/01/2020, 02/02/2020, 03/ 01/2020-are 1000, 10000, 100000, respectively. To transform this data using log, we can take the log base 10 of the number of cases column. This would result in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are 3, 4, 5, respectively. Dimensionality reduction The original dataset would have high dimensionality due to the large number of variables (100 companies) and time points (5 years). By applying principal component analysis, we can reduce the dimensionality of the dataset to a few principal components that represent the overall trends and patterns in the stock market. Ensemble methods An example of an ensemble method is the random forest algorithm. It combines multiple decision trees, each trained on a random subset of the data, to make a more accurate prediction.",
+  "context_ids": [
+   "B:pds-ch02:p93:1",
+   "B:pds-ch02:p92:2",
+   "B:pds-ch02:p93:2"
+  ],
+  "context_chars": 2966,
+  "elapsed_s": 5.28,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3786,
+     "out": 314,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.002017
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What does stopwords removal do in text preprocessing?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "Stopwords removal in text preprocessing filters out commonly occurring words that do not add meaningful context to the text, such as 'the', 'and', or 'was'. This helps to reduce noise and focus on more meaningful words, improving the clarity and quality of the text for analysis. For example, a sentence after stopwords removal retains mostly the key content words, making it more concise and relevant for natural language processing tasks like sentiment analysis or topic modeling [B:pds-ch02:p95:1][B:pds-ch02:p96:1].",
+  "citations": [
+   "B:pds-ch02:p95:1",
+   "B:pds-ch02:p96:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "stopwords removal in text preprocessing",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p95:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 95
+     },
+     {
+      "id": "B:pds-ch02:p96:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 96
+     },
+     {
+      "id": "B:pds-ch02:p95:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 95
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p95:1",
+     "B:pds-ch02:p96:1",
+     "B:pds-ch02:p95:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2774
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p95:1 | pds-ch02 | page 95]\n\"John likes to eat pizza.\" After lowercasing it, the sentence becomes \"john likes to eat pizza.\" Stopwords removal Filtering out commonly occurring words that do not add meaning or context Consider: \"The sun was shining bright in the sky and the birds were chirping. It was a lovely day in the park and people were enjoying the beautiful weather.\" After removing stopwords, the paragraph would be transformed into: \"Sun shining bright sky birds chirping. Lovely day park people enjoying beautiful weather.\" Lemmatization and stemming Reducing words to their root forms to reduce complexity and improve model performance For example, the words \"running,\" \"runs,\" and \"ran\" would all be lemmatized to the base form \"run.\" Table 2.8 Summary of Text Preprocessing Techniques\n\n[B:pds-ch02:p96:1 | pds-ch02 | page 96]\n\"I am extremely satisfied with my purchase. The laptop has exceeded all of my expectations and has greatly improved my work efficiency. Thanks for an amazing product!\" To perform sentiment analysis, the text will first undergo preprocessing, which involves cleaning and preparing the text data for analysis. This may include removing punctuation, converting all letters to lowercase, and removing stopwords (commonly used words that do not add much meaning to a sentence, such as \"the\" or \"and\"). After preprocessing, sentiment analysis techniques will be applied to analyze the emotions and opinions expressed in the review. The analysis may identify key positive words such as \"satisfied\" and \"amazing\" and measure their overall sentiment score. It may also take into account the context and tone of the review to accurately determine the sentiment. Table 2.8 Summary of Text Preprocessing Techniques\n\n[B:pds-ch02:p95:0 | pds-ch02 | page 95]\naggregation to study energy consumption patterns. Text Preprocessing Text preprocessing is a technique of preparing data in text format for further analysis and natural language processing tasks. It involves transforming unstructured text data into a more structured format to be interpreted by algorithms and models. Some common techniques used in text preprocessing are reviewed in Table 2.8. Preprocessing Technique Explanation Example Tokenization Breaking text data into individual words or phrases (tokens) Original Text: \"Tokenization is the process of breaking down a sentence, paragraph, or entire text into smaller parts called tokens.\" Tokenized Text: \"Tokenization\", \"is\", \"the\", \"process\", \"of\", \"breaking\", \"down\", \"a\", \"sentence\", \",\", \"paragraph\", \",\", \"or\", \"entire\", \"text\", \"into\", \"smaller\", \"parts\", \"called\", \"tokens\", \".\" Lowercasing Converting all text to lowercase to avoid multiple representations of the identical word Consider the following sentence:",
+  "context_ids": [
+   "B:pds-ch02:p95:1",
+   "B:pds-ch02:p96:1",
+   "B:pds-ch02:p95:0"
+  ],
+  "context_chars": 2774,
+  "elapsed_s": 3.56,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2589,
+     "out": 280,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001484
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Which big data storage solution stores data as objects made of both data and metadata?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The big data storage solution that stores data as objects made of both data and metadata is object storage. This method is often used for storing large volumes of unstructured data, such as images and videos [B:pds-ch02:p99:1].",
+  "citations": [
+   "B:pds-ch02:p99:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "big data storage solution storing data as objects made of data and metadata",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p99:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 99
+     },
+     {
+      "id": "B:pds-ch02:p98:1",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 98
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p99:1",
+     "B:pds-ch02:p98:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 3008
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The big data storage solution that stores data as objects made of both data and metadata is object storage. This method is often used for storing large volumes of unstructured data, such as images and videos.",
+    "citations": [
+     "B:pds-ch02:p99:1"
+    ],
+    "problem": [
+     "B:pds-ch02:p99:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p100:1 | pds-ch02 | page 100]\nThese chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following: 1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4.\n\n[B:pds-ch02:p99:1 | pds-ch02 | page 99]\nRelational databases. organize data in tables and uses structured query language (SQL) for data retrieval and management. They are commonly used for traditional, structured data such as financial data. 2. NoSQL databases. These databases are designed to handle unstructured data, such as social media content or data from sensors, and use non-relational data models. 3. Data warehouses. A data warehouse is a centralized repository of data that combines data from multiple sources and allows for complex queries and analysis. It is commonly used for business intelligence and reporting intentions. 4. Cloud storage. Cloud storage involves storing data in remote servers accessed over the internet. It offers scalability, cost-effectiveness, and remote accessibility. 5. Object storage. With object storage, data are stored as objects that consist of both data and metadata. This method is often used for storing large volumes of unstructured data, such as images and videos.\n\n[B:pds-ch02:p98:1 | pds-ch02 | page 98]\n2.5 Handling Large Datasets Learning Outcomes By the end of this section, you should be able to: • 2.5.1 Recognize the challenges associated with large data, including storage, processing, and analysis limitations. • 2.5.2 Implement techniques for efficient storage and retrieval of large datasets, including compression, indexing, and chunking. • 2.5.3 Discuss database management systems and cloud computing and their key characteristics with regard to large datasets. Large datasets, also known as big data, are extremely large and complex sets of data that traditional data processing methods and tools are unable to handle. These datasets typically include sizeable volumes, variety, and velocity of data, making it challenging to process, manage, and analyze them using traditional methods. Large datasets can be generated by a variety of sources, including social media, sensors, and financial transactions.",
+  "context_ids": [
+   "B:pds-ch02:p100:1",
+   "B:pds-ch02:p99:1",
+   "B:pds-ch02:p98:1"
+  ],
+  "context_chars": 3008,
+  "elapsed_s": 4.67,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3621,
+     "out": 283,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 13,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.001901
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What is pseudonymization?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "Pseudonymization is the process of replacing sensitive information in a dataset with artificial identifiers or codes while maintaining the data's usefulness for analysis. It involves masking, encoding, or encrypting values of specific features such as names or Social Security numbers by replacing them with artificial values. These pseudonymized values can be replaced later using a secure lookup table or decryption algorithm. A common method is hashing, which transforms data into a fixed-length value or string. Pseudonymization helps comply with data protection laws by protecting individual identities without removing the data entirely from the dataset.[B:pds-ch08:p401:3][B:pds-ch08:p390:1][B:pds-ch08:p402:0]",
+  "citations": [
+   "B:pds-ch08:p401:3",
+   "B:pds-ch08:p390:1",
+   "B:pds-ch08:p402:0"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "pseudonymization",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p401:3",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 401
+     },
+     {
+      "id": "B:pds-ch08:p390:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 390
+     },
+     {
+      "id": "B:pds-ch08:p402:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 402
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p401:3",
+     "B:pds-ch08:p390:1",
+     "B:pds-ch08:p402:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2718
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p401:3 | pds-ch08 | page 401]\nData Anonymization As discussed in Ethics in Data Collection, the process of removing or modifying personally identifiable information is called data anonymization or pseudonymization, respectively. Anonymized data can usually still be utilized for analysis without compromising the individual's identity. Pseudonymization of data involves masking, encoding, or encrypting the values of specific features of the data. Features such as names or Social Security numbers can be exchanged with artificial values. If needed, these values can be replaced later using a secure lookup table or decryption algorithm. A common method of pseudonymization is called hashing, which is the process of transforming data into a fixed-length value or string (called a hash), typically using an algorithm called a hash function.\n\n[B:pds-ch08:p390:1 | pds-ch08 | page 390]\nThis can involve techniques such as removing or encrypting identifying information. Pseudonymization is the act of replacing sensitive information in a dataset with artificial identifiers or codes while still maintaining its usefulness for analysis. These techniques may be required to comply with data protection laws. To further comply with regulations, some data components may need to be isolated or removed from datasets; for example, industry-specific information may need to be undisclosable from other datasets, especially in the medical or financial domain. Ultimately, adhering to applicable regulatory provisions throughout the data science cycle ensures that all relevant information and data are collected and stored in a way that meets its specific needs without violating any laws or regulations.\n\n[B:pds-ch08:p402:0 | pds-ch08 | page 402]\nwhich the last name and student ID are combined into a codeword, which may be used to access that student's grade information from the server. This is an example of pseudonymization, as the PII is encoded rather than removed from the dataset. Robust data anonymization should follow a policy of k-anonymization, which is the principle of ensuring that each record within a dataset is indistinguishable from at least other records with respect to a specified set of identifying attributes or features. This approach helps reduce the risk of re-identifying individuals in a dataset, allowing organizations to protect clients and their information without restricting their ability to use the data to gain insight and make decisions. Data anonymization policy (including the determination of k in k-anonymization if needed) should be set by the regulatory compliance officer (RCO) or other compliance professionals with specialized knowledge of data privacy regulations.",
+  "context_ids": [
+   "B:pds-ch08:p401:3",
+   "B:pds-ch08:p390:1",
+   "B:pds-ch08:p402:0"
+  ],
+  "context_chars": 2718,
+  "elapsed_s": 3.94,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2493,
+     "out": 322,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001512
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What are cookies, as described in the discussion of informed consent?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "cookies informed consent",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p391:3",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 391
+     },
+     {
+      "id": "B:pds-ch08:p392:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 392
+     },
+     {
+      "id": "B:pds-ch08:p392:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 392
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p391:3",
+     "B:pds-ch08:p392:1",
+     "B:pds-ch08:p392:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2950
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "Cookies are described as small data files deposited on users' hard disks from websites they visit. They keep track of users' browsing and search history, collecting information about potential interests to tailor advertisements and product placement on websites. They can store user information, preferences, and browsing habits, which can create potential privacy risks, but also provide convenience such as saving log-in information and speeding up page loads. Their use raises questions about informed consent, confidentiality, and privacy, especially when websites require users to agree to their cookie policies before loading content [B:pds-ch08:p392:0,B:pds-ch08:p392:1].",
+    "citations": [
+     "B:pds-ch08:p392:0",
+     "B:pds-ch08:p392:1"
+    ],
+    "problem": [
+     "B:pds-ch08:p392:0",
+     "B:pds-ch08:p392:1"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "Cookies are described as small data files deposited on users' hard disks from websites they visit. They keep track of users' browsing and search history, collecting information about potential interests to tailor advertisements and product placement on websites. They can store user information, preferences, and browsing habits, which can create potential privacy risks, but also provide convenience such as saving log-in information and speeding up page loads. Their use raises questions about informed consent, confidentiality, and privacy, especially when websites require users to agree to their cookie policies before loading content [pds-ch08:p392:0][pds-ch08:p392:1].",
+    "citations": [
+     "pds-ch08:p392:0",
+     "pds-ch08:p392:1"
+    ],
+    "problem": [
+     "pds-ch08:p392:0",
+     "pds-ch08:p392:1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p391:3 | pds-ch08 | page 391]\nInformed consent is a process of obtaining permission from a research subject indicating that they understand the scope of collecting data as well as the associated potential risks, benefits, and consequences, including how the data will be used and how it will be stored. Informed consent consists of disclosure, or providing full and clear information about the activity, study, survey, or data collection process; understanding, or ensuring that the participant is able to comprehend the information; voluntariness, or absence of any coercion, pressure, or undue influence; and finally consent, or agreeing to or approving of the process. For example, a data scientist, Sarah, is conducting research for a company that collects user data through a mobile app. The company requires informed consent from the app users before collecting any data. Sarah decides to conduct a survey to obtain consent from the users. The research aims to understand user behavior\n\n[B:pds-ch08:p392:1 | pds-ch08 | page 392]\nThe potential risk of cookies is that they can store information about the user, user preferences, and user browsing habits. That said, they can also save time by storing users' log-in information and browsing preferences, allowing internet pages to load faster than if you had loaded them the first time. Regardless of convenience, it is a good idea to clear cookies from time to time and to restrict cookies on certain sites depending on your own preferences. Does the use of cookies by online websites violate any of the principles of informed consent? What about websites that will not load unless the user agrees to their cookie policy? Confidentiality refers to the safeguarding of privacy and security of data by controlling access to it. The danger is that personally identifiable information (PII), which is information that directly and unambiguously identifies an individual, may end up in the wrong hands.\n\n[B:pds-ch08:p392:0 | pds-ch08 | page 392]\nand usage patterns in order to improve the app experience. Informed consent is required to ensure transparency and compliance with regulations. By constructing an easy-to-read survey, Sarah is disclosing information and ensuring understanding. Participants take the survey voluntarily, and the results of the survey will indicate consent or non-consent. COOKIES After you have searched for a product on the internet, do you notice that you suddenly start receiving advertisements for that product or that a store website now displays that product on its front page? You can thank cookies for that. Cookies are small data files that are deposited on users' hard disks from websites they visit. They keep track of your browsing and search history, collecting information about your potential interests to tailor advertisements and product placement on websites. Cookies can be either blocked or accepted depending on a company's privacy policy.",
+  "context_ids": [
+   "B:pds-ch08:p391:3",
+   "B:pds-ch08:p392:1",
+   "B:pds-ch08:p392:0"
+  ],
+  "context_chars": 2950,
+  "elapsed_s": 5.25,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3590,
+     "out": 451,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.002158
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "How can an outlier affect an algorithm's outcomes?",
+  "answerable": true,
+  "filter": {
+   "chapter": 8
+  },
+  "status": "answered",
+  "answer": "An outlier can cause an algorithm to drastically change its outcomes because it is abnormal compared to the rest of the data. This abnormality can lead to misleading insights and decisions if outliers are included, especially when they significantly impact overall data trends. Therefore, outliers can introduce biases or inaccuracies in the algorithm's predictions. To handle outliers, they may need to be removed or replaced with more reasonable values, but ethical considerations must guide such decisions to ensure fairness and avoid discrimination. Hence, the presence of outliers can influence the accuracy and reliability of algorithmic outcomes significantly.[B:pds-ch08:p400:0][B:pds-ch08:p403:3][B:pds-ch08:p407:0]",
+  "citations": [
+   "B:pds-ch08:p400:0",
+   "B:pds-ch08:p403:3",
+   "B:pds-ch08:p407:0"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "effect of outliers on algorithm outcomes",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p400:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 400
+     },
+     {
+      "id": "B:pds-ch08:p403:3",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p407:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 407
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p400:0",
+     "B:pds-ch08:p403:3",
+     "B:pds-ch08:p407:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2995
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p400:0 | pds-ch08 | page 400]\n1. Outliers. An outlier might cause an algorithm to drastically change its outcomes due to its abnormality compared to the rest of the data. 2. Unrepresentative samples. If the data employed to train an algorithm lacks significant representations of a particular group, then that algorithm will not be qualified to properly serve that group. 3. Imbalance of classes. If the data factors are weighted disproportionately to one class group, then the algorithm may be biased toward that particular group. 4. Limited features. If there are not enough features to represent the data accurately or completely, the algorithm will likely have an incomplete understanding of the data, leading to inaccurate outcomes or biased decisions. 5. Overfitting. Overfitted models are trained on specific data models that cause them to be unable to generalize the data that they have not seen before, causing bias. 6. Data quality.\n\n[B:pds-ch08:p403:3 | pds-ch08 | page 403]\nIf outliers are detected, they may either be removed or imputed to have more reasonable values. Cross-validation is a process used to evaluate a set of data, and it involves the comparison of the results with different subsets of the data or with the entire dataset by repeatedly breaking the data into training and testing sets and evaluating the model's performance on different subsets of the data. If the results vary too much on different subsets, then the model may have been over-fit, leading to biases and inaccurate predictions when used on new data. Ethical guidelines for data validation cover a broad range of protocol and policy intended to inform when and how such tools as cross-validation and outlier detection and handling should be used. There are overlaps and interactions between these three key areas of data validation. Ethical rules may influence the choice and implementation of outlier detection methods to ensure fairness and avoid discrimination.\n\n[B:pds-ch08:p407:0 | pds-ch08 | page 407]\nFigure 8.6 Second Data Scientist's Presentation a. The second data scientist chooses to remove the low sales outliers from the graph. This approach can be useful in certain cases, such as when the data is extremely skewed and the outliers are significantly impacting the overall trend of the data. The first data scientist chooses to include all data points, including the outliers, in their graph. This means that the graph of the first data scientist includes unusual or extreme values that may lead to misleading insights and decisions. b. The more accurate presentation would be the first one, which includes all the data points without any exclusion. By excluding the low sales points, the second data scientist is not presenting the complete picture, and it can cause misleading insights and decisions being made based on incomplete information. Additionally, the assumption is that the low sales points are genuine measurements and so may not in fact be random outliers. c.",
+  "context_ids": [
+   "B:pds-ch08:p400:0",
+   "B:pds-ch08:p403:3",
+   "B:pds-ch08:p407:0"
+  ],
+  "context_chars": 2995,
+  "elapsed_s": 3.73,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2664,
+     "out": 326,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001587
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "At which stages can sampling bias occur, and why does it matter?",
+  "answerable": true,
+  "filter": {
+   "chapter": 2
+  },
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "sampling bias stages and importance",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:4",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p74:4",
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2796
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "Sampling bias can occur at various stages of the sampling process, including the selection of the sample and recruitment of participants. It happens when the sample used is not representative of the target population. Examples include selection bias, volunteer bias, self-selection bias, and under-coverage bias. These biases matter because they lead to skewed or inaccurate conclusions, limiting the generalizability and validity of research findings. Ensuring each member of the population has an equal chance of being included helps avoid sampling bias and improves the accuracy of study results [B:pds-ch02:p74:4, B:pds-ch02:p75:0, B:pds-ch02:p75:2].",
+    "citations": [
+     "B:pds-ch02:p74:4",
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:2"
+    ],
+    "problem": [
+     "B:pds-ch02:p74:4",
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p75:2"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "Sampling bias can occur at various stages of the sampling process, including during the selection of the sample and participant recruitment. It occurs when the sample is not representative of the target population, leading to systematic over- or underrepresentation of certain groups (selection bias, volunteer bias, self-selection bias, under-coverage bias). Sampling bias matters because it skews results and limits the accuracy, validity, and generalizability of research findings. Researchers use probability sampling and ensure equal inclusion chances to avoid it [pds-ch02:p74:4][pds-ch02:p75:0][pds-ch02:p75:2].",
+    "citations": [
+     "pds-ch02:p74:4",
+     "pds-ch02:p75:0",
+     "pds-ch02:p75:2"
+    ],
+    "problem": [
+     "pds-ch02:p74:4",
+     "pds-ch02:p75:0",
+     "pds-ch02:p75:2"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p74:4 | pds-ch02 | page 74]\nTo avoid sampling error, researchers can increase sample size, use probability sampling methods, control for extraneous variables, use multiple modes of data collection, and pay careful attention to question formulation. Sampling Bias Sampling bias occurs when the sample used in a study isn't representative of the population it intends to generalize to, leading to skewed or inaccurate conclusions. This bias can take many forms, such as selection bias, where certain groups are systematically over- or underrepresented, or volunteer bias, where only a specific subset of the population participates. Researchers use the sampling techniques summarized earlier to avoid sampling bias and ensure that each member of the population has an equal chance of being included in\n\n[B:pds-ch02:p75:0 | pds-ch02 | page 75]\nthe sample. Additionally, careful consideration of the sampling frame should ideally encompass all members of the target population and provide a clear and accessible way to identify and select individuals or units for inclusion in the sample. Sampling bias can occur at various stages of the sampling process, and it can greatly impact the accuracy and validity of research findings. Measurement Error Measurement errors are inaccuracies or discrepancies that surface during the process of collecting, recording, or analyzing data. They may occur due to human error, environmental factors, or inherent inconsistencies in the phenomena being studied. Random error, which arises unpredictably, can affect the precision of measurements, and systematic error may consistently bias measurements in a particular direction. In data analysis, addressing measurement error is crucial for ensuring the reliability and validity of results.\n\n[B:pds-ch02:p75:2 | pds-ch02 | page 75]\nThis method of random sampling ensures that the sample is representative of the larger population, providing a more accurate representation of the relationship between exercise and mental health outcomes for college students. Types of sampling error that could occur in this study include the following: 1. Sampling bias. One potential source of bias in this study is self-selection bias. As the participants are all college students, they may not be representative of the larger population, as college students tend to have more access and motivation to exercise compared to the general population. This could limit the generalizability of the study's findings. In addition, if the researchers only recruit participants from one university, there may be under-coverage bias. This means that certain groups of individuals, such as nonstudents or students from other universities, may be excluded from the study, potentially leading to biased results. 2. Measurement error.",
+  "context_ids": [
+   "B:pds-ch02:p74:4",
+   "B:pds-ch02:p75:0",
+   "B:pds-ch02:p75:2"
+  ],
+  "context_chars": 2796,
+  "elapsed_s": 5.9,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3573,
+     "out": 484,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.002204
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Who should set the data anonymization policy, including choosing k for k-anonymization?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The data anonymization policy, including choosing the value of k for k-anonymization, should be set by data privacy professionals who are familiar with prevailing data privacy regulations and data masking processes to ensure security compliance. For example, a data privacy officer named Mike determined the value of k by considering the total number of respondents and the amount of identifying information, aiming for a group size sufficient to achieve satisfactory anonymization while maintaining data usefulness [B:pds-ch08:p398:1][B:pds-ch08:p402:1][B:pds-ch08:p402:2].",
+  "citations": [
+   "B:pds-ch08:p398:1",
+   "B:pds-ch08:p402:1",
+   "B:pds-ch08:p402:2"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "who sets data anonymization policy and chooses k for k-anonymization",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p402:2",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 402
+     },
+     {
+      "id": "B:pds-ch08:p402:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 402
+     },
+     {
+      "id": "B:pds-ch08:p398:1",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 398
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p402:2",
+     "B:pds-ch08:p402:1",
+     "B:pds-ch08:p398:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2642
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The data anonymization policy, including choosing the value of k for k-anonymization, should be set by data privacy professionals who are familiar with prevailing data privacy regulations and the data masking process. These professionals ensure that security measures comply with regulations and balance privacy with data utility. For example, in a scenario described, a data privacy officer (Mike) determines the appropriate k by considering the total number of respondents and the amount of identifying information, aiming for a minimum group size to achieve satisfactory anonymization while preserving data usefulness [B:pds-ch08:p398:1,B:pds-ch08:p402:1,B:pds-ch08:p402:2].",
+    "citations": [
+     "B:pds-ch08:p398:1",
+     "B:pds-ch08:p402:1",
+     "B:pds-ch08:p402:2"
+    ],
+    "problem": [
+     "B:pds-ch08:p398:1",
+     "B:pds-ch08:p402:1",
+     "B:pds-ch08:p402:2"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p402:2 | pds-ch08 | page 402]\nTo determine the appropriate value for k, Mike looks at the total number of respondents and the information collected in the survey. He knows that the more identifying characteristics he removes, the higher the level of anonymity will be. However, he also wants to make sure that the data is still useful for analysis. After some research, he determines that a minimum of 5 respondents should have the same characteristics in order to achieve a satisfactory level of anonymization. After reviewing the survey questions, Mike sees that there are 10 potential identifying characteristics, such as the number of children, their school district, and their ages. To calculate the k-anonymization, he takes the total number of respondents and divides it by 5. For example, if there are 100 respondents, the k- anonymization would be . This means that for each set of characteristics, there must be at least 20 respondents who share the same values.\n\n[B:pds-ch08:p402:1 | pds-ch08 | page 402]\nThese professionals must be familiar with prevailing data privacy regulations and the data masking process to ensure that all possible security measures comply with these regulations. It is also important that all data masking processes use protected techniques to ensure that data can't be accessed or operated in an unauthorized manner. EXAMPLE 8.7 Problem Mike is a data privacy officer for his local school district. The district is looking to collect data from parents to gain insight into their opinions on the district's curriculum. However, Mike is concerned about protecting the privacy of the parents and their children. He knows that by including too much identifying information in the survey, it could potentially allow someone to re-identify the respondents. What steps can Mike take to protect the privacy of the respondents while still collecting useful data for analysis? Solution Mike decides to implement k-anonymization.\n\n[B:pds-ch08:p398:1 | pds-ch08 | page 398]\nThis includes setting guidelines and procedures for data usage, implementing security measures to protect data privacy and integrity, and providing access only to authorized individuals or organizations. For example, data governance policy might dictate that all personally identifiable information (PII) be anonymized or excluded when sharing with entities outside of the company. Since the data being shared is a mix of qualitative and quantitative data, an online file sharing app such as Google Drive or Microsoft OneDrive is most appropriate. Permissions should be granted to various team members based on their need to know.",
+  "context_ids": [
+   "B:pds-ch08:p402:2",
+   "B:pds-ch08:p402:1",
+   "B:pds-ch08:p398:1"
+  ],
+  "context_chars": 2642,
+  "elapsed_s": 6.06,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3577,
+     "out": 483,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 14,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.002204
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Which US law requires safeguarding sensitive information related to patient health?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "US law safeguarding sensitive patient health information",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p395:0",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 395
+     },
+     {
+      "id": "B:pds-ch08:p392:3",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 392
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p395:0",
+     "B:pds-ch08:p392:3"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2811
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The US law that requires safeguarding sensitive information related to patient health is the Health Insurance Portability and Accountability Act (HIPAA).",
+    "citations": [
+     "B:pds-ch08:p389:1"
+    ],
+    "problem": [
+     "B:pds-ch08:p389:1"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The US law that requires safeguarding sensitive information related to patient health is the Health Insurance Portability and Accountability Act (HIPAA) [pds-ch08:p389:1].",
+    "citations": [
+     "pds-ch08:p389:1"
+    ],
+    "problem": [
+     "pds-ch08:p389:1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p389:1 | pds-ch08 | page 389]\nMany countries have also enacted laws and regulations involving data retention, or how long personal data may be stored (e.g., the Sarbanes-Oxley Act [SOX] in the United States or the Data Protection Act [DPA] in the United Kingdom); data breach notification, or what to do when data is stolen by a malicious third party (Gramm-Leach-Bliley Act [GLBA] in the United States or the Personal Information Protection and Electronic Documents Act [PIPEDA] in Canada); and many other issues of data privacy, security, and integrity. Some regulations apply only to certain types of data or data related to certain industries. For example, in the United States, the Health Insurance Portability and Accountability Act (HIPAA) requires the safeguarding of sensitive information related to patient health.\n\n[B:pds-ch08:p395:0 | pds-ch08 | page 395]\nagency outside of the team who has heard about their work. What steps should be taken to ensure data security? Solution This data contains personally identifiable information (PII). Moreover, the team needs to ensure that the project complies with HIPAA regulations because there are medical records involved. The following measures should be taken at the beginning of the project and throughout the collection stage. 1. Review access control policies: The first step in granting access to any sensitive data is to review the access control policies in place. This includes understanding who has access to the data, what level of access they have, and how this access is granted. This will help determine if the researcher should be granted permission and what level of access they should have. 2. Authenticate the request: Before granting access, the team should verify the authenticity of the request.\n\n[B:pds-ch08:p392:3 | pds-ch08 | page 392]\nOther examples of possible privacy violations during the data collection stage include collecting sensitive information such as health data without explicit consent (as per HIPAA introduced earlier in the chapter), data from minors without their parent's approval, and data from an individual or group that may be vulnerable or marginalized without proper notification or protection measures in place. Those who work in higher education need to be aware of FERPA (Family Educational Rights and Privacy Act), which restricts the sharing or obtaining of college students' academic information without prior consent, even if the requesting party is the student's parent or guardian. EXAMPLE 8.2 Problem A group of data scientists is contracted by Gadget Galaxy to conduct a study on consumer buying patterns. They begin by collecting private information from respective participants. The team has implemented an informed consent process to ensure ethical and transparent data collection.",
+  "context_ids": [
+   "B:pds-ch08:p389:1",
+   "B:pds-ch08:p395:0",
+   "B:pds-ch08:p392:3"
+  ],
+  "context_chars": 2811,
+  "elapsed_s": 4.41,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3381,
+     "out": 247,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001748
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q17",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What is data validation?",
+  "answerable": true,
+  "filter": {
+   "chapter": 8
+  },
+  "status": "answered",
+  "answer": "Data validation is the process of establishing procedures and protocols to secure data from bias, prejudices, or preconceptions, ensuring it accurately represents real-world situations. It involves three key areas: outlier detection, which identifies data points significantly different from the rest; cross-validation, which evaluates a data set by comparing results on different subsets; and ethical guidelines to ensure fairness and avoid discrimination. Effective data validation is crucial for ethical data usage and unbiased modeling, enabling decisions based on solid facts and evidence rather than subjective opinions [B:pds-ch08:p403:2][B:pds-ch08:p403:3].",
+  "citations": [
+   "B:pds-ch08:p403:2",
+   "B:pds-ch08:p403:3"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "data validation",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p403:2",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p403:3",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 403
+     },
+     {
+      "id": "B:pds-ch08:p398:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 398
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p403:2",
+     "B:pds-ch08:p403:3",
+     "B:pds-ch08:p398:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 3048
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "Data validation is the process of establishing procedures and protocols to secure data from bias, prejudices, or preconceptions, ensuring it accurately represents real-world situations. It includes outlier detection (identifying and handling data points significantly different from others), cross-validation (evaluating data by comparing results on different subsets), and adherence to ethical guidelines to ensure fairness and avoid discrimination. Effective data validation is essential for ethical data usage, unbiased modeling, and making decisions based on solid facts and evidence rather than subjective opinions.",
+    "citations": [
+     "B:pds-ch08:p403:2",
+     "B:pds-ch08:p403:3"
+    ],
+    "problem": [
+     "B:pds-ch08:p403:2",
+     "B:pds-ch08:p403:3"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p403:2 | pds-ch08 | page 403]\nBy establishing processes and procedures for data validation, companies can demonstrate a commitment to ethical data usage, which is an important component of any data governance policy. Effective data validation will secure data from the influence of bias, prejudices, or preconceptions. As mentioned earlier, unbiased data is essential for ethical modeling, as it gives an accurate illustration of a real-world situation rather than being influenced by personal intentions or opinions held by certain individuals and ensures that decisions are made on solid facts and evidence instead of subjective opinion. The process of data validation can be divided into three key areas: outlier detection, cross-validation, and ethical guidelines. Outlier detection concerns the identification of observations that are significantly different from the rest of the data and ensures that the data is free from outliers that can affect the results of the models and analysis.\n\n[B:pds-ch08:p403:3 | pds-ch08 | page 403]\nIf outliers are detected, they may either be removed or imputed to have more reasonable values. Cross-validation is a process used to evaluate a set of data, and it involves the comparison of the results with different subsets of the data or with the entire dataset by repeatedly breaking the data into training and testing sets and evaluating the model's performance on different subsets of the data. If the results vary too much on different subsets, then the model may have been over-fit, leading to biases and inaccurate predictions when used on new data. Ethical guidelines for data validation cover a broad range of protocol and policy intended to inform when and how such tools as cross-validation and outlier detection and handling should be used. There are overlaps and interactions between these three key areas of data validation. Ethical rules may influence the choice and implementation of outlier detection methods to ensure fairness and avoid discrimination.\n\n[B:pds-ch08:p398:2 | pds-ch08 | page 398]\n8.2 Ethics in Data Analysis and Modeling Learning Outcomes By the end of this section, you should be able to: • 8.2.1 Define bias and fairness in the context of data science and machine learning. • 8.2.2 Identify sensitive data elements and implement data anonymization techniques. • 8.2.3 Apply data validation techniques, such as cross-validation and outlier detection. In today's technology, industries produce massive amounts of data every day, and with the improvement in digital resources, analyzing and modeling the delivered data has evolved into an essential part of decision- making in many fields, such as business, health care, education, and government. However, with the control and influence that data analysis and modeling hold, it is crucial to consider the ethical implications of this practice. Data analysis, defined in Data Science in Practice, is the process of examining, organizing, and transforming data to gather knowledge and make well-informed decisions.",
+  "context_ids": [
+   "B:pds-ch08:p403:2",
+   "B:pds-ch08:p403:3",
+   "B:pds-ch08:p398:2"
+  ],
+  "context_chars": 3048,
+  "elapsed_s": 5.23,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3472,
+     "out": 426,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.00207
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "q18",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Which web scraping technique follows links from one page to other pages to collect data across a site?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "web scraping technique that follows links from one page to other pages",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch02:p76:2",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p76:3",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 76
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p77:0",
+     "B:pds-ch02:p76:2",
+     "B:pds-ch02:p76:3"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2816
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The web scraping technique that follows links from one page to other pages to collect data across a site is called Web Crawling. It involves navigating through links on a web page to other pages and collecting data from them, which is useful for scraping data from multiple pages of a website.",
+    "citations": [
+     "B:pds-ch02:p77:0"
+    ],
+    "problem": [
+     "B:pds-ch02:p77:0"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The web scraping technique that follows links from one page to other pages to collect data across a site is called Web Crawling. It involves navigating through links on a web page to other pages and collecting data from them, which is useful for scraping data from multiple pages of a website [pds-ch02:p77:0].",
+    "citations": [
+     "pds-ch02:p77:0"
+    ],
+    "problem": [
+     "pds-ch02:p77:0"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p77:0 | pds-ch02 | page 77]\ncommon techniques used. (Note: The techniques used for web scraping will vary depending on the website and the type of data being collected. It may require a combination of different techniques to effectively scrape data from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to scrape Regular Expressions • Search for and extract specific patterns of text from a web page • Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses HTML Parsing • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data\n\n[B:pds-ch02:p76:2 | pds-ch02 | page 76]\n2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.\n\n[B:pds-ch02:p76:3 | pds-ch02 | page 76]\nSocial media data collection involves gathering information from various platforms like Twitter and Instagram using application programming interface or monitoring tools. An application programming interface (API) is a set of protocols, tools, and definitions for building software applications allowing different software systems to communicate and interact with each other and enabling developers to access data and services from other applications, operating systems, or platforms. Both web scraping and social media data collection require determining the data to be collected and analyzing it for accuracy and relevance. Web Scraping There are several techniques and approaches for scraping data from websites. See Table 2.2 for some of the",
+  "context_ids": [
+   "B:pds-ch02:p77:0",
+   "B:pds-ch02:p76:2",
+   "B:pds-ch02:p76:3"
+  ],
+  "context_chars": 2816,
+  "elapsed_s": 4.74,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3692,
+     "out": 312,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001976
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q19",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "When reporting findings ethically, what should be true of the scales on chart axes?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "citation không hợp lệ sau khi sửa",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "ethical reporting scales on chart axes",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p405:2",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 405
+     },
+     {
+      "id": "B:pds-ch08:p409:0",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 409
+     },
+     {
+      "id": "B:pds-ch08:p410:0",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 410
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p405:2",
+     "B:pds-ch08:p409:0",
+     "B:pds-ch08:p410:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2730
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "When reporting findings ethically, the scales on chart axes should be consistent and proportionate to ensure clear and honest representation of the data. This means avoiding misleading scaling that can obscure true differences or exaggerate effects, and ensuring axes are correctly labeled and scaled to facilitate accurate interpretation. For example, scales should start at zero when appropriate and be designed to allow easy comparison without distorting the data. Proper and consistent scaling supports accurate, unambiguous visualizations and helps prevent sensationalizing or misrepresenting the findings.",
+    "citations": [
+     "B:pds-ch08:p405:2",
+     "B:pds-ch08:p409:0"
+    ],
+    "problem": [
+     "B:pds-ch08:p405:2",
+     "B:pds-ch08:p409:0"
+    ]
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "When reporting findings ethically, the scales on chart axes should be consistent and proportionate to ensure the data is represented accurately and without distortion. This helps avoid misinterpretation and sensationalism, providing clear and unambiguous visualization. Axes should also be correctly labeled and scaled appropriately to facilitate easy interpretation and comparison of the data [pds-ch08:p405:2,pds-ch08:p409:0].",
+    "citations": [
+     "pds-ch08:p405:2",
+     "pds-ch08:p409:0"
+    ],
+    "problem": [
+     "pds-ch08:p405:2",
+     "pds-ch08:p409:0"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p405:2 | pds-ch08 | page 405]\nAcknowledge all third-party data sources appropriately. 3. Ensure that all visualizations are unambiguous and do not focus on any sensationalized data points. 4. Construct visualizations in a meaningful way, utilizing appropriate titles, labels, scales, and legends. 5. Present all data in a complete picture, avoiding masking or omitting portions of graphs. 6. Ensure that the scales on all axes in a chart are consistent and proportionate. 7. Exercise caution when implying causality between connected data points, providing supporting evidence if needed. 8. Utilize representative datasets of the population of interest. Accurate Representation Accurate representation is a crucial aspect of data science and reporting, and it refers to presenting data in a way that authentically reflects the underlying information. This includes ensuring that the data is not misrepresented or manipulated in any way and that the findings are based on reliable and valid data.\n\n[B:pds-ch08:p409:0 | pds-ch08 | page 409]\nFigure 8.7 Graph A: Representation of First Data Scientist's Analysis Figure 8.8 Graph B: Representation of Second Data Scientist's Analysis (Market Share in %) Solution The first data scientist, who generated Graph A in Figure 8.7, has effectively represented the brand names and their corresponding market share percentages, using correct labeling and scaling of axes. This facilitates easy interpretation and comparison of the data. The second data scientist, who produced Graph B as shown in Figure 8.8, scaled the vertical axis from 0 to 100, making it more difficult to observe small differences in percentages. Moreover, Graph B fails to label the horizontal or vertical axes in equivalent\n\n[B:pds-ch08:p410:0 | pds-ch08 | page 410]\ndetail, which may cause undue confusion, even if the intended labels may be clear from context. EXAMPLE 8.10 Problem A data scientist at a health care research institution is analyzing the effects of a new medication on a specific disease. After collecting data from multiple clinical trials, the scientist summarized the results in Table 8.2 and created a histogram to show the distribution of participants across different age groups as shown in Figure 8.9. The scientist included age intervals of 18-25, 26-36, 37-46, 47-56, 57-66, and 67+ in the chart. To provide a complete understanding of the data, what additional information should be included? a. The percentage of participants in each group to accurately depict the proportion of participants in each age group b. The total number of participants to demonstrate the scope of the results c. The number of participants in each age group for a comprehensive overview of the data d.",
+  "context_ids": [
+   "B:pds-ch08:p405:2",
+   "B:pds-ch08:p409:0",
+   "B:pds-ch08:p410:0"
+  ],
+  "context_chars": 2730,
+  "elapsed_s": 5.26,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3703,
+     "out": 387,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.0021
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "q20",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "Why might the results of quota sampling not represent the entire population?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The results of quota sampling might not represent the entire population because the sample is not randomly selected and may be biased toward certain characteristics. Although quotas are set to ensure representation of specific demographic characteristics, the non-random selection can lead to bias, making the findings less generalizable to the whole population. Therefore, results from quota sampling should be interpreted with caution due to potential sampling bias associated with this method [B:pds-ch02:p74:2].",
+  "citations": [
+   "B:pds-ch02:p74:2"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "quota sampling limitations population representation",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p74:2",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p74:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 74
+     },
+     {
+      "id": "B:pds-ch02:p74:4",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 74
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p74:2",
+     "B:pds-ch02:p74:1",
+     "B:pds-ch02:p74:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2604
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The results of quota sampling might not represent the entire population because the sample is not randomly selected and may be biased toward certain characteristics. Although quotas are set to ensure representation of specific demographic characteristics, the non-random selection can lead to bias, making the findings less generalizable to the whole population. Therefore, results from quota sampling should be interpreted with caution due to potential sampling bias associated with this method.",
+    "citations": [
+     "B:pds-ch02:p74:2"
+    ],
+    "problem": [
+     "B:pds-ch02:p74:2"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p74:2 | pds-ch02 | page 74]\nThese quotas are based on specific demographic characteristics, such as age, gender, ethnicity, and occupation, which are believed to have a direct or indirect relationship with the research topic. Quota sampling is generally used in market research and opinion polls, as it allows for a fast and cost-effective way to gather data from a diverse range of individuals. However, it is important to note that the results of quota sampling may not accurately represent the entire population, as the sample is not randomly selected and may be biased toward certain characteristics. Therefore, the findings from studies using quota sampling should be interpreted with caution. 9. Volunteer sampling. Volunteer sampling refers to the fact that the participants are not picked at random by the researcher, but instead volunteer themselves to be a part of the study.\n\n[B:pds-ch02:p74:1 | pds-ch02 | page 74]\nHowever, researchers need to be transparent about their sampling strategy and potential biases that may arise from purposely selecting certain individuals. 7. Snowball sampling. Snowball sampling is typically used in situations where it is difficult to access a particular population; it relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This type of sampling can be useful in studying hard-to-reach or sensitive populations, but it may also be biased and limit the generalizability of findings. 8. Quota sampling. Quota sampling is a non-probability sampling technique in which experimenters select participants based on predetermined quotas to guarantee that a certain number or percentage of the population of interest is represented in the sample.\n\n[B:pds-ch02:p74:4 | pds-ch02 | page 74]\nTo avoid sampling error, researchers can increase sample size, use probability sampling methods, control for extraneous variables, use multiple modes of data collection, and pay careful attention to question formulation. Sampling Bias Sampling bias occurs when the sample used in a study isn't representative of the population it intends to generalize to, leading to skewed or inaccurate conclusions. This bias can take many forms, such as selection bias, where certain groups are systematically over- or underrepresented, or volunteer bias, where only a specific subset of the population participates. Researchers use the sampling techniques summarized earlier to avoid sampling bias and ensure that each member of the population has an equal chance of being included in",
+  "context_ids": [
+   "B:pds-ch02:p74:2",
+   "B:pds-ch02:p74:1",
+   "B:pds-ch02:p74:4"
+  ],
+  "context_chars": 2604,
+  "elapsed_s": 4.73,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3387,
+     "out": 355,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001923
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What is the maximum fine under the GDPR, as an amount in euros or a percentage of annual revenue?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not mention the specific maximum fine under the GDPR in euros or as a percentage of annual revenue.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "maximum fine under GDPR",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p388:3"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2269
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "GDPR maximum fine amount",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p388:3"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 2269
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "GDPR fine maximum euros percentage annual revenue",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p388:3"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 2269
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not mention the specific maximum fine under the GDPR in euros or as a percentage of annual revenue."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch08:p388:4 | pds-ch08 | page 388]\nData Security Regulations are based on data protection laws, such as the General Data Protection Regulation in the European Union (https://openstax.org/r/gdpr) (GDPR) and the 2018 California Consumer Privacy Act (https://openstax.org/r/privacy) (CCPA) in the United States, with its amendment, CPRA (2023). These regulations demand that organizations collect, process, and accumulate confidential data securely and\n\n[B:pds-ch08:p389:1 | pds-ch08 | page 389]\nMany countries have also enacted laws and regulations involving data retention, or how long personal data may be stored (e.g., the Sarbanes-Oxley Act [SOX] in the United States or the Data Protection Act [DPA] in the United Kingdom); data breach notification, or what to do when data is stolen by a malicious third party (Gramm-Leach-Bliley Act [GLBA] in the United States or the Personal Information Protection and Electronic Documents Act [PIPEDA] in Canada); and many other issues of data privacy, security, and integrity. Some regulations apply only to certain types of data or data related to certain industries. For example, in the United States, the Health Insurance Portability and Accountability Act (HIPAA) requires the safeguarding of sensitive information related to patient health.\n\n[B:pds-ch08:p388:3 | pds-ch08 | page 388]\nSuch regulations may vary from country to country or even from state to state within a country. In the United States, the US Privacy Act of 1974 regulates how federal agencies may collect, use, maintain, and disseminate personal information. This law was later supplemented by the E-Government Act of 2002, extending protections to data held digitally rather than physically. A good summary of these laws and other privacy regulations can be found at the GAO's Protecting Personal Privacy (https://openstax.org/r/ gao) site. Industry and Global Standards Data privacy compliance requirements vary depending on the industry and the standards or laws that govern the organization's operations. Failure to comply with these requirements can result in penalties and legal consequences for the organization, so data scientists in these industries need to be aware of and adhere to these regulations to avoid any potential repercussions.",
+  "context_ids": [
+   "B:pds-ch08:p388:4",
+   "B:pds-ch08:p389:1",
+   "B:pds-ch08:p388:3"
+  ],
+  "context_chars": 2269,
+  "elapsed_s": 9.23,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 7273,
+     "out": 436,
+     "calls": 7
+    },
+    "text-embedding-3-small": {
+     "in": 13,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.003607
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "config": "ag_rerank",
+  "question": "What default block size does Hadoop HDFS use when splitting large files into chunks?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks discuss data chunking and its benefits but do not specify the default block size used by Hadoop HDFS when splitting large files.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "Hadoop HDFS default block size",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p100:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2675
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "Hadoop HDFS block size default",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:2",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p100:2"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 2675
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid_rerank",
+    "query": "default block size in Hadoop HDFS",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p98:1",
+      "rank": 1,
+      "score": 1.0,
+      "source_id": "pds-ch02",
+      "page": 98
+     },
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 2,
+      "score": 0.5,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 3,
+      "score": 0.333333,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p98:1"
+    ],
+    "duplicate": [
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p100:1"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 3631
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks discuss data chunking and its benefits but do not specify the default block size used by Hadoop HDFS when splitting large files."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p100:0 | pds-ch02 | page 100]\nFigure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units. Data chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes.\n\n[B:pds-ch02:p100:1 | pds-ch02 | page 100]\nThese chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following: 1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4.\n\n[B:pds-ch02:p100:2 | pds-ch02 | page 100]\nFlexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets. Database Management Systems Database management is a crucial aspect of data science projects as it involves organizing, storing, retrieving, and managing large volumes of data. In a data science project, a database management system (DBMS) is used to ensure the efficient storage and retrieval of data. Database management systems are software tools used for managing data in a structured format. Their functions are summarized in Table 2.9.\n\n[B:pds-ch02:p98:1 | pds-ch02 | page 98]\n2.5 Handling Large Datasets Learning Outcomes By the end of this section, you should be able to: • 2.5.1 Recognize the challenges associated with large data, including storage, processing, and analysis limitations. • 2.5.2 Implement techniques for efficient storage and retrieval of large datasets, including compression, indexing, and chunking. • 2.5.3 Discuss database management systems and cloud computing and their key characteristics with regard to large datasets. Large datasets, also known as big data, are extremely large and complex sets of data that traditional data processing methods and tools are unable to handle. These datasets typically include sizeable volumes, variety, and velocity of data, making it challenging to process, manage, and analyze them using traditional methods. Large datasets can be generated by a variety of sources, including social media, sensors, and financial transactions.",
+  "context_ids": [
+   "B:pds-ch02:p100:0",
+   "B:pds-ch02:p100:1",
+   "B:pds-ch02:p100:2",
+   "B:pds-ch02:p98:1"
+  ],
+  "context_chars": 3631,
+  "elapsed_s": 8.77,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 7667,
+     "out": 445,
+     "calls": 7
+    },
+    "text-embedding-3-small": {
+     "in": 8,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.003779
+  },
+  "context_has_evidence": false
+ }
+]
