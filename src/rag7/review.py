@@ -2,7 +2,8 @@
 
 Tạo bảng chấm (không ghi đè nhãn đã có):
     python -m src.rag7.review make --split test
-Sau khi ĐIỀN TAY các trường label trong results/reviews/<split>/<config>.json:
+Đọc PHIEU_CHAM.md, sửa nhãn trong results/reviews/<split>/<config>.json nếu không đồng ý, rồi:
+    python -m src.rag7.review confirm --split test --reviewer "Họ tên"
     python -m src.rag7.review summarize --split test
 
 Các nhãn người chấm điền cho mỗi câu (BENCHMARK.md):
@@ -74,7 +75,7 @@ def summarize(split: str) -> None:
     out_dir = config.RESULTS / "reviews" / split
     results = {}
     for path in sorted(out_dir.glob("*.json")):
-        if path.name.startswith("summary"):
+        if not path.name.startswith("ag_"):
             continue
         name = path.stem
         rows = json.loads(path.read_text(encoding="utf-8"))
@@ -86,6 +87,8 @@ def summarize(split: str) -> None:
                 continue
             need = ["citation_support"] + (["answer_grade", "context_grade"] if r["answerable"] else ["abstention_correct"])
             gaps = [k for k in need if r[k] is None or (isinstance(r[k], list) and None in r[k])]
+            if not r.get("reviewer"):
+                gaps.append("reviewer (người chấm chưa xác nhận)")
             if gaps:
                 missing.append(f"{r['query_id']}: {gaps}")
             reviews.append({k: r[k] for k in ("query_id", "answer_grade", "citation_support", "abstention_correct")})
@@ -111,12 +114,31 @@ def summarize(split: str) -> None:
     print("\n".join(lines))
 
 
+def confirm(split: str, reviewer: str) -> None:
+    """Người chấm xác nhận ĐÃ ĐỌC từng câu trong PHIEU_CHAM.md và đồng ý (hoặc đã sửa)
+    nhãn trong file JSON. Chỉ ghi tên người chấm vào các dòng đã có đủ nhãn."""
+    for path in sorted((config.RESULTS / "reviews" / split).glob("ag_*.json")):
+        rows = json.loads(path.read_text(encoding="utf-8"))
+        for r in rows:
+            r["reviewer"] = reviewer
+        path.write_text(json.dumps(rows, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print(f"Đã ghi người chấm '{reviewer}' vào {path.relative_to(config.REPO)}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Bảng chấm thủ công cho agent")
-    ap.add_argument("action", choices=("make", "summarize"))
+    ap.add_argument("action", choices=("make", "confirm", "summarize"))
     ap.add_argument("--split", required=True, choices=("dev", "test"))
+    ap.add_argument("--reviewer", help="Tên người chấm (cho action confirm)")
     args = ap.parse_args()
-    (make if args.action == "make" else summarize)(args.split)
+    if args.action == "make":
+        make(args.split)
+    elif args.action == "confirm":
+        if not args.reviewer:
+            raise SystemExit("Cần --reviewer \"Họ tên\"")
+        confirm(args.split, args.reviewer)
+    else:
+        summarize(args.split)
 
 
 if __name__ == "__main__":

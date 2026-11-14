@@ -1,0 +1,1046 @@
+[
+ {
+  "query_id": "t01",
+  "split": "test",
+  "config": "ag_base",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information about metadata added to each chunk for reassembling the original dataset during data chunking was found in the retrieved document chunks.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "metadata added to each chunk during data chunking for reassembly",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 1,
+      "score": 0.595759,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 2,
+      "score": 0.51922,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p99:3",
+      "rank": 3,
+      "score": 0.364475,
+      "source_id": "pds-ch02",
+      "page": 99
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p99:3"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p100:0"
+    ],
+    "context_chars": 403
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "metadata added to data chunks for reassembling original dataset",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 1,
+      "score": 0.625765,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 2,
+      "score": 0.492402,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p103:1",
+      "rank": 3,
+      "score": 0.432024,
+      "source_id": "pds-ch02",
+      "page": 103
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p103:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p100:0"
+    ],
+    "context_chars": 778
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "metadata to reassemble chunks into original data set chunking",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 1,
+      "score": 0.680382,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 2,
+      "score": 0.615108,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:2",
+      "rank": 3,
+      "score": 0.416535,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p100:2"
+    ],
+    "context_chars": 778
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information about metadata added to each chunk for reassembling the original dataset during data chunking was found in the retrieved document chunks."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p99:3 | pds-ch02 | page 99]\nThis allows for direct access to the data based on its hashed value, making retrieval faster than traditional sequential searching. Bitmap indexing is a technique that involves creating a bitmap for each different value in a dataset. The bitmaps are then combined to quickly identify records that match a specific set of values, allowing efficient data retrieval.\n\n[B:pds-ch02:p103:1 | pds-ch02 | page 103]\nThis option may not directly impact storage capacity, but by identifying and eliminating redundancies, the company can optimize its existing storage capacity and potentially reduce costs in the long run. Datasets Note: The primary datasets referenced in the chapter code may also be downloaded here (https://openstax.org/r/drive).)",
+  "context_ids": [
+   "B:pds-ch02:p99:3",
+   "B:pds-ch02:p103:1"
+  ],
+  "context_chars": 778,
+  "elapsed_s": 5.96,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1809,
+     "out": 115,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 34,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000908
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "t02",
+  "split": "test",
+  "config": "ag_base",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks from the search do not contain information about the external Python library mainly used for scraping and parsing HTML and XML code.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "Python library for scraping and parsing HTML and XML",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p78:1",
+      "rank": 1,
+      "score": 0.551748,
+      "source_id": "pds-ch02",
+      "page": 78
+     },
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 2,
+      "score": 0.494817,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch02:p80:0",
+      "rank": 3,
+      "score": 0.48425,
+      "source_id": "pds-ch02",
+      "page": 80
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p78:1",
+     "B:pds-ch02:p77:0",
+     "B:pds-ch02:p80:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "library for scraping HTML XML Python",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p78:1",
+      "rank": 1,
+      "score": 0.555578,
+      "source_id": "pds-ch02",
+      "page": 78
+     },
+     {
+      "id": "B:pds-ch02:p80:0",
+      "rank": 2,
+      "score": 0.509429,
+      "source_id": "pds-ch02",
+      "page": 80
+     },
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 3,
+      "score": 0.499681,
+      "source_id": "pds-ch02",
+      "page": 77
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p78:1",
+     "B:pds-ch02:p80:0",
+     "B:pds-ch02:p77:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "web scraping library Python",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p78:1",
+      "rank": 1,
+      "score": 0.569884,
+      "source_id": "pds-ch02",
+      "page": 78
+     },
+     {
+      "id": "B:pds-ch02:p76:2",
+      "rank": 2,
+      "score": 0.534307,
+      "source_id": "pds-ch02",
+      "page": 76
+     },
+     {
+      "id": "B:pds-ch02:p80:0",
+      "rank": 3,
+      "score": 0.53157,
+      "source_id": "pds-ch02",
+      "page": 80
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p78:1",
+     "B:pds-ch02:p76:2",
+     "B:pds-ch02:p80:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks from the search do not contain information about the external Python library mainly used for scraping and parsing HTML and XML code."
+   }
+  ],
+  "n_searches": 3,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 4.77,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1357,
+     "out": 98,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 19,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.0007
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "t03",
+  "split": "test",
+  "config": "ag_base",
+  "question": "Which normal forms are most commonly used in database design?",
+  "answerable": true,
+  "filter": {
+   "chapter": 2
+  },
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "Insufficient evidence in the retrieved chunks to determine which normal forms are most commonly used in database design.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "most commonly used normal forms in database design",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p90:2",
+      "rank": 1,
+      "score": 0.626431,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p90:0",
+      "rank": 2,
+      "score": 0.489766,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p91:1",
+      "rank": 3,
+      "score": 0.440973,
+      "source_id": "pds-ch02",
+      "page": 91
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p90:2",
+     "B:pds-ch02:p90:0",
+     "B:pds-ch02:p91:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "normal forms commonly used in database design",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p90:2",
+      "rank": 1,
+      "score": 0.603958,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p90:0",
+      "rank": 2,
+      "score": 0.480238,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p91:1",
+      "rank": 3,
+      "score": 0.406446,
+      "source_id": "pds-ch02",
+      "page": 91
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p90:2",
+     "B:pds-ch02:p90:0",
+     "B:pds-ch02:p91:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "first normal form second normal form third normal form",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p90:2",
+      "rank": 1,
+      "score": 0.63111,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p90:0",
+      "rank": 2,
+      "score": 0.436561,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p91:1",
+      "rank": 3,
+      "score": 0.40844,
+      "source_id": "pds-ch02",
+      "page": 91
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p90:2",
+     "B:pds-ch02:p90:0",
+     "B:pds-ch02:p91:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "Insufficient evidence in the retrieved chunks to determine which normal forms are most commonly used in database design."
+   }
+  ],
+  "n_searches": 3,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 5.02,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1341,
+     "out": 97,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 24,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.000692
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "t04",
+  "split": "test",
+  "config": "ag_base",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not contain information about the length of copyright protection for original creative works in the United States.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "copyright duration in the United States",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 1,
+      "score": 0.304403,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 2,
+      "score": 0.294214,
+      "source_id": "pds-ch08",
+      "page": 389
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 3,
+      "score": 0.282403,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p388:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p389:1",
+     "B:pds-ch08:p388:3"
+    ],
+    "context_chars": 456
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "copyright protection duration original creative works United States",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p394:1",
+      "rank": 1,
+      "score": 0.307474,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p394:0",
+      "rank": 2,
+      "score": 0.296248,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 3,
+      "score": 0.272551,
+      "source_id": "pds-ch08",
+      "page": 389
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p394:1",
+     "B:pds-ch08:p394:0",
+     "B:pds-ch08:p389:1"
+    ],
+    "context_chars": 456
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not contain information about the length of copyright protection for original creative works in the United States."
+   }
+  ],
+  "n_searches": 2,
+  "context": "[B:pds-ch08:p388:4 | pds-ch08 | page 388]\nData Security Regulations are based on data protection laws, such as the General Data Protection Regulation in the European Union (https://openstax.org/r/gdpr) (GDPR) and the 2018 California Consumer Privacy Act (https://openstax.org/r/privacy) (CCPA) in the United States, with its amendment, CPRA (2023). These regulations demand that organizations collect, process, and accumulate confidential data securely and",
+  "context_ids": [
+   "B:pds-ch08:p388:4"
+  ],
+  "context_chars": 456,
+  "elapsed_s": 3.3,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1159,
+     "out": 77,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 14,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000587
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "t05",
+  "split": "test",
+  "config": "ag_base",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "answerable": true,
+  "filter": {
+   "chapter": 8
+  },
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about a platform for sharing data with the broader public in a research context when there are no privacy implications.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "platform for sharing data with broader public no privacy implications",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p397:0",
+      "rank": 1,
+      "score": 0.529985,
+      "source_id": "pds-ch08",
+      "page": 397
+     },
+     {
+      "id": "B:pds-ch08:p396:3",
+      "rank": 2,
+      "score": 0.51777,
+      "source_id": "pds-ch08",
+      "page": 396
+     },
+     {
+      "id": "B:pds-ch08:p397:1",
+      "rank": 3,
+      "score": 0.504595,
+      "source_id": "pds-ch08",
+      "page": 397
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p397:0",
+     "B:pds-ch08:p396:3",
+     "B:pds-ch08:p397:1"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "data repository for public sharing no privacy",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p397:0",
+      "rank": 1,
+      "score": 0.526214,
+      "source_id": "pds-ch08",
+      "page": 397
+     },
+     {
+      "id": "B:pds-ch08:p394:1",
+      "rank": 2,
+      "score": 0.502185,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p396:3",
+      "rank": 3,
+      "score": 0.491398,
+      "source_id": "pds-ch08",
+      "page": 396
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p397:0",
+     "B:pds-ch08:p394:1",
+     "B:pds-ch08:p396:3"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about a platform for sharing data with the broader public in a research context when there are no privacy implications."
+   }
+  ],
+  "n_searches": 2,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 3.39,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 978,
+     "out": 85,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 17,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000528
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "t06",
+  "split": "test",
+  "config": "ag_base",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "No relevant information found in the retrieved chunks about the hours of sunlight per day for each of the two groups in the plant growth experiment.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "plant growth experiment sunlight hours per day groups",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p71:1",
+      "rank": 1,
+      "score": 0.737098,
+      "source_id": "pds-ch02",
+      "page": 71
+     },
+     {
+      "id": "B:pds-ch02:p71:0",
+      "rank": 2,
+      "score": 0.512228,
+      "source_id": "pds-ch02",
+      "page": 71
+     },
+     {
+      "id": "B:pds-ch02:p70:0",
+      "rank": 3,
+      "score": 0.293806,
+      "source_id": "pds-ch02",
+      "page": 70
+     }
+    ],
+    "added": [],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p71:1",
+     "B:pds-ch02:p71:0",
+     "B:pds-ch02:p70:0"
+    ],
+    "context_chars": 0
+   },
+   {
+    "event": "abstain",
+    "reason": "No relevant information found in the retrieved chunks about the hours of sunlight per day for each of the two groups in the plant growth experiment."
+   }
+  ],
+  "n_searches": 1,
+  "context": "",
+  "context_ids": [],
+  "context_chars": 0,
+  "elapsed_s": 2.25,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 609,
+     "out": 62,
+     "calls": 2
+    },
+    "text-embedding-3-small": {
+     "in": 8,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.000343
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "u03",
+  "split": "test",
+  "config": "ag_base",
+  "question": "What sample size is needed for a survey to reach a 95% confidence level with a 5% margin of error?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about the sample size needed for a 95% confidence level with a 5% margin of error.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sample size for 95% confidence level 5% margin of error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 1,
+      "score": 0.416921,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.383072,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 3,
+      "score": 0.362175,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p73:4"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p75:0"
+    ],
+    "context_chars": 709
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sample size calculation 95% confidence interval 5% margin of error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 1,
+      "score": 0.410967,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.371591,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 3,
+      "score": 0.366687,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p73:4"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p75:0"
+    ],
+    "context_chars": 709
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about the sample size needed for a 95% confidence level with a 5% margin of error."
+   }
+  ],
+  "n_searches": 2,
+  "context": "[B:pds-ch02:p73:4 | pds-ch02 | page 73]\nThe researcher first assigns a number to each student, going from 1 to 1,000. Then, the researcher randomly selects a number from 1 to 10-let's say they select 4. This number will be the starting point for selecting the sample of students. The researcher will then select every 10th student from the list, which means every student with a number ending in 4 (14, 24, 34, etc.) will be included in the sample. This way, the researcher will have a representative sample of 100 students from the high school, which is 10% of the population. The sample will consist of students from different grades, genders, and backgrounds, making it a diverse and representative sample.",
+  "context_ids": [
+   "B:pds-ch02:p73:4"
+  ],
+  "context_chars": 709,
+  "elapsed_s": 3.51,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1346,
+     "out": 96,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 28,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000693
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "u04",
+  "split": "test",
+  "config": "ag_base",
+  "question": "Which programming language is recommended for writing smart contracts on a blockchain?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunk does not contain information about the programming language recommended for writing smart contracts on a blockchain.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "programming language for writing smart contracts on blockchain",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p393:3",
+      "rank": 1,
+      "score": 0.285648,
+      "source_id": "pds-ch08",
+      "page": 393
+     },
+     {
+      "id": "B:pds-ch02:p80:1",
+      "rank": 2,
+      "score": 0.275242,
+      "source_id": "pds-ch02",
+      "page": 80
+     },
+     {
+      "id": "B:pds-ch02:p77:1",
+      "rank": 3,
+      "score": 0.268523,
+      "source_id": "pds-ch02",
+      "page": 77
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p77:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [
+     "B:pds-ch08:p393:3",
+     "B:pds-ch02:p80:1"
+    ],
+    "context_chars": 728
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "Solidity programming language for smart contracts",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p80:1",
+      "rank": 1,
+      "score": 0.260667,
+      "source_id": "pds-ch02",
+      "page": 80
+     },
+     {
+      "id": "B:pds-ch02:p77:1",
+      "rank": 2,
+      "score": 0.257072,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch08:p393:3",
+      "rank": 3,
+      "score": 0.23974,
+      "source_id": "pds-ch08",
+      "page": 393
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p77:1"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch02:p80:1",
+     "B:pds-ch08:p393:3"
+    ],
+    "context_chars": 728
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunk does not contain information about the programming language recommended for writing smart contracts on a blockchain."
+   }
+  ],
+  "n_searches": 2,
+  "context": "[B:pds-ch02:p77:1 | pds-ch02 | page 77]\n• Often used for simple scraping tasks Application Programming Interfaces (APIs) • Authorize developers to access and retrieve data instantly without the need for web scraping • Often a more efficient and reliable method for data collection (XML) API Subset • XML (Extensible Markup Language) is another markup language used exchanging data • This method works similarly to using the HTML API subset by making HTTP requests to the website's API endpoints and then parsing the data received in XML format (JSON) API Subset • JSON (JavaScript Object Notation) is a lightweight data interchange format that is commonly used for sending and receiving data between servers and web applications",
+  "context_ids": [
+   "B:pds-ch02:p77:1"
+  ],
+  "context_chars": 728,
+  "elapsed_s": 3.72,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1251,
+     "out": 77,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 15,
+     "out": 0,
+     "calls": 2
+    }
+   },
+   "cost_usd": 0.000624
+  },
+  "context_has_evidence": false
+ }
+]

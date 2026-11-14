@@ -1,0 +1,101 @@
+[
+  {
+    "method": "dense",
+    "N": 6,
+    "hit1": "4/6",
+    "hit1_rate": 0.667,
+    "hit3": "6/6",
+    "hit3_rate": 1.0,
+    "misses_top3": [],
+    "not_top1": [
+      "t05",
+      "t06"
+    ],
+    "filter_questions_respected": "2/2",
+    "median_ms": 569.6,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 112,
+          "out": 0,
+          "calls": 6
+        }
+      },
+      "cost_usd": 2e-06
+    }
+  },
+  {
+    "method": "bm25",
+    "N": 6,
+    "hit1": "6/6",
+    "hit1_rate": 1.0,
+    "hit3": "6/6",
+    "hit3_rate": 1.0,
+    "misses_top3": [],
+    "not_top1": [],
+    "filter_questions_respected": "2/2",
+    "median_ms": 2.1,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 0,
+          "out": 0,
+          "calls": 0
+        }
+      },
+      "cost_usd": 0.0
+    }
+  },
+  {
+    "method": "hybrid",
+    "N": 6,
+    "hit1": "6/6",
+    "hit1_rate": 1.0,
+    "hit3": "6/6",
+    "hit3_rate": 1.0,
+    "misses_top3": [],
+    "not_top1": [],
+    "filter_questions_respected": "2/2",
+    "median_ms": 6.9,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 0,
+          "out": 0,
+          "calls": 0
+        }
+      },
+      "cost_usd": 0.0
+    }
+  },
+  {
+    "method": "hybrid_rerank",
+    "N": 6,
+    "hit1": "4/6",
+    "hit1_rate": 0.667,
+    "hit3": "6/6",
+    "hit3_rate": 1.0,
+    "misses_top3": [],
+    "not_top1": [
+      "t04",
+      "t06"
+    ],
+    "filter_questions_respected": "2/2",
+    "median_ms": 1495.1,
+    "usage": {
+      "by_model": {
+        "text-embedding-3-small": {
+          "in": 0,
+          "out": 0,
+          "calls": 0
+        },
+        "gpt-4.1-mini": {
+          "in": 8451,
+          "out": 673,
+          "calls": 6
+        }
+      },
+      "cost_usd": 0.004457
+    }
+  }
+]

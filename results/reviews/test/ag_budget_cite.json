@@ -1,0 +1,410 @@
+[
+ {
+  "query_id": "t01",
+  "answerable": true,
+  "status": "answered",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "expected_answer": "The chunk number and the total number of chunks.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 100,
+    "evidence": "the chunk number and the total number of chunks"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "data chunking metadata reassemble original dataset"
+  ],
+  "answer": "During data chunking, metadata such as the chunk number and the total number of chunks is added to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately [B:pds-ch02:p100:1].",
+  "agent_reason": null,
+  "citations": [
+   {
+    "id": "B:pds-ch02:p100:1",
+    "page": 100,
+    "text": "These chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following: 1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4."
+   }
+  ],
+  "context": [
+   {
+    "id": "B:pds-ch02:p100:1",
+    "page": 100,
+    "auto_evidence_match": true
+   },
+   {
+    "id": "B:pds-ch02:p100:0",
+    "page": 100,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p100:2",
+    "page": 100,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "abstention_correct": null,
+  "context_grade": 2,
+  "reason": "Nêu đúng 'chunk number và total number of chunks'; chunk p100:1 chứa nguyên văn câu này.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t02",
+  "answerable": true,
+  "status": "answered",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "expected_answer": "Beautiful Soup.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 80,
+    "evidence": "Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "Python library for scraping and parsing HTML and XML"
+  ],
+  "answer": "The external Python library mainly used for scraping and parsing HTML and XML code is Beautiful Soup [B:pds-ch02:p80:0].",
+  "agent_reason": null,
+  "citations": [
+   {
+    "id": "B:pds-ch02:p80:0",
+    "page": 80,
+    "text": "In Python, there are several libraries and methods that can be used for parsing and extracting data from text. These include the following: 1. Regular expressions (regex or RE) (https://openstax.org/r/docpython). This is a built-in library in Python that allows for pattern matching and extraction of data from strings. It uses a specific syntax to define patterns and rules for data extraction. 2. Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code. It can be utilized to extract specific data from web pages or documents. 3. Natural Language Toolkit (NLTK) (https://openstax.org/r/nltk). This is a powerful library for natural language processing in Python. It provides various tools for tokenizing, parsing, and extracting data from text data."
+   }
+  ],
+  "context": [
+   {
+    "id": "B:pds-ch02:p78:1",
+    "page": 78,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p77:0",
+    "page": 77,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p80:0",
+    "page": 80,
+    "auto_evidence_match": true
+   }
+  ],
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "abstention_correct": null,
+  "context_grade": 2,
+  "reason": "Beautiful Soup đúng; chunk p80:0 ghi rõ 'external library ... scraping and parsing HTML and XML'.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t03",
+  "answerable": true,
+  "status": "answered",
+  "question": "Which normal forms are most commonly used in database design?",
+  "expected_answer": "1NF, 2NF, 3NF (First, Second and Third Normal Form) and BCNF (Boyce-Codd Normal Form).",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 90,
+    "evidence": "The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form)"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "most commonly used normal forms in database design"
+  ],
+  "answer": "The most commonly used normal forms in database design are 1NF (First Normal Form), 2NF (Second Normal Form), 3NF (Third Normal Form), and BCNF (Boyce-Codd Normal Form). These normal forms serve as guidelines to ensure a database is well-structured, organized, and free from redundancy and inconsistency. Normalization involves applying these rules to organize and clean the data effectively [B:pds-ch02:p90:2].",
+  "agent_reason": null,
+  "citations": [
+   {
+    "id": "B:pds-ch02:p90:2",
+    "page": 90,
+    "text": "This may include setting conventions for naming, data types, and formatting A normal form (NF) is a guideline or set of rules used in database design to ensure that a database is well-structured, organized, and free from certain types of data irregularities, such as redundancy and inconsistency. The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form). Normalization is the process of applying these rules to a database. The data must be organized and cleaned, which involves removing duplicates and erroneous data, filling in missing values, and logically arranging the data. To uphold data standardization, regular quality control measures should be implemented, including periodic data audits to ascertain the accuracy and consistency of the data. It is also important to document the standardization process, including the guidelines and procedures followed."
+   }
+  ],
+  "context": [
+   {
+    "id": "B:pds-ch02:p90:2",
+    "page": 90,
+    "auto_evidence_match": true
+   },
+   {
+    "id": "B:pds-ch02:p90:0",
+    "page": 90,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p91:1",
+    "page": 91,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "abstention_correct": null,
+  "context_grade": 2,
+  "reason": "Đủ 1NF, 2NF, 3NF, BCNF; câu thêm về normalization cũng có trong chunk p90:2.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t04",
+  "answerable": true,
+  "status": "abstain",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "expected_answer": "For the life of the creator plus 70 years.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 394,
+    "evidence": "copyright protects original creative works for the life of the creator plus 70 years"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "copyright duration United States",
+   "copyright duration original creative works United States",
+   "how long does copyright last original creative works United States"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved chunks do not contain information about the duration of copyright protection for original creative works in the United States.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch08:p388:4",
+    "page": 388,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch08:p388:3",
+    "page": 388,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch08:p389:1",
+    "page": 389,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch08:p394:1",
+    "page": 394,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Agent tự viết lại query ('copyright duration...') và lấy p394:1 thay vì p394:0 chứa đáp án; context không có evidence.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t05",
+  "answerable": true,
+  "status": "answered",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "expected_answer": "Kaggle, which is designed for open data sharing in a research context.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 397,
+    "evidence": "through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "platform for sharing data with the broader public without privacy implications"
+  ],
+  "answer": "The platform mentioned for sharing data with the broader public in a research context when there are no privacy implications is Kaggle [B:pds-ch08:p397:1].",
+  "agent_reason": null,
+  "citations": [
+   {
+    "id": "B:pds-ch08:p397:1",
+    "page": 397,
+    "text": "As introduced in Python Basics for Data Science and discussed through this book, Google Colab (https://openstax.org/r/colab), which is connected to Google Drive, allows users to collaborate remotely on coding tasks. Files may be hosted on Google Drive or Microsoft OneDrive, allowing lead data scientists to set different levels of permissions relevant to each team member or outside entity. Those directly involved in the project, including team members, customers, researchers, and the project's eventual audience, should be granted access to the data in accordance with the intended purpose. If appropriate, and with no privacy-related implications, the data may be disseminated to the broader public through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context."
+   }
+  ],
+  "context": [
+   {
+    "id": "B:pds-ch08:p397:0",
+    "page": 397,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch08:p396:3",
+    "page": 396,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch08:p397:1",
+    "page": 397,
+    "auto_evidence_match": true
+   }
+  ],
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "abstention_correct": null,
+  "context_grade": 2,
+  "reason": "Kaggle đúng; chunk p397:1 chứa 'platforms like Kaggle ... open data sharing in a research context' kèm điều kiện 'no privacy-related implications'.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t06",
+  "answerable": true,
+  "status": "answered",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "expected_answer": "One group received eight hours of sunlight per day and the other only four hours.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 71,
+    "evidence": "one group received eight hours of sunlight per day, while the other only received four hours"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "plant growth experiment sunlight hours per day"
+  ],
+  "answer": "In the plant growth experiment on sunlight, one group of plants received eight hours of sunlight per day, while the other group received only four hours of sunlight per day. This setup was used to investigate whether increased exposure to sunlight enhances plant growth [B:pds-ch02:p71:1][B:pds-ch02:p71:0].",
+  "agent_reason": null,
+  "citations": [
+   {
+    "id": "B:pds-ch02:p71:1",
+    "page": 71,
+    "text": "The main research objective was to determine the growth rate of plants exposed to eight hours of sunlight compared to those with only four hours. A total of 20 identical potted plants were used, with one group allocated to the \"sunlight\" condition and the other to the \"limited sunlight\" condition. Both groups were maintained under identical environmental conditions, including temperature, humidity, and soil moisture. Adequate watering was provided to ensure equal hydration of all plants. The measurements of plant height were obtained and accurately recorded every week. This approach allowed for the collection of precise and reliable data on the impact of sunlight on plant growth, which can serve as a valuable resource for further research and understanding of this relationship."
+   },
+   {
+    "id": "B:pds-ch02:p71:0",
+    "page": 71,
+    "text": "Collecting Data Through Experiments Collecting data through scientific experiments requires a well-designed experimental scheme, describing the research objectives, variables, and procedures. The establishment of a control specimen is crucial, and data is obtained through systematic properties, measurements, or characteristics. It is crucial to follow ethical guidelines for the proper documentation and ethical utilization of the collected data (see Ethics in Data Collection). Consider this example: Scientist Sally aimed to investigate the impact of sunlight on plant growth. The research inquiry was to determine whether increased exposure to sunlight enhances the growth of plants. Sally experimented with two groups of plants wherein one group received eight hours of sunlight per day, while the other only received four hours. The height of each plant was measured and documented every week for four consecutive weeks."
+   }
+  ],
+  "context": [
+   {
+    "id": "B:pds-ch02:p71:1",
+    "page": 71,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p71:0",
+    "page": 71,
+    "auto_evidence_match": true
+   },
+   {
+    "id": "B:pds-ch02:p70:0",
+    "page": 70,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "abstention_correct": null,
+  "context_grade": 2,
+  "reason": "8 giờ và 4 giờ đúng; p71:0 có câu gold, p71:1 nhắc lại 'eight hours ... compared to those with only four hours' nên cả 2 citation đều hỗ trợ.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "u03",
+  "answerable": false,
+  "status": "abstain",
+  "question": "What sample size is needed for a survey to reach a 95% confidence level with a 5% margin of error?",
+  "expected_answer": null,
+  "gold": null,
+  "absence_reason": "Mục 2.2 nói về sampling và sample size nói chung, không có công thức/số mẫu cho mức tin cậy 95%.",
+  "queries": [
+   "sample size for 95% confidence level and 5% margin of error",
+   "sample size calculation 95% confidence 5% margin of error",
+   "sample size formula 95% confidence interval 5% margin of error"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved document chunks do not contain explicit information or formula about the sample size needed for a 95% confidence level with a 5% margin of error.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch02:p75:1",
+    "page": 75,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p73:4",
+    "page": 73,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p76:0",
+    "page": 76,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p75:0",
+    "page": 75,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": null,
+  "citation_support": [],
+  "abstention_correct": true,
+  "context_grade": null,
+  "reason": "Từ chối, không đưa ra con số nào; corpus không có công thức/số mẫu cho 95% và 5%.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "u04",
+  "answerable": false,
+  "status": "abstain",
+  "question": "Which programming language is recommended for writing smart contracts on a blockchain?",
+  "expected_answer": null,
+  "gold": null,
+  "absence_reason": "Trang 393-394 chỉ nhắc blockchain khi nói về mã hóa của tiền mã hóa, không nói về smart contract hay ngôn ngữ lập trình.",
+  "queries": [
+   "programming language for writing smart contracts on a blockchain"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved documents do not contain information about the programming language recommended for writing smart contracts on a blockchain.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch08:p393:3",
+    "page": 393,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p80:1",
+    "page": 80,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p77:1",
+    "page": 77,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": null,
+  "citation_support": [],
+  "abstention_correct": true,
+  "context_grade": null,
+  "reason": "Từ chối, không bịa tên ngôn ngữ; corpus không nhắc smart contract.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ }
+]

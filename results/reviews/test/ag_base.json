@@ -1,0 +1,261 @@
+[
+ {
+  "query_id": "t01",
+  "answerable": true,
+  "status": "abstain",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "expected_answer": "The chunk number and the total number of chunks.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 100,
+    "evidence": "the chunk number and the total number of chunks"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "metadata added to each chunk during data chunking for reassembly",
+   "metadata added to data chunks for reassembling original dataset",
+   "metadata to reassemble chunks into original data set chunking"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "No relevant information about metadata added to each chunk for reassembling the original dataset during data chunking was found in the retrieved document chunks.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch02:p99:3",
+    "page": 99,
+    "auto_evidence_match": false
+   },
+   {
+    "id": "B:pds-ch02:p103:1",
+    "page": 103,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context chỉ có p99:3, p103:1, không chứa evidence.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t02",
+  "answerable": true,
+  "status": "abstain",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "expected_answer": "Beautiful Soup.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 80,
+    "evidence": "Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "Python library for scraping and parsing HTML and XML",
+   "library for scraping HTML XML Python",
+   "web scraping library Python"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved chunks from the search do not contain information about the external Python library mainly used for scraping and parsing HTML and XML code.",
+  "citations": [],
+  "context": [],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t03",
+  "answerable": true,
+  "status": "abstain",
+  "question": "Which normal forms are most commonly used in database design?",
+  "expected_answer": "1NF, 2NF, 3NF (First, Second and Third Normal Form) and BCNF (Boyce-Codd Normal Form).",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 90,
+    "evidence": "The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form)"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "most commonly used normal forms in database design",
+   "normal forms commonly used in database design",
+   "first normal form second normal form third normal form"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "Insufficient evidence in the retrieved chunks to determine which normal forms are most commonly used in database design.",
+  "citations": [],
+  "context": [],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t04",
+  "answerable": true,
+  "status": "abstain",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "expected_answer": "For the life of the creator plus 70 years.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 394,
+    "evidence": "copyright protects original creative works for the life of the creator plus 70 years"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "copyright duration in the United States",
+   "copyright protection duration original creative works United States"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved document chunks do not contain information about the length of copyright protection for original creative works in the United States.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch08:p388:4",
+    "page": 388,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context chỉ có p388:4, không chứa evidence.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t05",
+  "answerable": true,
+  "status": "abstain",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "expected_answer": "Kaggle, which is designed for open data sharing in a research context.",
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 397,
+    "evidence": "through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "platform for sharing data with broader public no privacy implications",
+   "data repository for public sharing no privacy"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved chunks do not contain information about a platform for sharing data with the broader public in a research context when there are no privacy implications.",
+  "citations": [],
+  "context": [],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "t06",
+  "answerable": true,
+  "status": "abstain",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "expected_answer": "One group received eight hours of sunlight per day and the other only four hours.",
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 71,
+    "evidence": "one group received eight hours of sunlight per day, while the other only received four hours"
+   }
+  ],
+  "absence_reason": null,
+  "queries": [
+   "plant growth experiment sunlight hours per day groups"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "No relevant information found in the retrieved chunks about the hours of sunlight per day for each of the two groups in the plant growth experiment.",
+  "citations": [],
+  "context": [],
+  "answer_grade": 0,
+  "citation_support": [],
+  "abstention_correct": null,
+  "context_grade": 0,
+  "reason": "Từ chối câu có đáp án -> 0. Budget 800 ký tự nhỏ hơn độ dài chunk (~900) nên chunk đúng bị loại khỏi context; context rỗng.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "u03",
+  "answerable": false,
+  "status": "abstain",
+  "question": "What sample size is needed for a survey to reach a 95% confidence level with a 5% margin of error?",
+  "expected_answer": null,
+  "gold": null,
+  "absence_reason": "Mục 2.2 nói về sampling và sample size nói chung, không có công thức/số mẫu cho mức tin cậy 95%.",
+  "queries": [
+   "sample size for 95% confidence level 5% margin of error",
+   "sample size calculation 95% confidence interval 5% margin of error"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved chunks do not contain information about the sample size needed for a 95% confidence level with a 5% margin of error.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch02:p73:4",
+    "page": 73,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": null,
+  "citation_support": [],
+  "abstention_correct": true,
+  "context_grade": null,
+  "reason": "Từ chối, không đưa khẳng định nào.",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ },
+ {
+  "query_id": "u04",
+  "answerable": false,
+  "status": "abstain",
+  "question": "Which programming language is recommended for writing smart contracts on a blockchain?",
+  "expected_answer": null,
+  "gold": null,
+  "absence_reason": "Trang 393-394 chỉ nhắc blockchain khi nói về mã hóa của tiền mã hóa, không nói về smart contract hay ngôn ngữ lập trình.",
+  "queries": [
+   "programming language for writing smart contracts on blockchain",
+   "Solidity programming language for smart contracts"
+  ],
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "agent_reason": "The retrieved document chunk does not contain information about the programming language recommended for writing smart contracts on a blockchain.",
+  "citations": [],
+  "context": [
+   {
+    "id": "B:pds-ch02:p77:1",
+    "page": 77,
+    "auto_evidence_match": false
+   }
+  ],
+  "answer_grade": null,
+  "citation_support": [],
+  "abstention_correct": true,
+  "context_grade": null,
+  "reason": "Từ chối, không đưa khẳng định nào (dù agent có thử query 'Solidity', không có trong corpus).",
+  "reviewer": "",
+  "label_source": "AI gợi ý; người chấm đọc và xác nhận/sửa"
+ }
+]

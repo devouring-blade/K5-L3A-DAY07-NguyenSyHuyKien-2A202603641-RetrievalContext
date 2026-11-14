@@ -1,0 +1,414 @@
+[
+ {
+  "query_id": "t01",
+  "split": "test",
+  "type": "truc_tiep",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "query_used": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "filter": null,
+  "method": "hybrid",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 100,
+    "evidence": "the chunk number and the total number of chunks"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p100:1",
+    "score": 0.032787,
+    "source_id": "pds-ch02",
+    "page": 100,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 1
+    },
+    "hit": true,
+    "text": "These chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following: 1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4."
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p100:0",
+    "score": 0.032258,
+    "source_id": "pds-ch02",
+    "page": 100,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 0
+    },
+    "hit": false,
+    "text": "Figure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units. Data chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes."
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p100:2",
+    "score": 0.031746,
+    "source_id": "pds-ch02",
+    "page": 100,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 2
+    },
+    "hit": false,
+    "text": "Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets. Database Management Systems Database management is a crucial aspect of data science projects as it involves organizing, storing, retrieving, and managing large volumes of data. In a data science project, a database management system (DBMS) is used to ensure the efficient storage and retrieval of data. Database management systems are software tools used for managing data in a structured format. Their functions are summarized in Table 2.9."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 4.9
+ },
+ {
+  "query_id": "t02",
+  "split": "test",
+  "type": "dien_dat_lai",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "query_used": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "filter": null,
+  "method": "hybrid",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 80,
+    "evidence": "Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p80:0",
+    "score": 0.032787,
+    "source_id": "pds-ch02",
+    "page": 80,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.3",
+     "section_title": "Web Scraping and Social Media Data Collection",
+     "chunk_index": 0
+    },
+    "hit": true,
+    "text": "In Python, there are several libraries and methods that can be used for parsing and extracting data from text. These include the following: 1. Regular expressions (regex or RE) (https://openstax.org/r/docpython). This is a built-in library in Python that allows for pattern matching and extraction of data from strings. It uses a specific syntax to define patterns and rules for data extraction. 2. Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code. It can be utilized to extract specific data from web pages or documents. 3. Natural Language Toolkit (NLTK) (https://openstax.org/r/nltk). This is a powerful library for natural language processing in Python. It provides various tools for tokenizing, parsing, and extracting data from text data."
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p77:1",
+    "score": 0.031754,
+    "source_id": "pds-ch02",
+    "page": 77,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.3",
+     "section_title": "Web Scraping and Social Media Data Collection",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "• Often used for simple scraping tasks Application Programming Interfaces (APIs) • Authorize developers to access and retrieve data instantly without the need for web scraping • Often a more efficient and reliable method for data collection (XML) API Subset • XML (Extensible Markup Language) is another markup language used exchanging data • This method works similarly to using the HTML API subset by making HTTP requests to the website's API endpoints and then parsing the data received in XML format (JSON) API Subset • JSON (JavaScript Object Notation) is a lightweight data interchange format that is commonly used for sending and receiving data between servers and web applications"
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p78:1",
+    "score": 0.031754,
+    "source_id": "pds-ch02",
+    "page": 78,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.3",
+     "section_title": "Web Scraping and Social Media Data Collection",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "Python is one of the popular programming languages used for web scraping due to its various libraries and frameworks that make it easy to pull and process data from websites. To scrape data such as a table from a website using Python, we follow these steps: 1. Import the pandaspandas library. The first step is to import the pandas library (https://openstax.org/r/pandas), which is a popular Python library for data analysis and manipulation. import pandas as pd 2. Use the read_htmlread_html() function. This function is used to read HTML tables from a web page and convert them into a list of DataFrame objects. Recall from What Are Data and Data Science? that a DataFrame is a data type that pandas uses to store multi-column tabular data. df = pd.read_html(\"https://...... 3. Access the desired data. If the data on the web page is divided into different tables, we need to specify which table we want to extract."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 14.0
+ },
+ {
+  "query_id": "t03",
+  "split": "test",
+  "type": "metadata_filter",
+  "question": "Which normal forms are most commonly used in database design?",
+  "query_used": "Which normal forms are most commonly used in database design?",
+  "filter": {
+   "chapter": 2
+  },
+  "method": "hybrid",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 90,
+    "evidence": "The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form)"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p90:2",
+    "score": 0.032787,
+    "source_id": "pds-ch02",
+    "page": 90,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.4",
+     "section_title": "Data Cleaning and Preprocessing",
+     "chunk_index": 2
+    },
+    "hit": true,
+    "text": "This may include setting conventions for naming, data types, and formatting A normal form (NF) is a guideline or set of rules used in database design to ensure that a database is well-structured, organized, and free from certain types of data irregularities, such as redundancy and inconsistency. The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form). Normalization is the process of applying these rules to a database. The data must be organized and cleaned, which involves removing duplicates and erroneous data, filling in missing values, and logically arranging the data. To uphold data standardization, regular quality control measures should be implemented, including periodic data audits to ascertain the accuracy and consistency of the data. It is also important to document the standardization process, including the guidelines and procedures followed."
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p90:0",
+    "score": 0.032002,
+    "source_id": "pds-ch02",
+    "page": 90,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.4",
+     "section_title": "Data Cleaning and Preprocessing",
+     "chunk_index": 0
+    },
+    "hit": false,
+    "text": "duplicates as well as converting data from various sources into a unified format, often termed a normal form (defined in the next section). Data transformation involves modifying the data to make it more suitable for the analysis that is planned. Data validation ensures that the data is accurate and consistent and meets certain criteria or standards. Table 2.4 summarizes these processes, which are explored in more depth later in the chapter. Purpose Techniques Example Normalization To eliminate redundant data and ensure data dependencies make sense Involve breaking down a larger database into smaller, more manageable tables and establishing relationships between them. A customer database table with redundant data can be normalized by splitting it into two tables for customer information and orders and establishing the relationship between them. Transformation To make the data more consistent, coherent, and meaningful for analysis."
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p99:1",
+    "score": 0.031025,
+    "source_id": "pds-ch02",
+    "page": 99,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "Relational databases. organize data in tables and uses structured query language (SQL) for data retrieval and management. They are commonly used for traditional, structured data such as financial data. 2. NoSQL databases. These databases are designed to handle unstructured data, such as social media content or data from sensors, and use non-relational data models. 3. Data warehouses. A data warehouse is a centralized repository of data that combines data from multiple sources and allows for complex queries and analysis. It is commonly used for business intelligence and reporting intentions. 4. Cloud storage. Cloud storage involves storing data in remote servers accessed over the internet. It offers scalability, cost-effectiveness, and remote accessibility. 5. Object storage. With object storage, data are stored as objects that consist of both data and metadata. This method is often used for storing large volumes of unstructured data, such as images and videos."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": true,
+  "elapsed_ms": 5.9
+ },
+ {
+  "query_id": "t04",
+  "split": "test",
+  "type": "truc_tiep",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "query_used": "In the United States, how long does copyright protect original creative works?",
+  "filter": null,
+  "method": "hybrid",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 394,
+    "evidence": "copyright protects original creative works for the life of the creator plus 70 years"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch08:p394:0",
+    "score": 0.032787,
+    "source_id": "pds-ch08",
+    "page": 394,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 0
+    },
+    "hit": true,
+    "text": "underpins the trust and value associated with cryptocurrencies and provides a way to \"store value\" in the otherwise intangible medium of pure data. For more about bitcoin and other cryptocurrencies, check out Riverlearn's \"How Bitcoin Uses Cryptography\" (https://openstax.org/r/river) and Kraken's \"Beginner's Guide to Cryptography\" (https://openstax.org/r/kraken). Intellectual Property Another form of data protection that typically does not require encryption is that of legal protection of intellectual property. Intellectual property, broadly defined as original artistic works, trademarks and trade secrets, patents, and other creative output, is often protected from copying, modification, and unauthorized use by specific laws. For example, in the United States, copyright protects original creative works for the life of the creator plus 70 years."
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch08:p389:1",
+    "score": 0.032002,
+    "source_id": "pds-ch08",
+    "page": 389,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "Many countries have also enacted laws and regulations involving data retention, or how long personal data may be stored (e.g., the Sarbanes-Oxley Act [SOX] in the United States or the Data Protection Act [DPA] in the United Kingdom); data breach notification, or what to do when data is stolen by a malicious third party (Gramm-Leach-Bliley Act [GLBA] in the United States or the Personal Information Protection and Electronic Documents Act [PIPEDA] in Canada); and many other issues of data privacy, security, and integrity. Some regulations apply only to certain types of data or data related to certain industries. For example, in the United States, the Health Insurance Portability and Accountability Act (HIPAA) requires the safeguarding of sensitive information related to patient health."
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch08:p388:4",
+    "score": 0.030769,
+    "source_id": "pds-ch08",
+    "page": 388,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 4
+    },
+    "hit": false,
+    "text": "Data Security Regulations are based on data protection laws, such as the General Data Protection Regulation in the European Union (https://openstax.org/r/gdpr) (GDPR) and the 2018 California Consumer Privacy Act (https://openstax.org/r/privacy) (CCPA) in the United States, with its amendment, CPRA (2023). These regulations demand that organizations collect, process, and accumulate confidential data securely and"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 8.2
+ },
+ {
+  "query_id": "t05",
+  "split": "test",
+  "type": "metadata_filter",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "query_used": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "filter": {
+   "chapter": 8
+  },
+  "method": "hybrid",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 397,
+    "evidence": "through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch08:p397:1",
+    "score": 0.032522,
+    "source_id": "pds-ch08",
+    "page": 397,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 1
+    },
+    "hit": true,
+    "text": "As introduced in Python Basics for Data Science and discussed through this book, Google Colab (https://openstax.org/r/colab), which is connected to Google Drive, allows users to collaborate remotely on coding tasks. Files may be hosted on Google Drive or Microsoft OneDrive, allowing lead data scientists to set different levels of permissions relevant to each team member or outside entity. Those directly involved in the project, including team members, customers, researchers, and the project's eventual audience, should be granted access to the data in accordance with the intended purpose. If appropriate, and with no privacy-related implications, the data may be disseminated to the broader public through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context."
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch08:p396:3",
+    "score": 0.032002,
+    "source_id": "pds-ch08",
+    "page": 396,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 3
+    },
+    "hit": false,
+    "text": "The team should also provide support for affected individuals, such as offering credit monitoring services or assistance with any financial or identity theft issues that may arise from the breach. Data Sharing Data sharing is the process of allowing access to or transferring data from one entity (individual, organization, or system) to another. It is done for a variety of reasons, including collaboration, research, providing services, improved forecasting, and jumpstarting innovation. Data sharing can be carried out in a variety of ways and may involve different types of data. Organizations and individuals may use public datasets, open data standards, or data pools to share data. But most importantly, they must establish data governance protocols-a set of rules, policies, and procedures that enable precise control over data access while ensuring that it is safeguarded."
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch08:p411:1",
+    "score": 0.030579,
+    "source_id": "pds-ch08",
+    "page": 411,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.3",
+     "section_title": "Ethics in Visualization and Reporting",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "By disclosing the sources of data, it promotes trust and transparency between data producers and consumers. This is especially important when data is used to inform decision-making or to shape public perceptions. 3. Accountability. Featuring full attribution in the available results allows the rest of the research community to validate and further research the results provided. This safeguard enforces data integrity and holds developers accountable for the claims and conclusions put forth. 4. Privacy considerations. In some circumstances, the data employed in visualizations may retain sensitive or personal information. Attributing the source of the data can help protect individuals' privacy and avoid potential harm or misuse of their information. It is important to note that if the data utilized in graphs or reports are not publicly available, permission must be obtained from the source before using it in new research or publication."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": true,
+  "elapsed_ms": 4.1
+ },
+ {
+  "query_id": "t06",
+  "split": "test",
+  "type": "dieu_kien",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "query_used": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "filter": null,
+  "method": "hybrid",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 71,
+    "evidence": "one group received eight hours of sunlight per day, while the other only received four hours"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p71:0",
+    "score": 0.032522,
+    "source_id": "pds-ch02",
+    "page": 71,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.1",
+     "section_title": "Overview of Data Collection Methods",
+     "chunk_index": 0
+    },
+    "hit": true,
+    "text": "Collecting Data Through Experiments Collecting data through scientific experiments requires a well-designed experimental scheme, describing the research objectives, variables, and procedures. The establishment of a control specimen is crucial, and data is obtained through systematic properties, measurements, or characteristics. It is crucial to follow ethical guidelines for the proper documentation and ethical utilization of the collected data (see Ethics in Data Collection). Consider this example: Scientist Sally aimed to investigate the impact of sunlight on plant growth. The research inquiry was to determine whether increased exposure to sunlight enhances the growth of plants. Sally experimented with two groups of plants wherein one group received eight hours of sunlight per day, while the other only received four hours. The height of each plant was measured and documented every week for four consecutive weeks."
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p71:1",
+    "score": 0.032522,
+    "source_id": "pds-ch02",
+    "page": 71,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.1",
+     "section_title": "Overview of Data Collection Methods",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "The main research objective was to determine the growth rate of plants exposed to eight hours of sunlight compared to those with only four hours. A total of 20 identical potted plants were used, with one group allocated to the \"sunlight\" condition and the other to the \"limited sunlight\" condition. Both groups were maintained under identical environmental conditions, including temperature, humidity, and soil moisture. Adequate watering was provided to ensure equal hydration of all plants. The measurements of plant height were obtained and accurately recorded every week. This approach allowed for the collection of precise and reliable data on the impact of sunlight on plant growth, which can serve as a valuable resource for further research and understanding of this relationship."
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p70:0",
+    "score": 0.031746,
+    "source_id": "pds-ch02",
+    "page": 70,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.1",
+     "section_title": "Overview of Data Collection Methods",
+     "chunk_index": 0
+    },
+    "hit": false,
+    "text": "Solution Ashley wants to ensure that there is enough food for her local birds while she is away for three days. To do this, she will carefully observe the feeder daily for two consecutive weeks. She will record the total amount of feed eaten each day and make sure to refill the feeder each morning before the observation. This will provide a consistent amount of food available for the birds. After two weeks, Ashley will use the total amount of food consumed and divide it by the number of days observed to estimate the required daily food. Then, she will multiply the daily food by three to determine the total amount of bird food needed for her three-day absence. By directly observing and recording the bird food, as well as collecting data for two weeks, Ashley will gather accurate and reliable information."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 7.9
+ }
+]

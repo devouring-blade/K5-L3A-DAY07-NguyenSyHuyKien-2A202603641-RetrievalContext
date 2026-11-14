@@ -1,0 +1,432 @@
+[
+ {
+  "query_id": "t01",
+  "split": "test",
+  "type": "truc_tiep",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "query_used": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "filter": null,
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 100,
+    "evidence": "the chunk number and the total number of chunks"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p100:1",
+    "score": 1.0,
+    "source_id": "pds-ch02",
+    "page": 100,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 1
+    },
+    "hit": true,
+    "text": "These chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following: 1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4.",
+    "base_rank": 1
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p100:0",
+    "score": 0.5,
+    "source_id": "pds-ch02",
+    "page": 100,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 0
+    },
+    "hit": false,
+    "text": "Figure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units. Data chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes.",
+    "base_rank": 2
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p100:2",
+    "score": 0.333333,
+    "source_id": "pds-ch02",
+    "page": 100,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.5",
+     "section_title": "Handling Large Datasets",
+     "chunk_index": 2
+    },
+    "hit": false,
+    "text": "Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets. Database Management Systems Database management is a crucial aspect of data science projects as it involves organizing, storing, retrieving, and managing large volumes of data. In a data science project, a database management system (DBMS) is used to ensure the efficient storage and retrieval of data. Database management systems are software tools used for managing data in a structured format. Their functions are summarized in Table 2.9.",
+    "base_rank": 3
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 1729.4
+ },
+ {
+  "query_id": "t02",
+  "split": "test",
+  "type": "dien_dat_lai",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "query_used": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "filter": null,
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 80,
+    "evidence": "Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p80:0",
+    "score": 1.0,
+    "source_id": "pds-ch02",
+    "page": 80,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.3",
+     "section_title": "Web Scraping and Social Media Data Collection",
+     "chunk_index": 0
+    },
+    "hit": true,
+    "text": "In Python, there are several libraries and methods that can be used for parsing and extracting data from text. These include the following: 1. Regular expressions (regex or RE) (https://openstax.org/r/docpython). This is a built-in library in Python that allows for pattern matching and extraction of data from strings. It uses a specific syntax to define patterns and rules for data extraction. 2. Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code. It can be utilized to extract specific data from web pages or documents. 3. Natural Language Toolkit (NLTK) (https://openstax.org/r/nltk). This is a powerful library for natural language processing in Python. It provides various tools for tokenizing, parsing, and extracting data from text data.",
+    "base_rank": 1
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p76:2",
+    "score": 0.5,
+    "source_id": "pds-ch02",
+    "page": 76,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.3",
+     "section_title": "Web Scraping and Social Media Data Collection",
+     "chunk_index": 2
+    },
+    "hit": false,
+    "text": "2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.",
+    "base_rank": 5
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p77:0",
+    "score": 0.333333,
+    "source_id": "pds-ch02",
+    "page": 77,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.3",
+     "section_title": "Web Scraping and Social Media Data Collection",
+     "chunk_index": 0
+    },
+    "hit": false,
+    "text": "common techniques used. (Note: The techniques used for web scraping will vary depending on the website and the type of data being collected. It may require a combination of different techniques to effectively scrape data from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to scrape Regular Expressions • Search for and extract specific patterns of text from a web page • Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses HTML Parsing • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data",
+    "base_rank": 4
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 1918.4
+ },
+ {
+  "query_id": "t03",
+  "split": "test",
+  "type": "metadata_filter",
+  "question": "Which normal forms are most commonly used in database design?",
+  "query_used": "Which normal forms are most commonly used in database design?",
+  "filter": {
+   "chapter": 2
+  },
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 90,
+    "evidence": "The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form)"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p90:2",
+    "score": 1.0,
+    "source_id": "pds-ch02",
+    "page": 90,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.4",
+     "section_title": "Data Cleaning and Preprocessing",
+     "chunk_index": 2
+    },
+    "hit": true,
+    "text": "This may include setting conventions for naming, data types, and formatting A normal form (NF) is a guideline or set of rules used in database design to ensure that a database is well-structured, organized, and free from certain types of data irregularities, such as redundancy and inconsistency. The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form). Normalization is the process of applying these rules to a database. The data must be organized and cleaned, which involves removing duplicates and erroneous data, filling in missing values, and logically arranging the data. To uphold data standardization, regular quality control measures should be implemented, including periodic data audits to ascertain the accuracy and consistency of the data. It is also important to document the standardization process, including the guidelines and procedures followed.",
+    "base_rank": 1
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p90:0",
+    "score": 0.5,
+    "source_id": "pds-ch02",
+    "page": 90,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.4",
+     "section_title": "Data Cleaning and Preprocessing",
+     "chunk_index": 0
+    },
+    "hit": false,
+    "text": "duplicates as well as converting data from various sources into a unified format, often termed a normal form (defined in the next section). Data transformation involves modifying the data to make it more suitable for the analysis that is planned. Data validation ensures that the data is accurate and consistent and meets certain criteria or standards. Table 2.4 summarizes these processes, which are explored in more depth later in the chapter. Purpose Techniques Example Normalization To eliminate redundant data and ensure data dependencies make sense Involve breaking down a larger database into smaller, more manageable tables and establishing relationships between them. A customer database table with redundant data can be normalized by splitting it into two tables for customer information and orders and establishing the relationship between them. Transformation To make the data more consistent, coherent, and meaningful for analysis.",
+    "base_rank": 2
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p91:1",
+    "score": 0.333333,
+    "source_id": "pds-ch02",
+    "page": 91,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.4",
+     "section_title": "Data Cleaning and Preprocessing",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "By normalizing the data, the marketing team can efficiently follow and investigate the customers' purchasing behavior, identify patterns and trends, and make data-driven judgments to enhance their marketing systems. The normalization formula is a statistical formula utilized to scale down a dataset, typically to between one and zero. The largest data would have a normalized value of one, and the smallest data point would be zero. Note that the presence of outliers can significantly impact the calculated values of minimum/maximum. As such, it is important to first remove any outliers from the dataset before performing normalization. This ensures more accurate and representative results. The normalization formula: EXAMPLE 2.7 Problem A retail company with eight branches across the country wants to analyze its product sales to identify its top-selling items. The company collects data from each branch and stores it in Table 2.5, listing the sales and profits for each product.",
+    "base_rank": 9
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": true,
+  "elapsed_ms": 1409.6
+ },
+ {
+  "query_id": "t04",
+  "split": "test",
+  "type": "truc_tiep",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "query_used": "In the United States, how long does copyright protect original creative works?",
+  "filter": null,
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 394,
+    "evidence": "copyright protects original creative works for the life of the creator plus 70 years"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch08:p395:3",
+    "score": 1.0,
+    "source_id": "pds-ch08",
+    "page": 395,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 3
+    },
+    "hit": false,
+    "text": "They should ensure that the data being collected is necessary and relevant to the project. Next, they should understand the types and quantity of data being collected to determine the level of security measures needed for different types of data. EXAMPLE 8.4 Problem A data scientist is leading a project for a construction company that involves extensive data collection. The team carefully assesses the data requirements and implements measures to encrypt the stored data during transmission to safeguard against potential breaches. As the project progresses, the team becomes aware of the importance of obtaining appropriate authorization from copyright holders for any data protected by intellectual property laws. The team prioritizes ethical responsibility by properly attributing all data used and seeking permission from third parties when necessary. However, despite proactive measures, the team",
+    "base_rank": 8
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch08:p394:1",
+    "score": 0.5,
+    "source_id": "pds-ch08",
+    "page": 394,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "Any protected data under intellectual property rights can be accessed legitimately, if proper permission from the holder of the copyright is obtained and proper attribution given. More about copyright and attribution of data will be discussed in Ethics in Visualization and Reporting. Some kinds of data are publicly available. Even when this is the case, data scientists need to be aware of the nature of the data to ensure it is used appropriately. For example, if publicly available data contains a person's medical information or financial information, this would still pose a data security risk. Organizations should always ensure that any data they make publicly available is secure and protected by their data security policies and protocols. If data is accidentally breached during the project development process (thereby inadvertently making it public data), this could have serious and damaging consequences.",
+    "base_rank": 5
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch08:p394:0",
+    "score": 0.333333,
+    "source_id": "pds-ch08",
+    "page": 394,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 0
+    },
+    "hit": true,
+    "text": "underpins the trust and value associated with cryptocurrencies and provides a way to \"store value\" in the otherwise intangible medium of pure data. For more about bitcoin and other cryptocurrencies, check out Riverlearn's \"How Bitcoin Uses Cryptography\" (https://openstax.org/r/river) and Kraken's \"Beginner's Guide to Cryptography\" (https://openstax.org/r/kraken). Intellectual Property Another form of data protection that typically does not require encryption is that of legal protection of intellectual property. Intellectual property, broadly defined as original artistic works, trademarks and trade secrets, patents, and other creative output, is often protected from copying, modification, and unauthorized use by specific laws. For example, in the United States, copyright protects original creative works for the life of the creator plus 70 years.",
+    "base_rank": 1
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 1580.7
+ },
+ {
+  "query_id": "t05",
+  "split": "test",
+  "type": "metadata_filter",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "query_used": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "filter": {
+   "chapter": 8
+  },
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch08",
+    "page": 397,
+    "evidence": "through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch08:p397:1",
+    "score": 1.0,
+    "source_id": "pds-ch08",
+    "page": 397,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 1
+    },
+    "hit": true,
+    "text": "As introduced in Python Basics for Data Science and discussed through this book, Google Colab (https://openstax.org/r/colab), which is connected to Google Drive, allows users to collaborate remotely on coding tasks. Files may be hosted on Google Drive or Microsoft OneDrive, allowing lead data scientists to set different levels of permissions relevant to each team member or outside entity. Those directly involved in the project, including team members, customers, researchers, and the project's eventual audience, should be granted access to the data in accordance with the intended purpose. If appropriate, and with no privacy-related implications, the data may be disseminated to the broader public through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context.",
+    "base_rank": 1
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch08:p398:1",
+    "score": 0.5,
+    "source_id": "pds-ch08",
+    "page": 398,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "This includes setting guidelines and procedures for data usage, implementing security measures to protect data privacy and integrity, and providing access only to authorized individuals or organizations. For example, data governance policy might dictate that all personally identifiable information (PII) be anonymized or excluded when sharing with entities outside of the company. Since the data being shared is a mix of qualitative and quantitative data, an online file sharing app such as Google Drive or Microsoft OneDrive is most appropriate. Permissions should be granted to various team members based on their need to know.",
+    "base_rank": 5
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch08:p397:2",
+    "score": 0.333333,
+    "source_id": "pds-ch08",
+    "page": 397,
+    "metadata": {
+     "chapter": 8,
+     "section": "8.1",
+     "section_title": "Ethics in Data Collection",
+     "chunk_index": 2
+    },
+    "hit": false,
+    "text": "To protect data privacy and integrity when sharing information with outside parties, ethical policies should be implemented, and appropriate security measures should be put in place. Clear guidelines and procedures must also be provided to ensure that the data is used correctly and only for its intended purpose. Who Should Have Access to Data? Access to data in a data science project should be given to individuals who are directly involved in the project and have a legitimate need for the data. This may include the following: 1. Data scientists and analysts. These are the core team members who are responsible for analyzing and interpreting the data to draw insights and make decisions. 2. Data engineers. These individuals are responsible for managing and maintaining the data infrastructure and ensuring that the data is accessible and stored securely. 3. Project managers.",
+    "base_rank": 9
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "filter_respected": true,
+  "elapsed_ms": 1213.1
+ },
+ {
+  "query_id": "t06",
+  "split": "test",
+  "type": "dieu_kien",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "query_used": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "filter": null,
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "gold": [
+   {
+    "source_id": "pds-ch02",
+    "page": 71,
+    "evidence": "one group received eight hours of sunlight per day, while the other only received four hours"
+   }
+  ],
+  "results": [
+   {
+    "rank": 1,
+    "id": "B:pds-ch02:p71:1",
+    "score": 1.0,
+    "source_id": "pds-ch02",
+    "page": 71,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.1",
+     "section_title": "Overview of Data Collection Methods",
+     "chunk_index": 1
+    },
+    "hit": false,
+    "text": "The main research objective was to determine the growth rate of plants exposed to eight hours of sunlight compared to those with only four hours. A total of 20 identical potted plants were used, with one group allocated to the \"sunlight\" condition and the other to the \"limited sunlight\" condition. Both groups were maintained under identical environmental conditions, including temperature, humidity, and soil moisture. Adequate watering was provided to ensure equal hydration of all plants. The measurements of plant height were obtained and accurately recorded every week. This approach allowed for the collection of precise and reliable data on the impact of sunlight on plant growth, which can serve as a valuable resource for further research and understanding of this relationship.",
+    "base_rank": 2
+   },
+   {
+    "rank": 2,
+    "id": "B:pds-ch02:p71:0",
+    "score": 0.5,
+    "source_id": "pds-ch02",
+    "page": 71,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.1",
+     "section_title": "Overview of Data Collection Methods",
+     "chunk_index": 0
+    },
+    "hit": true,
+    "text": "Collecting Data Through Experiments Collecting data through scientific experiments requires a well-designed experimental scheme, describing the research objectives, variables, and procedures. The establishment of a control specimen is crucial, and data is obtained through systematic properties, measurements, or characteristics. It is crucial to follow ethical guidelines for the proper documentation and ethical utilization of the collected data (see Ethics in Data Collection). Consider this example: Scientist Sally aimed to investigate the impact of sunlight on plant growth. The research inquiry was to determine whether increased exposure to sunlight enhances the growth of plants. Sally experimented with two groups of plants wherein one group received eight hours of sunlight per day, while the other only received four hours. The height of each plant was measured and documented every week for four consecutive weeks.",
+    "base_rank": 1
+   },
+   {
+    "rank": 3,
+    "id": "B:pds-ch02:p75:4",
+    "score": 0.333333,
+    "source_id": "pds-ch02",
+    "page": 75,
+    "metadata": {
+     "chapter": 2,
+     "section": "2.2",
+     "section_title": "Survey Design and Implementation",
+     "chunk_index": 4
+    },
+    "hit": false,
+    "text": "In this study, the researchers randomly assign participants to either the exercise group or the control group. However, there is always a possibility of sampling error in the random assignment process, meaning that the groups may not be perfectly balanced in terms of their exercise habits or other characteristics. These types of sampling errors can affect the accuracy and generalizability of the study's findings.",
+    "base_rank": 8
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "filter_respected": null,
+  "elapsed_ms": 1344.8
+ }
+]

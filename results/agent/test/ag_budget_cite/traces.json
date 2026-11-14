@@ -1,0 +1,866 @@
+[
+ {
+  "query_id": "t01",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "During data chunking, what metadata is added to each chunk so that the chunks can be reassembled into the original dataset?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "During data chunking, metadata such as the chunk number and the total number of chunks is added to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately [B:pds-ch02:p100:1].",
+  "citations": [
+   "B:pds-ch02:p100:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "data chunking metadata reassemble original dataset",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p100:1",
+      "rank": 1,
+      "score": 0.695809,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:0",
+      "rank": 2,
+      "score": 0.591306,
+      "source_id": "pds-ch02",
+      "page": 100
+     },
+     {
+      "id": "B:pds-ch02:p100:2",
+      "rank": 3,
+      "score": 0.463414,
+      "source_id": "pds-ch02",
+      "page": 100
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p100:1",
+     "B:pds-ch02:p100:0",
+     "B:pds-ch02:p100:2"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2675
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p100:1 | pds-ch02 | page 100]\nThese chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following: 1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4.\n\n[B:pds-ch02:p100:0 | pds-ch02 | page 100]\nFigure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units. Data chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes.\n\n[B:pds-ch02:p100:2 | pds-ch02 | page 100]\nFlexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets. Database Management Systems Database management is a crucial aspect of data science projects as it involves organizing, storing, retrieving, and managing large volumes of data. In a data science project, a database management system (DBMS) is used to ensure the efficient storage and retrieval of data. Database management systems are software tools used for managing data in a structured format. Their functions are summarized in Table 2.9.",
+  "context_ids": [
+   "B:pds-ch02:p100:1",
+   "B:pds-ch02:p100:0",
+   "B:pds-ch02:p100:2"
+  ],
+  "context_chars": 2675,
+  "elapsed_s": 2.52,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1250,
+     "out": 101,
+     "calls": 2
+    },
+    "text-embedding-3-small": {
+     "in": 8,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.000662
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "t02",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "Which external Python library is mainly used for scraping and parsing HTML and XML code?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "The external Python library mainly used for scraping and parsing HTML and XML code is Beautiful Soup [B:pds-ch02:p80:0].",
+  "citations": [
+   "B:pds-ch02:p80:0"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "Python library for scraping and parsing HTML and XML",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p78:1",
+      "rank": 1,
+      "score": 0.551748,
+      "source_id": "pds-ch02",
+      "page": 78
+     },
+     {
+      "id": "B:pds-ch02:p77:0",
+      "rank": 2,
+      "score": 0.494817,
+      "source_id": "pds-ch02",
+      "page": 77
+     },
+     {
+      "id": "B:pds-ch02:p80:0",
+      "rank": 3,
+      "score": 0.48425,
+      "source_id": "pds-ch02",
+      "page": 80
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p78:1",
+     "B:pds-ch02:p77:0",
+     "B:pds-ch02:p80:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2826
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The external Python library mainly used for scraping and parsing HTML and XML code is Beautiful Soup.",
+    "citations": [
+     "B:pds-ch02:p80:0"
+    ],
+    "problem": [
+     "B:pds-ch02:p80:0"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p78:1 | pds-ch02 | page 78]\nPython is one of the popular programming languages used for web scraping due to its various libraries and frameworks that make it easy to pull and process data from websites. To scrape data such as a table from a website using Python, we follow these steps: 1. Import the pandaspandas library. The first step is to import the pandas library (https://openstax.org/r/pandas), which is a popular Python library for data analysis and manipulation. import pandas as pd 2. Use the read_htmlread_html() function. This function is used to read HTML tables from a web page and convert them into a list of DataFrame objects. Recall from What Are Data and Data Science? that a DataFrame is a data type that pandas uses to store multi-column tabular data. df = pd.read_html(\"https://...... 3. Access the desired data. If the data on the web page is divided into different tables, we need to specify which table we want to extract.\n\n[B:pds-ch02:p77:0 | pds-ch02 | page 77]\ncommon techniques used. (Note: The techniques used for web scraping will vary depending on the website and the type of data being collected. It may require a combination of different techniques to effectively scrape data from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to scrape Regular Expressions • Search for and extract specific patterns of text from a web page • Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses HTML Parsing • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data\n\n[B:pds-ch02:p80:0 | pds-ch02 | page 80]\nIn Python, there are several libraries and methods that can be used for parsing and extracting data from text. These include the following: 1. Regular expressions (regex or RE) (https://openstax.org/r/docpython). This is a built-in library in Python that allows for pattern matching and extraction of data from strings. It uses a specific syntax to define patterns and rules for data extraction. 2. Beautiful Soup (https://openstax.org/r/pypi). This is an external library that is mostly used for scraping and parsing HTML and XML code. It can be utilized to extract specific data from web pages or documents. 3. Natural Language Toolkit (NLTK) (https://openstax.org/r/nltk). This is a powerful library for natural language processing in Python. It provides various tools for tokenizing, parsing, and extracting data from text data.",
+  "context_ids": [
+   "B:pds-ch02:p78:1",
+   "B:pds-ch02:p77:0",
+   "B:pds-ch02:p80:0"
+  ],
+  "context_chars": 2826,
+  "elapsed_s": 3.1,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2449,
+     "out": 121,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.001173
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "t03",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "Which normal forms are most commonly used in database design?",
+  "answerable": true,
+  "filter": {
+   "chapter": 2
+  },
+  "status": "answered",
+  "answer": "The most commonly used normal forms in database design are 1NF (First Normal Form), 2NF (Second Normal Form), 3NF (Third Normal Form), and BCNF (Boyce-Codd Normal Form). These normal forms serve as guidelines to ensure a database is well-structured, organized, and free from redundancy and inconsistency. Normalization involves applying these rules to organize and clean the data effectively [B:pds-ch02:p90:2].",
+  "citations": [
+   "B:pds-ch02:p90:2"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "most commonly used normal forms in database design",
+    "filter": {
+     "chapter": 2
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p90:2",
+      "rank": 1,
+      "score": 0.626431,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p90:0",
+      "rank": 2,
+      "score": 0.489766,
+      "source_id": "pds-ch02",
+      "page": 90
+     },
+     {
+      "id": "B:pds-ch02:p91:1",
+      "rank": 3,
+      "score": 0.440973,
+      "source_id": "pds-ch02",
+      "page": 91
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p90:2",
+     "B:pds-ch02:p90:0",
+     "B:pds-ch02:p91:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2989
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p90:2 | pds-ch02 | page 90]\nThis may include setting conventions for naming, data types, and formatting A normal form (NF) is a guideline or set of rules used in database design to ensure that a database is well-structured, organized, and free from certain types of data irregularities, such as redundancy and inconsistency. The most commonly used normal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal Form). Normalization is the process of applying these rules to a database. The data must be organized and cleaned, which involves removing duplicates and erroneous data, filling in missing values, and logically arranging the data. To uphold data standardization, regular quality control measures should be implemented, including periodic data audits to ascertain the accuracy and consistency of the data. It is also important to document the standardization process, including the guidelines and procedures followed.\n\n[B:pds-ch02:p90:0 | pds-ch02 | page 90]\nduplicates as well as converting data from various sources into a unified format, often termed a normal form (defined in the next section). Data transformation involves modifying the data to make it more suitable for the analysis that is planned. Data validation ensures that the data is accurate and consistent and meets certain criteria or standards. Table 2.4 summarizes these processes, which are explored in more depth later in the chapter. Purpose Techniques Example Normalization To eliminate redundant data and ensure data dependencies make sense Involve breaking down a larger database into smaller, more manageable tables and establishing relationships between them. A customer database table with redundant data can be normalized by splitting it into two tables for customer information and orders and establishing the relationship between them. Transformation To make the data more consistent, coherent, and meaningful for analysis.\n\n[B:pds-ch02:p91:1 | pds-ch02 | page 91]\nBy normalizing the data, the marketing team can efficiently follow and investigate the customers' purchasing behavior, identify patterns and trends, and make data-driven judgments to enhance their marketing systems. The normalization formula is a statistical formula utilized to scale down a dataset, typically to between one and zero. The largest data would have a normalized value of one, and the smallest data point would be zero. Note that the presence of outliers can significantly impact the calculated values of minimum/maximum. As such, it is important to first remove any outliers from the dataset before performing normalization. This ensures more accurate and representative results. The normalization formula: EXAMPLE 2.7 Problem A retail company with eight branches across the country wants to analyze its product sales to identify its top-selling items. The company collects data from each branch and stores it in Table 2.5, listing the sales and profits for each product.",
+  "context_ids": [
+   "B:pds-ch02:p90:2",
+   "B:pds-ch02:p90:0",
+   "B:pds-ch02:p91:1"
+  ],
+  "context_chars": 2989,
+  "elapsed_s": 2.2,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1269,
+     "out": 142,
+     "calls": 2
+    },
+    "text-embedding-3-small": {
+     "in": 0,
+     "out": 0,
+     "calls": 0
+    }
+   },
+   "cost_usd": 0.000735
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "t04",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "In the United States, how long does copyright protect original creative works?",
+  "answerable": true,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved chunks do not contain information about the duration of copyright protection for original creative works in the United States.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "copyright duration United States",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 1,
+      "score": 0.307303,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p388:3",
+      "rank": 2,
+      "score": 0.285048,
+      "source_id": "pds-ch08",
+      "page": 388
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 3,
+      "score": 0.284824,
+      "source_id": "pds-ch08",
+      "page": 389
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p388:4",
+     "B:pds-ch08:p388:3",
+     "B:pds-ch08:p389:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2269
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "copyright duration original creative works United States",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p394:1",
+      "rank": 1,
+      "score": 0.303114,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p394:0",
+      "rank": 2,
+      "score": 0.288923,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p388:4",
+      "rank": 3,
+      "score": 0.264469,
+      "source_id": "pds-ch08",
+      "page": 388
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p394:1"
+    ],
+    "duplicate": [
+     "B:pds-ch08:p388:4"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch08:p394:0"
+    ],
+    "context_chars": 3232
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "how long does copyright last original creative works United States",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p394:1",
+      "rank": 1,
+      "score": 0.278408,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p394:0",
+      "rank": 2,
+      "score": 0.253014,
+      "source_id": "pds-ch08",
+      "page": 394
+     },
+     {
+      "id": "B:pds-ch08:p389:1",
+      "rank": 3,
+      "score": 0.211907,
+      "source_id": "pds-ch08",
+      "page": 389
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch08:p394:1",
+     "B:pds-ch08:p389:1"
+    ],
+    "dropped_over_budget": [
+     "B:pds-ch08:p394:0"
+    ],
+    "context_chars": 3232
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved chunks do not contain information about the duration of copyright protection for original creative works in the United States."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch08:p388:4 | pds-ch08 | page 388]\nData Security Regulations are based on data protection laws, such as the General Data Protection Regulation in the European Union (https://openstax.org/r/gdpr) (GDPR) and the 2018 California Consumer Privacy Act (https://openstax.org/r/privacy) (CCPA) in the United States, with its amendment, CPRA (2023). These regulations demand that organizations collect, process, and accumulate confidential data securely and\n\n[B:pds-ch08:p388:3 | pds-ch08 | page 388]\nSuch regulations may vary from country to country or even from state to state within a country. In the United States, the US Privacy Act of 1974 regulates how federal agencies may collect, use, maintain, and disseminate personal information. This law was later supplemented by the E-Government Act of 2002, extending protections to data held digitally rather than physically. A good summary of these laws and other privacy regulations can be found at the GAO's Protecting Personal Privacy (https://openstax.org/r/ gao) site. Industry and Global Standards Data privacy compliance requirements vary depending on the industry and the standards or laws that govern the organization's operations. Failure to comply with these requirements can result in penalties and legal consequences for the organization, so data scientists in these industries need to be aware of and adhere to these regulations to avoid any potential repercussions.\n\n[B:pds-ch08:p389:1 | pds-ch08 | page 389]\nMany countries have also enacted laws and regulations involving data retention, or how long personal data may be stored (e.g., the Sarbanes-Oxley Act [SOX] in the United States or the Data Protection Act [DPA] in the United Kingdom); data breach notification, or what to do when data is stolen by a malicious third party (Gramm-Leach-Bliley Act [GLBA] in the United States or the Personal Information Protection and Electronic Documents Act [PIPEDA] in Canada); and many other issues of data privacy, security, and integrity. Some regulations apply only to certain types of data or data related to certain industries. For example, in the United States, the Health Insurance Portability and Accountability Act (HIPAA) requires the safeguarding of sensitive information related to patient health.\n\n[B:pds-ch08:p394:1 | pds-ch08 | page 394]\nAny protected data under intellectual property rights can be accessed legitimately, if proper permission from the holder of the copyright is obtained and proper attribution given. More about copyright and attribution of data will be discussed in Ethics in Visualization and Reporting. Some kinds of data are publicly available. Even when this is the case, data scientists need to be aware of the nature of the data to ensure it is used appropriately. For example, if publicly available data contains a person's medical information or financial information, this would still pose a data security risk. Organizations should always ensure that any data they make publicly available is secure and protected by their data security policies and protocols. If data is accidentally breached during the project development process (thereby inadvertently making it public data), this could have serious and damaging consequences.",
+  "context_ids": [
+   "B:pds-ch08:p388:4",
+   "B:pds-ch08:p388:3",
+   "B:pds-ch08:p389:1",
+   "B:pds-ch08:p394:1"
+  ],
+  "context_chars": 3232,
+  "elapsed_s": 4.66,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3384,
+     "out": 96,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 21,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.001508
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "t05",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "Which platform is mentioned for sharing data with the broader public in a research context when there are no privacy implications?",
+  "answerable": true,
+  "filter": {
+   "chapter": 8
+  },
+  "status": "answered",
+  "answer": "The platform mentioned for sharing data with the broader public in a research context when there are no privacy implications is Kaggle [B:pds-ch08:p397:1].",
+  "citations": [
+   "B:pds-ch08:p397:1"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "platform for sharing data with the broader public without privacy implications",
+    "filter": {
+     "chapter": 8
+    },
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p397:0",
+      "rank": 1,
+      "score": 0.540365,
+      "source_id": "pds-ch08",
+      "page": 397
+     },
+     {
+      "id": "B:pds-ch08:p396:3",
+      "rank": 2,
+      "score": 0.528089,
+      "source_id": "pds-ch08",
+      "page": 396
+     },
+     {
+      "id": "B:pds-ch08:p397:1",
+      "rank": 3,
+      "score": 0.511717,
+      "source_id": "pds-ch08",
+      "page": 397
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p397:0",
+     "B:pds-ch08:p396:3",
+     "B:pds-ch08:p397:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2689
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "The platform mentioned for sharing data with the broader public in a research context when there are no privacy implications is Kaggle.",
+    "citations": [
+     "B:pds-ch08:p397:1"
+    ],
+    "problem": [
+     "B:pds-ch08:p397:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p397:0 | pds-ch08 | page 397]\nspecifies who is responsible for managing and accessing different types of data and what security measures need to be in place to protect it. What and How Much Should Be Shared? The scope of the data science project, along with associated requirements, will determine the type and extent of data that can be shared. This data may encompass quantitative, qualitative, tabular, text-based, image- based, and audio-based formats, among others, each of which may require unique methods of sharing. For example, tools like Tableau (https://openstax.org/r/tableau) or Power BI (https://openstax.org/r/microsoft) can be used for sharing tabular data and visualizations, while GitHub (https://openstax.org/r/github) has traditionally been useful for sharing programming code, datasets, and related materials (though today, anything can be shared on GitHub).\n\n[B:pds-ch08:p396:3 | pds-ch08 | page 396]\nThe team should also provide support for affected individuals, such as offering credit monitoring services or assistance with any financial or identity theft issues that may arise from the breach. Data Sharing Data sharing is the process of allowing access to or transferring data from one entity (individual, organization, or system) to another. It is done for a variety of reasons, including collaboration, research, providing services, improved forecasting, and jumpstarting innovation. Data sharing can be carried out in a variety of ways and may involve different types of data. Organizations and individuals may use public datasets, open data standards, or data pools to share data. But most importantly, they must establish data governance protocols-a set of rules, policies, and procedures that enable precise control over data access while ensuring that it is safeguarded.\n\n[B:pds-ch08:p397:1 | pds-ch08 | page 397]\nAs introduced in Python Basics for Data Science and discussed through this book, Google Colab (https://openstax.org/r/colab), which is connected to Google Drive, allows users to collaborate remotely on coding tasks. Files may be hosted on Google Drive or Microsoft OneDrive, allowing lead data scientists to set different levels of permissions relevant to each team member or outside entity. Those directly involved in the project, including team members, customers, researchers, and the project's eventual audience, should be granted access to the data in accordance with the intended purpose. If appropriate, and with no privacy-related implications, the data may be disseminated to the broader public through platforms like Kaggle (https://openstax.org/r/kaggle), which is designed for open data sharing in a research context.",
+  "context_ids": [
+   "B:pds-ch08:p397:0",
+   "B:pds-ch08:p396:3",
+   "B:pds-ch08:p397:1"
+  ],
+  "context_chars": 2689,
+  "elapsed_s": 3.45,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2353,
+     "out": 135,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 11,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.001157
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "t06",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "In the plant growth experiment on sunlight, how many hours of sunlight per day did each of the two groups receive?",
+  "answerable": true,
+  "filter": null,
+  "status": "answered",
+  "answer": "In the plant growth experiment on sunlight, one group of plants received eight hours of sunlight per day, while the other group received only four hours of sunlight per day. This setup was used to investigate whether increased exposure to sunlight enhances plant growth [B:pds-ch02:p71:1][B:pds-ch02:p71:0].",
+  "citations": [
+   "B:pds-ch02:p71:1",
+   "B:pds-ch02:p71:0"
+  ],
+  "reason": null,
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "plant growth experiment sunlight hours per day",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p71:1",
+      "rank": 1,
+      "score": 0.739094,
+      "source_id": "pds-ch02",
+      "page": 71
+     },
+     {
+      "id": "B:pds-ch02:p71:0",
+      "rank": 2,
+      "score": 0.518627,
+      "source_id": "pds-ch02",
+      "page": 71
+     },
+     {
+      "id": "B:pds-ch02:p70:0",
+      "rank": 3,
+      "score": 0.327706,
+      "source_id": "pds-ch02",
+      "page": 70
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p71:1",
+     "B:pds-ch02:p71:0",
+     "B:pds-ch02:p70:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2653
+   },
+   {
+    "event": "invalid_answer",
+    "answer": "In the plant growth experiment on sunlight, one group of plants received eight hours of sunlight per day, while the other group received only four hours of sunlight per day. This setup was used to investigate whether increased exposure to sunlight enhances plant growth [B:pds-ch02:p71:1, B:pds-ch02:p71:0].",
+    "citations": [
+     "B:pds-ch02:p71:1",
+     "B:pds-ch02:p71:0"
+    ],
+    "problem": [
+     "B:pds-ch02:p71:1",
+     "B:pds-ch02:p71:0"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch02:p71:1 | pds-ch02 | page 71]\nThe main research objective was to determine the growth rate of plants exposed to eight hours of sunlight compared to those with only four hours. A total of 20 identical potted plants were used, with one group allocated to the \"sunlight\" condition and the other to the \"limited sunlight\" condition. Both groups were maintained under identical environmental conditions, including temperature, humidity, and soil moisture. Adequate watering was provided to ensure equal hydration of all plants. The measurements of plant height were obtained and accurately recorded every week. This approach allowed for the collection of precise and reliable data on the impact of sunlight on plant growth, which can serve as a valuable resource for further research and understanding of this relationship.\n\n[B:pds-ch02:p71:0 | pds-ch02 | page 71]\nCollecting Data Through Experiments Collecting data through scientific experiments requires a well-designed experimental scheme, describing the research objectives, variables, and procedures. The establishment of a control specimen is crucial, and data is obtained through systematic properties, measurements, or characteristics. It is crucial to follow ethical guidelines for the proper documentation and ethical utilization of the collected data (see Ethics in Data Collection). Consider this example: Scientist Sally aimed to investigate the impact of sunlight on plant growth. The research inquiry was to determine whether increased exposure to sunlight enhances the growth of plants. Sally experimented with two groups of plants wherein one group received eight hours of sunlight per day, while the other only received four hours. The height of each plant was measured and documented every week for four consecutive weeks.\n\n[B:pds-ch02:p70:0 | pds-ch02 | page 70]\nSolution Ashley wants to ensure that there is enough food for her local birds while she is away for three days. To do this, she will carefully observe the feeder daily for two consecutive weeks. She will record the total amount of feed eaten each day and make sure to refill the feeder each morning before the observation. This will provide a consistent amount of food available for the birds. After two weeks, Ashley will use the total amount of food consumed and divide it by the number of days observed to estimate the required daily food. Then, she will multiply the daily food by three to determine the total amount of bird food needed for her three-day absence. By directly observing and recording the bird food, as well as collecting data for two weeks, Ashley will gather accurate and reliable information.",
+  "context_ids": [
+   "B:pds-ch02:p71:1",
+   "B:pds-ch02:p71:0",
+   "B:pds-ch02:p70:0"
+  ],
+  "context_chars": 2653,
+  "elapsed_s": 4.0,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 2320,
+     "out": 230,
+     "calls": 3
+    },
+    "text-embedding-3-small": {
+     "in": 7,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.001296
+  },
+  "context_has_evidence": true
+ },
+ {
+  "query_id": "u03",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "What sample size is needed for a survey to reach a 95% confidence level with a 5% margin of error?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved document chunks do not contain explicit information or formula about the sample size needed for a 95% confidence level with a 5% margin of error.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sample size for 95% confidence level and 5% margin of error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 1,
+      "score": 0.402126,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.375045,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p76:0",
+      "rank": 3,
+      "score": 0.359889,
+      "source_id": "pds-ch02",
+      "page": 76
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p73:4",
+     "B:pds-ch02:p76:0"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2663
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sample size calculation 95% confidence 5% margin of error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 1,
+      "score": 0.424609,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 2,
+      "score": 0.383706,
+      "source_id": "pds-ch02",
+      "page": 73
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 3,
+      "score": 0.374219,
+      "source_id": "pds-ch02",
+      "page": 75
+     }
+    ],
+    "added": [
+     "B:pds-ch02:p75:0"
+    ],
+    "duplicate": [
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p73:4"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 3634
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sample size formula 95% confidence interval 5% margin of error",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch02:p75:1",
+      "rank": 1,
+      "score": 0.366574,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p75:0",
+      "rank": 2,
+      "score": 0.353953,
+      "source_id": "pds-ch02",
+      "page": 75
+     },
+     {
+      "id": "B:pds-ch02:p73:4",
+      "rank": 3,
+      "score": 0.346984,
+      "source_id": "pds-ch02",
+      "page": 73
+     }
+    ],
+    "added": [],
+    "duplicate": [
+     "B:pds-ch02:p75:1",
+     "B:pds-ch02:p75:0",
+     "B:pds-ch02:p73:4"
+    ],
+    "dropped_over_budget": [],
+    "context_chars": 3634
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved document chunks do not contain explicit information or formula about the sample size needed for a 95% confidence level with a 5% margin of error."
+   }
+  ],
+  "n_searches": 3,
+  "context": "[B:pds-ch02:p75:1 | pds-ch02 | page 75]\nTechniques for mitigating measurement error include improving data collection methods, calibrating instruments, conducting validation studies, and employing statistical methods like error modeling or sensitivity analysis to account for and minimize the impact of measurement inaccuracies on the analysis outcomes. A Sampling Case Study Consider a research study that wants to randomly select a group of college students from a larger population to examine the effects of exercise on their mental health outcomes. Using student ID numbers generated by a computer program, 100 participants from the larger population were randomly selected to participate in the study to achieve the desired accuracy. This process ensured that every student in the university had an equal chance of being selected to participate. The participants were then randomly assigned to either the exercise group or the control group.\n\n[B:pds-ch02:p73:4 | pds-ch02 | page 73]\nThe researcher first assigns a number to each student, going from 1 to 1,000. Then, the researcher randomly selects a number from 1 to 10-let's say they select 4. This number will be the starting point for selecting the sample of students. The researcher will then select every 10th student from the list, which means every student with a number ending in 4 (14, 24, 34, etc.) will be included in the sample. This way, the researcher will have a representative sample of 100 students from the high school, which is 10% of the population. The sample will consist of students from different grades, genders, and backgrounds, making it a diverse and representative sample.\n\n[B:pds-ch02:p76:0 | pds-ch02 | page 76]\nResearchers need to be aware of these potential errors and take steps to minimize them when designing and conducting their studies. EXAMPLE 2.3 Problem Mark is a data scientist who works for a marketing research company. He has been tasked to lead a study to understand consumer behavior toward a new product that is about to be launched in the market. As data scientists, they know the importance of using the right sampling technique to collect accurate and reliable data. Mark divided the population into different groups based on factors such as age, education, and income. This ensures that he gets a representative sample from each group, providing a more accurate understanding of consumer behavior. What is the name of the sampling technique used by Mark to ensure a representative sample from different groups of consumers for his study on consumer behavior toward a new product? Solution The sampling technique used by Mark is called stratified sampling.\n\n[B:pds-ch02:p75:0 | pds-ch02 | page 75]\nthe sample. Additionally, careful consideration of the sampling frame should ideally encompass all members of the target population and provide a clear and accessible way to identify and select individuals or units for inclusion in the sample. Sampling bias can occur at various stages of the sampling process, and it can greatly impact the accuracy and validity of research findings. Measurement Error Measurement errors are inaccuracies or discrepancies that surface during the process of collecting, recording, or analyzing data. They may occur due to human error, environmental factors, or inherent inconsistencies in the phenomena being studied. Random error, which arises unpredictably, can affect the precision of measurements, and systematic error may consistently bias measurements in a particular direction. In data analysis, addressing measurement error is crucial for ensuring the reliability and validity of results.",
+  "context_ids": [
+   "B:pds-ch02:p75:1",
+   "B:pds-ch02:p73:4",
+   "B:pds-ch02:p76:0",
+   "B:pds-ch02:p75:0"
+  ],
+  "context_chars": 3634,
+  "elapsed_s": 4.88,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 3592,
+     "out": 127,
+     "calls": 4
+    },
+    "text-embedding-3-small": {
+     "in": 42,
+     "out": 0,
+     "calls": 3
+    }
+   },
+   "cost_usd": 0.001641
+  },
+  "context_has_evidence": false
+ },
+ {
+  "query_id": "u04",
+  "split": "test",
+  "config": "ag_budget_cite",
+  "question": "Which programming language is recommended for writing smart contracts on a blockchain?",
+  "answerable": false,
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "reason": "The retrieved documents do not contain information about the programming language recommended for writing smart contracts on a blockchain.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "programming language for writing smart contracts on a blockchain",
+    "filter": null,
+    "top_k": 3,
+    "results": [
+     {
+      "id": "B:pds-ch08:p393:3",
+      "rank": 1,
+      "score": 0.293154,
+      "source_id": "pds-ch08",
+      "page": 393
+     },
+     {
+      "id": "B:pds-ch02:p80:1",
+      "rank": 2,
+      "score": 0.276737,
+      "source_id": "pds-ch02",
+      "page": 80
+     },
+     {
+      "id": "B:pds-ch02:p77:1",
+      "rank": 3,
+      "score": 0.266524,
+      "source_id": "pds-ch02",
+      "page": 77
+     }
+    ],
+    "added": [
+     "B:pds-ch08:p393:3",
+     "B:pds-ch02:p80:1",
+     "B:pds-ch02:p77:1"
+    ],
+    "duplicate": [],
+    "dropped_over_budget": [],
+    "context_chars": 2753
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved documents do not contain information about the programming language recommended for writing smart contracts on a blockchain."
+   }
+  ],
+  "n_searches": 1,
+  "context": "[B:pds-ch08:p393:3 | pds-ch08 | page 393]\nIf collected data is particularly sensitive or confidential, then it may require encryption, which is the process of converting data into code that would be very difficult or impossible for a third party to decipher. There are many encryption algorithms, making use of sophisticated mathematical algorithms, that are routinely used in industries such as finance, health care, education, and government agencies; however, the details of encryption fall outside the scope of this text. EXPLORING FURTHER Cryptocurrencies Bitcoin and other cryptocurrencies use encryption to secure transactions and maintain the integrity of the blockchain, the decentralized ledger that records all transactions. Encryption methods, such as public- private key cryptography, ensure that only the rightful owners can access and transfer their digital assets, creating a secure and verifiable system for storing value in a purely digital form. This cryptographic security\n\n[B:pds-ch02:p80:1 | pds-ch02 | page 80]\n(Tokenizing is the process of breaking down a piece of text or string of characters into smaller units called tokens, which can be words, phrases, symbols, or individual characters.) 4. TextBlob (https://openstax.org/r/textblob). This library provides a simple interface for most natural language processing assignments, such as argument and part-of-speech tagging. It can also be utilized for parsing and extracting data from text. 5. SpaCy (https://openstax.org/r/spacy). This is a popular open-source library for natural language processing. It provides efficient methods for tokenizing, parsing, and extracting data from text data. Overall, the library or method used for parsing and extracting data will depend on the specific task and type of data being analyzed. It is important to research and determine the best approach for a given project. Regular Expressions in Python Regular expressions, also known as regex, are a set of symbols used to define a search pattern in text data.\n\n[B:pds-ch02:p77:1 | pds-ch02 | page 77]\n• Often used for simple scraping tasks Application Programming Interfaces (APIs) • Authorize developers to access and retrieve data instantly without the need for web scraping • Often a more efficient and reliable method for data collection (XML) API Subset • XML (Extensible Markup Language) is another markup language used exchanging data • This method works similarly to using the HTML API subset by making HTTP requests to the website's API endpoints and then parsing the data received in XML format (JSON) API Subset • JSON (JavaScript Object Notation) is a lightweight data interchange format that is commonly used for sending and receiving data between servers and web applications",
+  "context_ids": [
+   "B:pds-ch08:p393:3",
+   "B:pds-ch02:p80:1",
+   "B:pds-ch02:p77:1"
+  ],
+  "context_chars": 2753,
+  "elapsed_s": 2.27,
+  "usage": {
+   "by_model": {
+    "gpt-4.1-mini": {
+     "in": 1245,
+     "out": 57,
+     "calls": 2
+    },
+    "text-embedding-3-small": {
+     "in": 9,
+     "out": 0,
+     "calls": 1
+    }
+   },
+   "cost_usd": 0.000589
+  },
+  "context_has_evidence": false
+ }
+]
